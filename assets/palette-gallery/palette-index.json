@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "fast-router",
+  "default_result": {"primary": 1, "alternatives": 2},
+  "defaults": {
+    "figure_type": "qualitative",
+    "groups": 5,
+    "background": "white",
+    "density": "ordinary",
+    "draw_cards": 5
+  },
+  "routes": [
+    {"keywords": ["水墨", "东方", "文人", "ink", "literati"], "palette_ids": ["ink-mineral-a-sunlit", "ink-paper-literati", "modern-ink-mineral"], "figure_types": ["qualitative", "neutral-accent"], "best_for": ["机制图", "富集图", "网络图"], "risk": "浅色小点和灰度相邻色需检查"},
+    {"keywords": ["敦煌", "矿物", "朱砂", "石青", "石绿"], "palette_ids": ["dunhuang-mineral", "ink-cinnabar", "hokusai-indigo"], "figure_types": ["qualitative"], "best_for": ["通路模块", "图形摘要", "机制图"], "risk": "暖色不代表风险或正方向"},
+    {"keywords": ["青花", "靛蓝", "版画", "浮世绘", "indigo"], "palette_ids": ["hokusai-indigo", "qinghua-porcelain", "paper-blue-sequential"], "figure_types": ["qualitative", "sequential"], "best_for": ["空间图", "流程图", "热图"], "risk": "相邻蓝色需用明度或形状区分"},
+    {"keywords": ["草木", "植物", "生态", "森林", "botanical"], "palette_ids": ["botanical-earth", "tea-earth-botanical", "jade-ochre-sequential"], "figure_types": ["qualitative", "sequential"], "best_for": ["代谢图", "生态图", "器官机制图"], "risk": "多个绿色在色觉差异下可能接近"},
+    {"keywords": ["印象派", "大气", "雾感", "柔和", "monet"], "palette_ids": ["monet-atmospheric", "impressionist-muted", "jiangnan-muted"], "figure_types": ["qualitative"], "best_for": ["低密度分面", "补充图", "大色面示意"], "risk": "不适合密集小点和细线"},
+    {"keywords": ["平面", "几何", "马蒂斯", "流程", "图形摘要"], "palette_ids": ["matisse-flat", "graphite-copper", "editorial-jewel"], "figure_types": ["qualitative", "neutral-accent"], "best_for": ["流程图", "机制图", "图形摘要"], "risk": "高饱和色不宜覆盖所有数据类别"},
+    {"keywords": ["临床", "病例", "对照", "biomarker"], "palette_ids": ["clinical-cool-warm", "nature-muted", "monochrome-accent"], "figure_types": ["qualitative", "neutral-accent"], "best_for": ["病例对照", "标志物", "多面板结果"], "risk": "珊瑚和芥末只作强调"},
+    {"keywords": ["连续", "强度", "密度", "显著性", "热图", "sequential"], "palette_ids": ["paper-blue-sequential", "jade-ochre-sequential"], "figure_types": ["sequential"], "best_for": ["热图", "密度图", "计数图"], "risk": "保持明度单调，不表达未经定义的好坏"},
+    {"keywords": ["发散", "正负", "效应", "相关性", "diverging"], "palette_ids": ["ink-cinnabar-diverging", "qingzhu-diverging"], "figure_types": ["diverging"], "best_for": ["效应图", "相关性图", "以 0 为中心的指标"], "risk": "必须先定义有意义的中点"},
+    {"keywords": ["主结果", "重点", "一个强调", "中性", "minimal"], "palette_ids": ["monochrome-accent", "rothko-field", "graphite-copper"], "figure_types": ["neutral-accent"], "best_for": ["主结论", "对照组 + 主结果"], "risk": "不适合所有类别同等重要的密集分类"}
+  ]
+}

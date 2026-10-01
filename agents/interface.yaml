@@ -1,7 +1,7 @@
 interface:
   display_name: "Daxuan Journal Palette"
   short_description: "Design and audit artistic, publication-ready palettes for scientific figures"
-  default_prompt: "为这张科研图选择一套适合期刊投稿的艺术化配色；如果内置风格不够开放，可先抽 3–5 张公共领域或生成式视觉卡片让我选图，再提取候选色。输出来源/生成记录、语义映射、HEX、R/ggplot2 和 Python 代码，并检查色盲、灰度、印刷、最终尺寸和多面板一致性。"
+  default_prompt: "快速为这张科研图选择 1 套主配色和最多 2 套备选；先根据图表类型、组数和白底/深底匹配内置风格。只有在我明确要求抽卡或图片提色时，才抽 1 或 5 张公共领域/生成式卡片，再输出来源、语义映射、HEX、R/ggplot2 和 Python 代码，并检查色盲、灰度、印刷、最终尺寸和多面板一致性。"
 compatibility:
   canonical_format: "Daxuan Skill Markdown with references and deterministic trigger cases"
   adapter_targets:
