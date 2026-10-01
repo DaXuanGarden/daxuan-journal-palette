@@ -1,12 +1,15 @@
 # Daxuan Journal Palette
 
-一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.3.1。
+一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.4.0。
 
 ## Prerequisites
 
 - [ ] Python 3.10+（仅用于生成静态画廊）
+- [ ] Pillow（仅在需要从本地图像自动提色时需要；可改用人工取色）
 - [ ] R 或 Python 绘图环境（仅在实际绘图时需要）
 - [ ] 已确定图表类型、类别顺序、目标栏宽和输出介质
+
+开放公共领域抽卡需要网络；内置色板、静态画廊和生成式卡片提示不依赖网络。
 
 ## 你可以直接这样说
 
@@ -16,6 +19,8 @@
 - “把水墨、文人纸本、青花瓷、草木土色、海岸矿物和现代编辑部风格列成风格地图，给出适用图形和风险。”
 - “审查这张热图的连续色带和中点设置，给出印刷和最终尺寸风险。”
 - “把所有分面中同一通路固定为同一种颜色，并生成 R 和 Python 代码。”
+- “在内置风格之外，随机抽 5 张公共领域的蓝绿色作品，让我选一张，再提取配色做 GO 富集图。”
+- “生成 5 张没有文字的现代水墨视觉卡片，我选一张后，把它转成适合白底论文图的 5 色方案。”
 
 ## 输出
 
@@ -32,6 +37,8 @@
 可用的艺术家族包括：水墨矿物、文人纸本、江南烟雨、宋韵青瓷、青花瓷、敦煌矿物、朱砂宫墙、草木土色、茶褐植物、北欧矿物、海岸矿物、沙漠陶土、高山湖泊、现代编辑部、临床冷暖、石墨铜色、单色强调、柔和补充图，以及印象派大气、梵高式强调、马蒂斯式平面、Rothko 式色域、浮世绘靛蓝和现代水墨矿物。它们是视觉设计标签，不代表任何期刊官方色板或历史色彩复原。艺术来源和公开仓库见 [references/artistic-inspiration.md](references/artistic-inspiration.md)。
 
 画廊由 [scripts/build_palette_gallery.py](scripts/build_palette_gallery.py) 从 `palettes.json` 生成。HTML 用于筛选和复制，SVG 用于矢量查看，CSV 用于 R/Python 整理；灰度代理仅用于快速发现明度风险。
+
+如果内置风格不够开放，可以使用 [开放抽卡工作流](references/card-draw-workflow.md)：用 [scripts/draw_art_cards.py](scripts/draw_art_cards.py) 抽取公共领域候选图，用 [scripts/extract_palette.py](scripts/extract_palette.py) 提取候选色，或调用本机 `imagegen` 生成 3–5 张视觉卡片。必须先让作者选图，再做语义映射和实际图形审查；抽卡来源、生成 prompt、版权状态和提色方法都要进入 `provenance`。
 
 仓库包含 MIT LICENSE 和 GitHub Actions 校验，可作为 public GitHub skill 发布；具体发布和版本标签顺序见 [references/github-publishing.md](references/github-publishing.md)。
 

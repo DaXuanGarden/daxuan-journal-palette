@@ -17,6 +17,10 @@ jobs:
           python3 -m json.tool manifest.json >/dev/null
           python3 -m json.tool assets/palette-gallery/palettes.json >/dev/null
           python3 -m py_compile scripts/build_palette_gallery.py
+          python3 -m py_compile scripts/draw_art_cards.py scripts/extract_palette.py
+          python3 scripts/draw_art_cards.py --help >/dev/null
+          python3 scripts/extract_palette.py --help >/dev/null
+          python3 -m unittest discover -s tests -v
           python3 scripts/build_palette_gallery.py --overwrite
           git diff --exit-code -- assets/palette-gallery
           test -s README.md
