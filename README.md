@@ -1,6 +1,12 @@
 # Daxuan Journal Palette
 
-一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.2.0。
+一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.3.0。
+
+## Prerequisites
+
+- [ ] Python 3.10+（仅用于生成静态画廊）
+- [ ] R 或 Python 绘图环境（仅在实际绘图时需要）
+- [ ] 已确定图表类型、类别顺序、目标栏宽和输出介质
 
 ## 你可以直接这样说
 
@@ -53,6 +59,10 @@ python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/trigger_eval.py /ho
 - 灰度下难以区分：用明度层次重排，并补充线型、形状或标签。
 - 热图中点不明确：使用发散色带并明确中点的统计含义；没有有意义的中点时改用连续色带。
 - 多面板颜色漂移：建立一个全局命名映射，在每个面板中按同一键值调用。
+
+## License
+
+MIT. See [LICENSE](LICENSE).
 
 Copyright (c) 向阳乔木  
 X: https://x.com/vista8  
