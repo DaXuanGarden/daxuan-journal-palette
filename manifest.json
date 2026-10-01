@@ -1,12 +1,12 @@
 {
   "name": "daxuan-journal-palette",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "owner": {
     "name": "向阳乔木",
     "x": "https://x.com/vista8",
     "github": "https://github.com/joeseesun/"
   },
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-10-02",
   "status": "local-development",
   "maturity_tier": "production",
   "lifecycle_stage": "visual-gallery",

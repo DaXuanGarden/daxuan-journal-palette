@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0.0-qiaomu-lite",
-  "generated_at": "2026-10-01",
+  "generated_at": "2026-10-02",
   "package": {
     "name": "daxuan-journal-palette",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "owner": {
       "name": "向阳乔木",
       "x": "https://x.com/vista8",
@@ -123,6 +123,7 @@
   "resources": {
     "references": [
       "references/accessibility-and-print.md",
+      "references/artistic-inspiration.md",
       "references/github-publishing.md",
       "references/output-contract.md",
       "references/palette-atlas.md",

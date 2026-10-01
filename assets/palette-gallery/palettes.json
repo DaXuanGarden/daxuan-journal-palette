@@ -287,6 +287,78 @@
       "avoid_for": "用色相代替统计方向定义",
       "colors": ["#3F7180", "#9BBCC0", "#F5F1E8", "#E0B18A", "#B66A4A"],
       "names": ["negative_high", "negative_low", "center", "positive_low", "positive_high"]
+    },
+    {
+      "id": "monet-atmospheric",
+      "label": "大气蓝绿 · 印象派启发",
+      "family": "印象派大气",
+      "kind": "qualitative",
+      "keywords": ["相邻冷暖", "雾感", "低饱和", "大色面"],
+      "inspiration": ["Monet-inspired visual principle"],
+      "best_for": "低密度分面、机制示意和大面积填充",
+      "avoid_for": "密集小点、细线或灰度优先的主结果",
+      "colors": ["#547C84", "#8BAEAB", "#BFD2C6", "#D8B08C", "#8A768B"],
+      "names": ["atmosphere_blue", "mist_teal", "paper_green", "warm_ochre", "violet_gray"]
+    },
+    {
+      "id": "van-gogh-accent",
+      "label": "深蓝与金黄 · 强调色",
+      "family": "梵高式强调",
+      "kind": "qualitative",
+      "keywords": ["蓝黄互补", "高饱和锚点", "有限强调"],
+      "inspiration": ["Van Gogh-inspired complementary contrast"],
+      "best_for": "主结果标注、少量机制节点和重点比较",
+      "avoid_for": "把每个类别都设为高饱和或用红绿表达方向",
+      "colors": ["#174A67", "#4F8FA4", "#F2C84B", "#D9775B", "#2B3A42"],
+      "names": ["deep_blue", "sky_teal", "sun_yellow", "warm_coral", "ink"]
+    },
+    {
+      "id": "matisse-flat",
+      "label": "平面朱蓝 · 几何构成",
+      "family": "平面构成",
+      "kind": "qualitative",
+      "keywords": ["平面色块", "互补", "轮廓清楚", "机制图"],
+      "inspiration": ["Matisse/Fauvist-inspired flat colour"],
+      "best_for": "流程图、机制图、分区示意和图形摘要",
+      "avoid_for": "高密度散点、连续数值或没有标签的多类别图",
+      "colors": ["#214E70", "#D8584B", "#E6B83F", "#4F8A6D", "#F1E6CE"],
+      "names": ["cobalt", "vermilion", "gold", "jade", "paper"]
+    },
+    {
+      "id": "rothko-field",
+      "label": "宽阔色域 · 中性强调",
+      "family": "色域叙事",
+      "kind": "neutral-accent",
+      "keywords": ["宽阔色面", "近邻色", "主结果", "留白"],
+      "inspiration": ["Rothko-inspired field relationship"],
+      "best_for": "对照组 + 主结果、叙事型图和宽面板背景",
+      "avoid_for": "需要所有类别同等区分的密集分类图",
+      "colors": ["#453B4A", "#7C5A5B", "#B1775B", "#D2A663", "#E3D2B7"],
+      "names": ["plum_ink", "russet", "clay", "ochre", "paper"]
+    },
+    {
+      "id": "hokusai-indigo",
+      "label": "靛蓝朱砂 · 版画纸本",
+      "family": "版画靛蓝",
+      "kind": "qualitative",
+      "keywords": ["靛蓝", "朱砂", "稻草色", "纸色"],
+      "inspiration": ["Hokusai/ukiyo-e-inspired print grammar"],
+      "best_for": "空间图、流程图、注释丰富的机制图",
+      "avoid_for": "把纸色用于小面积关键类别或把朱砂解释为风险方向",
+      "colors": ["#1E4C6B", "#5F8BA0", "#D8B16A", "#B9544A", "#E8DED0"],
+      "names": ["indigo", "glaze_blue", "straw", "vermilion", "paper"]
+    },
+    {
+      "id": "modern-ink-mineral",
+      "label": "现代水墨 · 矿物锚点",
+      "family": "现代水墨矿物",
+      "kind": "qualitative",
+      "keywords": ["墨灰", "灰青", "矿物色", "跨面板"],
+      "inspiration": ["modern ink/mineral visual principle"],
+      "best_for": "网络图、组学机制图和跨面板结果",
+      "avoid_for": "超过 6 组且没有标签、形状或分面辅助",
+      "colors": ["#2E3941", "#496B7D", "#7D9C96", "#B17E62", "#D8D1C4"],
+      "names": ["ink", "slate_blue", "celadon", "mineral_clay", "paper"]
     }
   ]
 }

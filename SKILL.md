@@ -4,7 +4,7 @@ description: |
   这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。
 metadata:
   author: Daxuan
-  version: "0.3.0"
+  version: "0.3.1"
   maturity: production
 ---
 
@@ -33,7 +33,7 @@ GitHub: https://github.com/joeseesun/
 按以下顺序路由，不要把“艺术风格”当作数据类型：
 
 1. **数据语义**：定性、连续、发散、循环，或中性灰 + 单一强调色。
-2. **视觉家族**：东方纸墨、宋韵青瓷、敦煌矿物、朱砂宫墙、草木土色、北欧矿物、海岸蓝、现代编辑部、单色强调等；完整清单见 [style-taxonomy](references/style-taxonomy.md)。
+2. **视觉家族**：东方纸墨、宋韵青瓷、敦煌矿物、朱砂宫墙、草木土色、北欧矿物、海岸蓝、现代编辑部、印象派大气、平面构成、色域叙事、版画靛蓝、现代水墨矿物、单色强调等；完整清单见 [style-taxonomy](references/style-taxonomy.md)，外部艺术灵感和公开来源见 [artistic-inspiration](references/artistic-inspiration.md)。
 3. **介质约束**：白底/深底、单栏/双栏、RGB/PDF/印刷、透明叠加、最终缩印尺寸。
 4. **角色分配**：固定背景和文字，再分配主色、支持色、中性灰和一个强调色；同一语义跨面板使用同一颜色。
 5. **可读性修正**：在同一家族内先调明度，再调饱和度，最后才调色相；不要为了“更艺术”牺牲相邻元素、灰度和标签识别。
@@ -84,6 +84,7 @@ GitHub: https://github.com/joeseesun/
 - 色盲、灰度、印刷和导出检查：[accessibility-and-print](references/accessibility-and-print.md)
 - 输出字段和审阅清单：[output-contract](references/output-contract.md)
 - 可视化色板画廊的源文件、生成器和使用方法：[palette-gallery](references/palette-gallery.md)
+- 艺术家视觉原则、公开仓库、博物馆开放数据和来源记录：[artistic-inspiration](references/artistic-inspiration.md)
 - GitHub public skill 仓库结构和发布顺序：[github-publishing](references/github-publishing.md)
 
 ## Gate Ladder
