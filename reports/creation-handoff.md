@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.4.0
+- Skill: daxuan-journal-palette 0.5.0
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
@@ -46,6 +46,13 @@
 - Added `scripts/draw_art_cards.py` for reproducible 3–5 card draws from The Met's paginated public-domain search and object metadata API.
 - Added `scripts/extract_palette.py` for optional Pillow-based RGB k-means extraction with seed, source, rights and candidate-only status.
 - Added deterministic tests and CI help/compile checks for both scripts. The package still keeps image assets outside the repository by default.
+
+## 10. 0.5.0 fast-router expansion
+
+- Added `palette-index.json` with keyword, figure-type, best-for and risk metadata for fast matching across the 32 built-in palettes.
+- Added `scripts/route_palette.py`: ordinary requests return one primary palette and up to two alternatives; explicit card-draw wording returns a draw mode with default count 5 or count 1 for a single-card request.
+- Reduced default questions to figure type, group count and background; detailed provenance remains available without expanding the normal response.
+- Added router regression tests and kept the full palette atlas as an on-demand reference.
 
 ## 4. Advantages and evidence
 

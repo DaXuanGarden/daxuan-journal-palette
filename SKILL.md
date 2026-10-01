@@ -4,7 +4,7 @@ description: |
   这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、开放抽卡、公共领域作品、随机视觉卡片、从图片提取配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。
 metadata:
   author: Daxuan
-  version: "0.4.0"
+  version: "0.5.0"
   maturity: production
 ---
 
@@ -27,6 +27,9 @@ GitHub: https://github.com/joeseesun/
 - 用户选择风格 A 时，白底密集图优先使用 `ink-mineral-a-sunlit`：`#6D98AF`、`#7DACA3`、`#CBA064`、`#CE8793`、`#A28BAF`。它保留 A 的色相关系，但把明度提高到更适合白底缩印的中间范围；原始较深版本仍保留为 `ink-mineral-a`。
 - 不承诺“期刊必然接受”或“绝对色盲安全”；实际可读性必须结合图形几何、最终尺寸和输出介质检查。
 - 用户想探索内置库之外的视觉风格时，进入 [card-draw-workflow](references/card-draw-workflow.md)：先抽 3–5 张公共领域或生成式卡片，让用户选图，再提取候选色、做语义映射和实际图形审查。不要未经选择、来源记录和审查就把图片颜色当作最终科研色板。
+- 普通请求先使用 `palette-index.json` 和 `route_palette.py` 快速路由，只返回 1 套主方案和最多 2 套备选；完整配方、来源和审查细节按需读取，不默认展开整个色板库。
+- 只有用户明确提出“抽卡、随机作品、公共领域卡片、生成视觉卡片、图片提取”等意图时才进入图像流程；抽卡默认 5 张，明确说“一张/单张”时只抽 1 张。
+- 默认只追问三个缺失信息：图表类型、组数/类别数、白底或深底；其余视觉家族、密度和风险先依据索引自动推断。
 - 不触发：网站/应用 UI、品牌 Logo、照片白平衡、统计检验、GWAS 结果解读和一般论文写作；只讨论字体/尺寸而不涉及配色时也不触发本 Skill。
 
 ## Style Router
@@ -55,13 +58,13 @@ GitHub: https://github.com/joeseesun/
 
 ## Compact Workflow
 
-1. 记录对象：图表类型、语义变量、类别数、顺序、背景、画布/缩印尺寸、期刊或媒介、输出格式。
-2. 决定探索路径：内置配方、`open-public`、`prompted-generated` 或 `hybrid`；抽卡时先展示 3–5 张候选卡片和来源。
-3. 选视觉家族：写明家族、关键词（如“纸本、低饱和、冷暖平衡”）和不适用场景；从 [style-taxonomy](references/style-taxonomy.md) 选家族，从 [palette-atlas](references/palette-atlas.md) 选配方，或从选中的卡片提取候选色。
-4. 选色族：定性、连续、发散、循环，或“中性灰 + 一个强调色”；连续/发散色带要明确方向和中点。
+1. 读取快速索引：识别图表语义、关键词、组数和背景；默认只选 1 个主路由和最多 2 个备选。
+2. 判断是否明确进入抽卡；未明确提出图像探索时，停留在内置色板快速路径。
+3. 只追问缺失的三个关键参数：图表类型、组数/类别数、白底或深底；其余信息先写入 assumptions。
+4. 选视觉家族：从索引给出 palette ID、适用图表和主要风险；需要详细 HEX 时再读取 `palette-atlas`。
 5. 生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。
 6. 审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 EasyPlot 的 palette audit；诊断结果不是认证结论。
-7. 交付：给出一套主方案和不超过两套备选；说明抽卡来源或生成记录、适用场景、风格理由、风险、假设和需要人工确认的点。
+7. 交付：默认给 1 套主方案和最多 2 套备选；把来源、算法和审查工具写入 `provenance`，正文只展示简短摘要。
 
 ## Output Contract
 
@@ -79,6 +82,7 @@ GitHub: https://github.com/joeseesun/
 - `assumptions`：缺失信息、来源边界和未验证的假设。
 - `provenance`：色板 ID、是否为本地设计配方、是否调整过明度/饱和度，以及审查工具和版本（如有）。
 - `visual_preview`：画廊/ SVG 预览路径；若未生成，标记为 unavailable。
+- `fast_route`：`mode`、`primary`、`alternatives`、`next_questions` 和 `draw_count`；普通请求只显示紧凑路由摘要。
 
 ## Reference Map
 
@@ -89,6 +93,7 @@ GitHub: https://github.com/joeseesun/
 - 可视化色板画廊的源文件、生成器和使用方法：[palette-gallery](references/palette-gallery.md)
 - 艺术家视觉原则、公开仓库、博物馆开放数据和来源记录：[artistic-inspiration](references/artistic-inspiration.md)
 - 开放抽卡、图像提色、来源记录和内置化规则：[card-draw-workflow](references/card-draw-workflow.md)
+- 快速关键词路由和轻量匹配表：[palette-index.json](assets/palette-gallery/palette-index.json)、[route_palette.py](scripts/route_palette.py)
 - GitHub public skill 仓库结构和发布顺序：[github-publishing](references/github-publishing.md)
 
 ## Gate Ladder

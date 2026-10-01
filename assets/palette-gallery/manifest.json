@@ -7,5 +7,6 @@
     "palette-atlas.svg",
     "palettes.csv",
     "manifest.json"
-  ]
+  ],
+  "fast_router_index": "palette-index.json"
 }

@@ -152,7 +152,13 @@ def write_outputs(output: Path, palettes: list[dict], overwrite: bool) -> None:
         for palette in palettes:
             for index, (name, colour) in enumerate(zip(palette["names"], palette["colors"]), start=1):
                 writer.writerow([palette["id"], palette["label"], palette["family"], palette["kind"], index, name, colour, "|".join(palette["keywords"]), "|".join(palette.get("inspiration", [])), palette["best_for"], palette["avoid_for"]])
-    manifest = {"schema_version": "1.0.0", "count": len(palettes), "source": "palettes.json", "outputs": [path.name for path in targets]}
+    manifest = {
+        "schema_version": "1.0.0",
+        "count": len(palettes),
+        "source": "palettes.json",
+        "outputs": [path.name for path in targets],
+        "fast_router_index": "palette-index.json",
+    }
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
