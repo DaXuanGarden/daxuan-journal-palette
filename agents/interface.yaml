@@ -1,0 +1,31 @@
+interface:
+  display_name: "Daxuan Journal Palette"
+  short_description: "Design and audit artistic, publication-ready palettes for scientific figures"
+  default_prompt: "为这张科研图选择一套适合期刊投稿的艺术化配色，先说明视觉家族和选择理由，必要时引用可视化色板画廊，再输出语义映射、HEX、R/ggplot2 和 Python 代码，并检查色盲、灰度、印刷、最终尺寸和多面板一致性。"
+compatibility:
+  canonical_format: "Daxuan Skill Markdown with references and deterministic trigger cases"
+  adapter_targets:
+    - openai
+    - claude
+    - generic
+    - agent-skills-compatible
+  activation:
+    mode: "description-first"
+    language: ["zh-CN", "en"]
+  execution:
+    deterministic_scripts: false
+    optional_tools: ["easyplot palette audit"]
+  trust:
+    source_boundary: "Recommendations are design guidance; automatic checks are diagnostic evidence."
+    human_review_required: true
+  permissions:
+    filesystem: "read-only by default; write only when the user requests a palette file or figure edit"
+    network: "not required"
+  degradation:
+    missing_geometry: "state assumptions and provide a palette plus a review checklist"
+    missing_audit_tool: "provide manual checks and label automated evidence as unavailable"
+gates:
+  - semantic_mapping
+  - accessibility_diagnostic
+  - cross_panel_consistency
+  - evidence_boundary

@@ -1,0 +1,192 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-10-01",
+  "package": {
+    "name": "daxuan-journal-palette",
+    "version": "0.3.0",
+    "owner": {
+      "name": "向阳乔木",
+      "x": "https://x.com/vista8",
+      "github": "https://github.com/joeseesun/"
+    },
+    "maturity_tier": "production",
+    "lifecycle_stage": "visual-gallery",
+    "upstream_inspiration": "qiaomu-meta-skill; K-Dense-AI/scientific-agent-skills scientific-visualization; local easyplot; local nature-figure; local journal-ggplot-stylebook",
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。\n",
+    "job_to_be_done": "为科研图表选择、映射和审查适合期刊传播的艺术化配色，并输出可复用代码。",
+    "target_users": [
+      "GWAS/omics researchers",
+      "R and Python figure authors",
+      "journal figure reviewers"
+    ],
+    "inputs": [
+      "figure type",
+      "semantic groups",
+      "category order",
+      "background",
+      "final size",
+      "target journal or medium"
+    ],
+    "outputs": [
+      "style family and rationale",
+      "semantic HEX mapping",
+      "visual palette preview",
+      "R/ggplot2 code",
+      "Python code",
+      "accessibility and print audit",
+      "provenance",
+      "assumptions"
+    ],
+    "exclusions": [
+      "brand identity",
+      "web UI themes",
+      "photo correction",
+      "statistical analysis",
+      "journal acceptance guarantee"
+    ],
+    "qiaomu_defaults": {
+      "language": "zh-CN",
+      "primary_style": "ink-mineral-a-sunlit",
+      "max_alternatives": 2,
+      "default_background": "#FFFFFF",
+      "preserve_category_order": true
+    }
+  },
+  "triggers": {
+    "should_trigger": [
+      "给 GO-BP 富集图设计中国水墨加矿物色，输出 HEX 和 ggplot2 映射。",
+      "给五组科研柱状图选不太浅、适合期刊投稿的高级配色，检查色盲和灰度。",
+      "为 Nature 风格的多面板论文图统一通路颜色，并给出 R 和 Python 代码。",
+      "比较宋韵、敦煌矿物和北欧矿物三种科研图色板，说明白底印刷风险。",
+      "审查这张热图的连续色带和中点设置，检查对比度、灰度和最终尺寸。",
+      "为失眠和脂肪肝的通路富集图选择艺术化但适合投稿的配色。"
+    ],
+    "should_not_trigger": [
+      "给网站按钮做暗色模式和 UI 主题色。",
+      "帮我做一个品牌 Logo 和品牌色规范。",
+      "修复这张照片的白平衡和曝光。",
+      "分析 GWAS 结果并计算 p 值和多重检验。"
+    ],
+    "near_neighbor": [
+      "只解释期刊图表常用的字体和尺寸，不需要设计配色。",
+      "帮我写论文讨论部分，解释失眠和脂肪肝的生物学意义。",
+      "整理实验数据并运行差异表达分析，不涉及图表配色。"
+    ]
+  },
+  "workflow": {
+    "router_rules": [
+      "处理期刊论文中的科研图表配色：先读图表语义，再选色板和介质策略。",
+      "名义分类使用定性色板；数值强度使用连续色带；正负方向使用发散色带；不要把定性颜色伪装成连续梯度。",
+      "先问清楚类别顺序、类别数、背景、输出尺寸、期刊/媒介、是否需要色盲和灰度检查；信息缺失时明确假设。",
+      "先在 `style-taxonomy` 中确定视觉家族，再在 `palette-atlas` 中选具体配方；不要只因为色名好看就跳过语义和缩印判断。",
+      "五组以内优先使用有层次的颜色；类别更多时减少饱和度差异，配合直接标签、形状或分面。不要依靠红绿单独表达差异。",
+      "多面板中固定同一语义到同一颜色；不要按面板重新排序颜色。深色文字配浅色填充，深色条形可配浅描边。",
+      "色板先分配“背景/文字/中性/主色/辅助色/强调色/描边”角色，再把角色映射到组别；艺术风格只改变视觉语汇，不改变数据语义。",
+      "白底密集图默认选择中等明度、低到中等饱和度的色板；浅粉、米黄、雾蓝只用于较大面积或有描边的填充。",
+      "用户选择风格 A 时，白底密集图优先使用 `ink-mineral-a-sunlit`：`#6D98AF`、`#7DACA3`、`#CBA064`、`#CE8793`、`#A28BAF`。它保留 A 的色相关系，但把明度提高到更适合白底缩印的中间范围；原始较深版本仍保留为 `ink-mineral-a`。",
+      "不承诺“期刊必然接受”或“绝对色盲安全”；实际可读性必须结合图形几何、最终尺寸和输出介质检查。",
+      "不触发：网站/应用 UI、品牌 Logo、照片白平衡、统计检验、GWAS 结果解读和一般论文写作；只讨论字体/尺寸而不涉及配色时也不触发本 Skill。"
+    ],
+    "compact_workflow": [
+      "记录对象：图表类型、语义变量、类别数、顺序、背景、画布/缩印尺寸、期刊或媒介、输出格式。",
+      "选视觉家族：写明家族、关键词（如“纸本、低饱和、冷暖平衡”）和不适用场景；从 [style-taxonomy](references/style-taxonomy.md) 选家族，从 [palette-atlas](references/palette-atlas.md) 选配方。",
+      "选色族：定性、连续、发散、循环，或“中性灰 + 一个强调色”；连续/发散色带要明确方向和中点。",
+      "生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。",
+      "审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 EasyPlot 的 palette audit；诊断结果不是认证结论。",
+      "交付：给出一套主方案，最多补充两套备选；说明适用场景、风格理由、风险、假设和需要人工确认的点。"
+    ],
+    "gate_ladder": [
+      "设计门：色彩数量、语义类型、类别顺序和背景已说明。",
+      "风格门：视觉家族、关键词、图表密度和介质理由已说明；未把“Nature/Cell 风格”写成官方色板或审稿保证。",
+      "可读性门：实际图形通过灰度、色觉差异、文字对比和最终尺寸检查，或明确标记为待审查。",
+      "一致性门：跨面板、图例、正文和补充图的同一语义使用同一映射。",
+      "证据门：把设计判断、自动化检查和人工确认分开，不把推荐写成已验证的期刊规范。"
+    ],
+    "output_contract": [
+      "`style_name`：风格名和适用对象。",
+      "`style_family`：视觉家族、关键词、适合的图形密度和不适用场景。",
+      "`style_rationale`：该家族如何服务图表层级、语义和目标介质；不要写成历史或期刊官方来源。",
+      "`palette_type`：qualitative / sequential / diverging / cyclic / neutral-accent。",
+      "`semantic_mapping`：每个组/通路/状态对应的语义角色。",
+      "`hex`：按显示顺序列出的精确 HEX。",
+      "`text_color`、`background`、`outline`：文字、背景和描边建议。",
+      "`R`、`Python`：可直接复制的命名向量或字典；没有代码需求时仍给最小示例。",
+      "`audit`：对比度、灰度、色觉差异、印刷和最终尺寸检查的结果或待检查项。",
+      "`assumptions`：缺失信息、来源边界和未验证的假设。",
+      "`provenance`：色板 ID、是否为本地设计配方、是否调整过明度/饱和度，以及审查工具和版本（如有）。",
+      "`visual_preview`：画廊/ SVG 预览路径；若未生成，标记为 unavailable。"
+    ]
+  },
+  "resources": {
+    "references": [
+      "references/accessibility-and-print.md",
+      "references/github-publishing.md",
+      "references/output-contract.md",
+      "references/palette-atlas.md",
+      "references/palette-gallery.md",
+      "references/style-taxonomy.md"
+    ],
+    "scripts": [
+      "scripts/build_palette_gallery.py"
+    ],
+    "evals": [
+      "evals/trigger_cases.json"
+    ],
+    "reports": [
+      "reports/creation-handoff.md",
+      "reports/prior-art-candidates.json",
+      "reports/prior-art-research.md",
+      "reports/skill-ir.json",
+      "reports/trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": "Daxuan Skill Markdown with references and deterministic trigger cases",
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {
+      "mode": "description-first",
+      "language": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    "execution": {
+      "deterministic_scripts": false,
+      "optional_tools": [
+        "easyplot palette audit"
+      ]
+    },
+    "trust": {
+      "source_boundary": "Recommendations are design guidance; automatic checks are diagnostic evidence.",
+      "human_review_required": true
+    },
+    "permissions": {
+      "filesystem": "read-only by default; write only when the user requests a palette file or figure edit",
+      "network": "not required"
+    },
+    "degradation": {
+      "missing_geometry": "state assumptions and provide a palette plus a review checklist",
+      "missing_audit_tool": "provide manual checks and label automated evidence as unavailable"
+    }
+  },
+  "gates": [
+    "semantic_mapping",
+    "accessibility_diagnostic",
+    "cross_panel_consistency",
+    "evidence_boundary"
+  ],
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

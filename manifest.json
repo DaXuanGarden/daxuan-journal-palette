@@ -1,0 +1,37 @@
+{
+  "name": "daxuan-journal-palette",
+  "version": "0.3.0",
+  "owner": {
+    "name": "向阳乔木",
+    "x": "https://x.com/vista8",
+    "github": "https://github.com/joeseesun/"
+  },
+  "updated_at": "2026-10-01",
+  "status": "local-development",
+  "maturity_tier": "production",
+  "lifecycle_stage": "visual-gallery",
+  "context_budget_tier": "production",
+  "license": "MIT",
+  "upstream_inspiration": "qiaomu-meta-skill; K-Dense-AI/scientific-agent-skills scientific-visualization; local easyplot; local nature-figure; local journal-ggplot-stylebook",
+  "intent": {
+    "job_to_be_done": "为科研图表选择、映射和审查适合期刊传播的艺术化配色，并输出可复用代码。",
+    "target_users": ["GWAS/omics researchers", "R and Python figure authors", "journal figure reviewers"],
+    "inputs": ["figure type", "semantic groups", "category order", "background", "final size", "target journal or medium"],
+    "outputs": ["style family and rationale", "semantic HEX mapping", "visual palette preview", "R/ggplot2 code", "Python code", "accessibility and print audit", "provenance", "assumptions"],
+    "exclusions": ["brand identity", "web UI themes", "photo correction", "statistical analysis", "journal acceptance guarantee"]
+  },
+  "qiaomu_defaults": {
+    "language": "zh-CN",
+    "primary_style": "ink-mineral-a-sunlit",
+    "max_alternatives": 2,
+    "default_background": "#FFFFFF",
+    "preserve_category_order": true
+  },
+  "release_gates": {
+    "secret_scan": true,
+    "trigger_eval": true,
+    "install_check": true,
+    "human_figure_review": false,
+    "publication": false
+  }
+}

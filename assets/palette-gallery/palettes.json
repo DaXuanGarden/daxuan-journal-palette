@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0.0",
+  "source": "daxuan-journal-palette palette-atlas",
+  "palettes": [
+    {
+      "id": "ink-mineral-a-sunlit",
+      "label": "水墨矿物 A · 白底优化",
+      "family": "东方纸墨",
+      "kind": "qualitative",
+      "keywords": ["纸本", "低饱和", "冷暖平衡"],
+      "best_for": "白底富集图、机制图、5 组以内分类",
+      "avoid_for": "深色底大面积填充或超过 7 组",
+      "colors": ["#6D98AF", "#7DACA3", "#CBA064", "#CE8793", "#A28BAF"],
+      "names": ["ink_blue", "mineral_teal", "ochre", "cinnabar_rose", "ink_plum"]
+    },
+    {
+      "id": "ink-mineral-a",
+      "label": "水墨矿物 A · 深色",
+      "family": "东方纸墨",
+      "kind": "qualitative",
+      "keywords": ["墨色", "矿物", "视觉重量"],
+      "best_for": "深底机制图、少量大色块",
+      "avoid_for": "白底密集小点和浅色文字",
+      "colors": ["#527A8F", "#5B8C85", "#B7833F", "#A75A66", "#8A6F99"],
+      "names": ["ink_blue", "mineral_teal", "ochre", "cinnabar_rose", "ink_plum"]
+    },
+    {
+      "id": "ink-cinnabar",
+      "label": "墨色朱砂",
+      "family": "朱砂宫墙",
+      "kind": "qualitative",
+      "keywords": ["墨蓝", "青绿", "朱砂", "单一强调"],
+      "best_for": "主结论、机制节点、重点标注",
+      "avoid_for": "用红绿表达未经定义的正负方向",
+      "colors": ["#27343B", "#3F6078", "#709B91", "#B94E52", "#C28A3A"],
+      "names": ["ink", "indigo", "celadon", "cinnabar", "ochre"]
+    },
+    {
+      "id": "jiangnan-muted",
+      "label": "江南烟雨",
+      "family": "江南烟雨",
+      "kind": "qualitative",
+      "keywords": ["雾青", "藕粉", "黛蓝", "柔和"],
+      "best_for": "组织/细胞分类、普通密度分面",
+      "avoid_for": "极小点、细线和无描边浅填充",
+      "colors": ["#4F8A83", "#C98291", "#4D6680", "#9B7653", "#806D88"],
+      "names": ["river_teal", "lotus_pink", "dai_blue", "tea_brown", "mist_plum"]
+    },
+    {
+      "id": "dunhuang-mineral",
+      "label": "敦煌矿物",
+      "family": "敦煌矿物",
+      "kind": "qualitative",
+      "keywords": ["石青", "朱红", "石绿", "金赭"],
+      "best_for": "通路模块、富集类别、概念图",
+      "avoid_for": "金赭作为大面积浅背景",
+      "colors": ["#3E6E8F", "#B65B50", "#5C8D78", "#C28B3C", "#8B7190"],
+      "names": ["lapis", "vermilion", "malachite", "gilded_ochre", "desert_lilac"]
+    },
+    {
+      "id": "songyun-celadon",
+      "label": "宋韵青瓷",
+      "family": "宋韵青瓷",
+      "kind": "qualitative",
+      "keywords": ["青瓷", "墨蓝", "米灰", "克制"],
+      "best_for": "正文主图、补充图、时间序列",
+      "avoid_for": "把纸灰作为关键组别唯一编码",
+      "colors": ["#6E9B96", "#3D566C", "#9D5B5C", "#B7B8B1", "#76677E"],
+      "names": ["celadon", "deep_ink", "date_red", "paper_gray", "plum"]
+    },
+    {
+      "id": "gugong-muted",
+      "label": "朱砂宫墙",
+      "family": "朱砂宫墙",
+      "kind": "qualitative",
+      "keywords": ["宫墙红", "玉青", "御赭", "墨蓝"],
+      "best_for": "少量高亮、分类标签、机制节点",
+      "avoid_for": "黄色大面积背景和红色风险暗示",
+      "colors": ["#A94B4A", "#578B83", "#C0903A", "#49647B", "#86847D"],
+      "names": ["palace_red", "jade", "imperial_ochre", "ink_blue", "stone"]
+    },
+    {
+      "id": "botanical-earth",
+      "label": "草木土色",
+      "family": "草木土色",
+      "kind": "qualitative",
+      "keywords": ["森林", "叶绿", "土黄", "陶土"],
+      "best_for": "代谢、炎症、生态和器官机制图",
+      "avoid_for": "多个绿色相近且没有形状辅助",
+      "colors": ["#3F6B5A", "#729B72", "#B58A43", "#B66956", "#765E78"],
+      "names": ["forest", "leaf", "ochre", "terracotta", "plum"]
+    },
+    {
+      "id": "nordic-mineral",
+      "label": "北欧矿物",
+      "family": "北欧矿物",
+      "kind": "qualitative",
+      "keywords": ["峡湾蓝", "冰青", "苔绿", "冷静"],
+      "best_for": "白底高密度图、缩印图",
+      "avoid_for": "冰青作为小面积无描边填充",
+      "colors": ["#416A80", "#79A9B3", "#718B70", "#B58C4E", "#AD7180"],
+      "names": ["fjord", "ice", "moss", "ochre", "dusty_rose"]
+    },
+    {
+      "id": "clinical-cool-warm",
+      "label": "临床冷暖",
+      "family": "临床冷暖",
+      "kind": "qualitative",
+      "keywords": ["海军蓝", "板岩", "青绿", "珊瑚"],
+      "best_for": "病例/对照、临床指标、标志物",
+      "avoid_for": "珊瑚和芥末同时承担主要类别",
+      "colors": ["#304F68", "#607D8B", "#4B918A", "#C46F6A", "#B68B3D"],
+      "names": ["navy", "slate", "teal", "coral", "mustard"]
+    },
+    {
+      "id": "nature-muted",
+      "label": "现代编辑部 · 克制",
+      "family": "现代编辑部",
+      "kind": "qualitative",
+      "keywords": ["白底", "低饱和", "清晰层次"],
+      "best_for": "生物医学主图和跨面板结果",
+      "avoid_for": "把期刊名称当作官方色板声明",
+      "colors": ["#365C78", "#4F8A86", "#B9833B", "#A75F70", "#81759A"],
+      "names": ["deep_blue", "teal", "amber", "rose", "lavender"]
+    },
+    {
+      "id": "monochrome-accent",
+      "label": "单色强调",
+      "family": "单色强调",
+      "kind": "neutral-accent",
+      "keywords": ["中性灰", "叙事", "单一重点"],
+      "best_for": "对照组 + 主结果、叙事型图",
+      "avoid_for": "所有类别同等重要的 5 组以上比较",
+      "colors": ["#27343B", "#63717A", "#A9B0B3", "#E6E7E3", "#4B918A"],
+      "names": ["ink", "slate", "silver", "paper", "accent_teal"]
+    },
+    {
+      "id": "pastel-journal",
+      "label": "柔和补充图",
+      "family": "柔和补充图",
+      "kind": "qualitative",
+      "keywords": ["淡紫", "雾蓝", "藕粉", "杏色"],
+      "best_for": "低密度补充图和流程示意",
+      "avoid_for": "灰度优先或极小尺寸的关键结果",
+      "colors": ["#C6B3DA", "#6986B6", "#B0DCE5", "#E3A9B5", "#F3C77A"],
+      "names": ["lavender", "blue", "cyan", "rose", "apricot"]
+    },
+    {
+      "id": "ink-paper-literati",
+      "label": "文人纸本",
+      "family": "文人纸本",
+      "kind": "qualitative",
+      "keywords": ["宣纸", "石墨", "灰青", "枣红"],
+      "best_for": "网络图、线图、注释密集机制图",
+      "avoid_for": "全部类别都用灰色而没有明度层次",
+      "colors": ["#34444D", "#607D86", "#8EA8A8", "#B8A58F", "#A46C6C"],
+      "names": ["graphite", "slate_ink", "paper_celadon", "tea_brown", "date_red"]
+    },
+    {
+      "id": "qinghua-porcelain",
+      "label": "青花瓷",
+      "family": "青花瓷",
+      "kind": "qualitative",
+      "keywords": ["深钴", "釉蓝", "青白", "暖米"],
+      "best_for": "热图注释、空间图、分组气泡",
+      "avoid_for": "相近蓝色类别不加明度或形状辅助",
+      "colors": ["#2F5D7E", "#4A82A3", "#8FB6C1", "#D8B98A", "#F3F0E8"],
+      "names": ["cobalt", "glaze_blue", "celadon_white", "warm_kaolin", "porcelain"]
+    },
+    {
+      "id": "tea-earth-botanical",
+      "label": "茶褐植物",
+      "family": "茶褐植物",
+      "kind": "qualitative",
+      "keywords": ["茶褐", "苔绿", "米纸", "果实红"],
+      "best_for": "生物过程、器官来源、实验流程",
+      "avoid_for": "棕色和橙色承担相邻关键类别",
+      "colors": ["#85664D", "#718B70", "#98AA83", "#D8D0BD", "#A96868"],
+      "names": ["tea", "moss", "leaf", "paper", "berry"]
+    },
+    {
+      "id": "coastal-mineral",
+      "label": "海岸矿物",
+      "family": "海岸矿物",
+      "kind": "qualitative",
+      "keywords": ["海蓝", "孔雀青", "贝灰", "珊瑚"],
+      "best_for": "环境、空间、单细胞分群",
+      "avoid_for": "青绿和蓝色明度过近",
+      "colors": ["#245C73", "#4A8E91", "#AAB8B2", "#C97868", "#C59B69"],
+      "names": ["deep_coast", "peacock", "shell_gray", "coral", "sand_gold"]
+    },
+    {
+      "id": "desert-clay",
+      "label": "沙漠陶土",
+      "family": "沙漠陶土",
+      "kind": "qualitative",
+      "keywords": ["赭红", "陶土", "沙金", "烟灰"],
+      "best_for": "空间热点、模块、地理图",
+      "avoid_for": "所有暖色都被解释为风险或升高",
+      "colors": ["#56666A", "#A96E58", "#C68B67", "#D3B083", "#7A4E45"],
+      "names": ["smoke", "clay", "terracotta", "desert_gold", "date"]
+    },
+    {
+      "id": "alpine-lake",
+      "label": "高山湖泊",
+      "family": "高山湖泊",
+      "kind": "qualitative",
+      "keywords": ["深湖蓝", "雾青", "松绿", "岩石金"],
+      "best_for": "纵向队列、生态、网络和轨迹",
+      "avoid_for": "冷色小差异在印刷中无辅助编码",
+      "colors": ["#365B69", "#6E9293", "#A9C3B2", "#C49A68", "#8B6F72"],
+      "names": ["lake", "mist", "pine", "rock_gold", "berry_plum"]
+    },
+    {
+      "id": "editorial-jewel",
+      "label": "现代编辑部 · 宝石色",
+      "family": "现代编辑部",
+      "kind": "qualitative",
+      "keywords": ["深蓝", "青绿", "琥珀", "有限强调"],
+      "best_for": "生物医学主图、跨面板结果",
+      "avoid_for": "过度模仿期刊色而忽略数据语义",
+      "colors": ["#274C77", "#4F8C8C", "#D07C4A", "#9A596B", "#7C6A9A"],
+      "names": ["editorial_blue", "editorial_teal", "amber", "rose", "violet_gray"]
+    },
+    {
+      "id": "graphite-copper",
+      "label": "石墨铜色",
+      "family": "石墨铜色",
+      "kind": "neutral-accent",
+      "keywords": ["石墨", "银灰", "铜色", "结构"],
+      "best_for": "模型比较、结构图、重点结果",
+      "avoid_for": "超过 4 个同等重要类别",
+      "colors": ["#30343B", "#8F9BA3", "#5A6470", "#B57F55", "#A85F59"],
+      "names": ["graphite", "silver", "slate", "copper", "brick"]
+    },
+    {
+      "id": "impressionist-muted",
+      "label": "印象派低饱和",
+      "family": "艺术化低饱和",
+      "kind": "qualitative",
+      "keywords": ["蓝灰", "鼠尾草", "赭石", "柔和"],
+      "best_for": "低密度示意图和补充图",
+      "avoid_for": "小点、细线和灰度优先的主结果",
+      "colors": ["#496A81", "#7F9E93", "#C8A77C", "#BA7A85", "#8C7A9A"],
+      "names": ["blue_gray", "sage", "ochre", "rose", "lavender"]
+    },
+    {
+      "id": "paper-blue-sequential",
+      "label": "纸白到墨蓝",
+      "family": "连续色带",
+      "kind": "sequential",
+      "keywords": ["明度单调", "纸白", "深蓝"],
+      "best_for": "计数、强度、显著性或密度",
+      "avoid_for": "正负效应或没有明确低高方向",
+      "colors": ["#F3F5F3", "#C9D9D8", "#8FB8BB", "#527A8F", "#263F55"],
+      "names": ["low", "low_mid", "mid", "high_mid", "high"]
+    },
+    {
+      "id": "jade-ochre-sequential",
+      "label": "青竹到森林",
+      "family": "连续色带",
+      "kind": "sequential",
+      "keywords": ["草木", "青竹", "森林", "明度单调"],
+      "best_for": "代谢、组织或生态强度",
+      "avoid_for": "把颜色端点解释为好/坏而没有定义",
+      "colors": ["#F5F1E9", "#D6DDD1", "#A8BDA7", "#728F79", "#3F6B5A"],
+      "names": ["low", "low_mid", "mid", "high_mid", "high"]
+    },
+    {
+      "id": "ink-cinnabar-diverging",
+      "label": "墨蓝—纸白—朱砂",
+      "family": "发散色带",
+      "kind": "diverging",
+      "keywords": ["明确中点", "冷暖两端", "纸白中心"],
+      "best_for": "正负效应、相关性和以 0 为中心的指标",
+      "avoid_for": "没有有意义中点的连续值",
+      "colors": ["#3F6078", "#94AFB8", "#F5F2EC", "#D89A91", "#A94B4A"],
+      "names": ["negative_high", "negative_low", "center", "positive_low", "positive_high"]
+    },
+    {
+      "id": "qingzhu-diverging",
+      "label": "青竹—暖赭",
+      "family": "发散色带",
+      "kind": "diverging",
+      "keywords": ["青竹", "暖赭", "中点"],
+      "best_for": "有明确中点的东方风格效应图",
+      "avoid_for": "用色相代替统计方向定义",
+      "colors": ["#3F7180", "#9BBCC0", "#F5F1E8", "#E0B18A", "#B66A4A"],
+      "names": ["negative_high", "negative_low", "center", "positive_low", "positive_high"]
+    }
+  ]
+}

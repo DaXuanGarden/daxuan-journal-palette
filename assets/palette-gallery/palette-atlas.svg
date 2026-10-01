@@ -1,0 +1,500 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1590" height="1825" viewBox="0 0 1590 1825">
+<rect width="100%" height="100%" fill="#F5F7F8"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#263238}.title{font-size:28px;font-weight:600}.subtitle{font-size:13px;fill:#66757D}.label{font-size:15px;font-weight:600}.id{font-size:10px;fill:#66757D}.hex{font-size:9px}</style>
+<text x="45" y="42" class="title">Daxuan Journal Palette · visual atlas</text>
+<text x="45" y="63" class="subtitle">艺术家族、定性/连续/发散语义与灰度代理；设计配方，不是期刊官方色板</text>
+<rect x="45" y="130" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="155" class="label">水墨矿物 A · 白底优化</text>
+<text x="60" y="172" class="id">ink-mineral-a-sunlit · 东方纸墨</text>
+<rect x="60.0" y="187" width="88.4" height="48" fill="#6D98AF"/>
+<text x="105.2" y="254" text-anchor="middle" class="hex">#6D98AF</text>
+<rect x="60.0" y="265" width="88.4" height="8" fill="#494949" stroke="#DEE5E9"/>
+<rect x="150.4" y="187" width="88.4" height="48" fill="#7DACA3"/>
+<text x="195.6" y="254" text-anchor="middle" class="hex">#7DACA3</text>
+<rect x="150.4" y="265" width="88.4" height="8" fill="#5D5D5D" stroke="#DEE5E9"/>
+<rect x="240.8" y="187" width="88.4" height="48" fill="#CBA064"/>
+<text x="286.0" y="254" text-anchor="middle" class="hex">#CBA064</text>
+<rect x="240.8" y="265" width="88.4" height="8" fill="#636363" stroke="#DEE5E9"/>
+<rect x="331.2" y="187" width="88.4" height="48" fill="#CE8793"/>
+<text x="376.4" y="254" text-anchor="middle" class="hex">#CE8793</text>
+<rect x="331.2" y="265" width="88.4" height="8" fill="#535353" stroke="#DEE5E9"/>
+<rect x="421.6" y="187" width="88.4" height="48" fill="#A28BAF"/>
+<text x="466.8" y="254" text-anchor="middle" class="hex">#A28BAF</text>
+<rect x="421.6" y="265" width="88.4" height="8" fill="#4B4B4B" stroke="#DEE5E9"/>
+<text x="60" y="242" class="id">灰度代理</text>
+<rect x="545" y="130" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="155" class="label">水墨矿物 A · 深色</text>
+<text x="560" y="172" class="id">ink-mineral-a · 东方纸墨</text>
+<rect x="560.0" y="187" width="88.4" height="48" fill="#527A8F"/>
+<text x="605.2" y="254" text-anchor="middle" class="hex">#527A8F</text>
+<rect x="560.0" y="265" width="88.4" height="8" fill="#2D2D2D" stroke="#DEE5E9"/>
+<rect x="650.4" y="187" width="88.4" height="48" fill="#5B8C85"/>
+<text x="695.6" y="254" text-anchor="middle" class="hex">#5B8C85</text>
+<rect x="650.4" y="265" width="88.4" height="8" fill="#3A3A3A" stroke="#DEE5E9"/>
+<rect x="740.8" y="187" width="88.4" height="48" fill="#B7833F"/>
+<text x="786.0" y="254" text-anchor="middle" class="hex">#B7833F</text>
+<rect x="740.8" y="265" width="88.4" height="8" fill="#444444" stroke="#DEE5E9"/>
+<rect x="831.2" y="187" width="88.4" height="48" fill="#A75A66"/>
+<text x="876.4" y="254" text-anchor="middle" class="hex">#A75A66</text>
+<rect x="831.2" y="265" width="88.4" height="8" fill="#2A2A2A" stroke="#DEE5E9"/>
+<rect x="921.6" y="187" width="88.4" height="48" fill="#8A6F99"/>
+<text x="966.8" y="254" text-anchor="middle" class="hex">#8A6F99</text>
+<rect x="921.6" y="265" width="88.4" height="8" fill="#313131" stroke="#DEE5E9"/>
+<text x="560" y="242" class="id">灰度代理</text>
+<rect x="1045" y="130" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="155" class="label">墨色朱砂</text>
+<text x="1060" y="172" class="id">ink-cinnabar · 朱砂宫墙</text>
+<rect x="1060.0" y="187" width="88.4" height="48" fill="#27343B"/>
+<text x="1105.2" y="254" text-anchor="middle" class="hex">#27343B</text>
+<rect x="1060.0" y="265" width="88.4" height="8" fill="#080808" stroke="#DEE5E9"/>
+<rect x="1150.4" y="187" width="88.4" height="48" fill="#3F6078"/>
+<text x="1195.6" y="254" text-anchor="middle" class="hex">#3F6078</text>
+<rect x="1150.4" y="265" width="88.4" height="8" fill="#1B1B1B" stroke="#DEE5E9"/>
+<rect x="1240.8" y="187" width="88.4" height="48" fill="#709B91"/>
+<text x="1286.0" y="254" text-anchor="middle" class="hex">#709B91</text>
+<rect x="1240.8" y="265" width="88.4" height="8" fill="#4A4A4A" stroke="#DEE5E9"/>
+<rect x="1331.2" y="187" width="88.4" height="48" fill="#B94E52"/>
+<text x="1376.4" y="254" text-anchor="middle" class="hex">#B94E52</text>
+<rect x="1331.2" y="265" width="88.4" height="8" fill="#2A2A2A" stroke="#DEE5E9"/>
+<rect x="1421.6" y="187" width="88.4" height="48" fill="#C28A3A"/>
+<text x="1466.8" y="254" text-anchor="middle" class="hex">#C28A3A</text>
+<rect x="1421.6" y="265" width="88.4" height="8" fill="#4C4C4C" stroke="#DEE5E9"/>
+<text x="1060" y="242" class="id">灰度代理</text>
+<rect x="45" y="310" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="335" class="label">江南烟雨</text>
+<text x="60" y="352" class="id">jiangnan-muted · 江南烟雨</text>
+<rect x="60.0" y="367" width="88.4" height="48" fill="#4F8A83"/>
+<text x="105.2" y="434" text-anchor="middle" class="hex">#4F8A83</text>
+<rect x="60.0" y="445" width="88.4" height="8" fill="#373737" stroke="#DEE5E9"/>
+<rect x="150.4" y="367" width="88.4" height="48" fill="#C98291"/>
+<text x="195.6" y="434" text-anchor="middle" class="hex">#C98291</text>
+<rect x="150.4" y="445" width="88.4" height="8" fill="#4E4E4E" stroke="#DEE5E9"/>
+<rect x="240.8" y="367" width="88.4" height="48" fill="#4D6680"/>
+<text x="286.0" y="434" text-anchor="middle" class="hex">#4D6680</text>
+<rect x="240.8" y="445" width="88.4" height="8" fill="#202020" stroke="#DEE5E9"/>
+<rect x="331.2" y="367" width="88.4" height="48" fill="#9B7653"/>
+<text x="376.4" y="434" text-anchor="middle" class="hex">#9B7653</text>
+<rect x="331.2" y="445" width="88.4" height="8" fill="#343434" stroke="#DEE5E9"/>
+<rect x="421.6" y="367" width="88.4" height="48" fill="#806D88"/>
+<text x="466.8" y="434" text-anchor="middle" class="hex">#806D88</text>
+<rect x="421.6" y="445" width="88.4" height="8" fill="#2C2C2C" stroke="#DEE5E9"/>
+<text x="60" y="422" class="id">灰度代理</text>
+<rect x="545" y="310" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="335" class="label">敦煌矿物</text>
+<text x="560" y="352" class="id">dunhuang-mineral · 敦煌矿物</text>
+<rect x="560.0" y="367" width="88.4" height="48" fill="#3E6E8F"/>
+<text x="605.2" y="434" text-anchor="middle" class="hex">#3E6E8F</text>
+<rect x="560.0" y="445" width="88.4" height="8" fill="#242424" stroke="#DEE5E9"/>
+<rect x="650.4" y="367" width="88.4" height="48" fill="#B65B50"/>
+<text x="695.6" y="434" text-anchor="middle" class="hex">#B65B50</text>
+<rect x="650.4" y="445" width="88.4" height="8" fill="#2E2E2E" stroke="#DEE5E9"/>
+<rect x="740.8" y="367" width="88.4" height="48" fill="#5C8D78"/>
+<text x="786.0" y="434" text-anchor="middle" class="hex">#5C8D78</text>
+<rect x="740.8" y="445" width="88.4" height="8" fill="#3A3A3A" stroke="#DEE5E9"/>
+<rect x="831.2" y="367" width="88.4" height="48" fill="#C28B3C"/>
+<text x="876.4" y="434" text-anchor="middle" class="hex">#C28B3C</text>
+<rect x="831.2" y="445" width="88.4" height="8" fill="#4D4D4D" stroke="#DEE5E9"/>
+<rect x="921.6" y="367" width="88.4" height="48" fill="#8B7190"/>
+<text x="966.8" y="434" text-anchor="middle" class="hex">#8B7190</text>
+<rect x="921.6" y="445" width="88.4" height="8" fill="#313131" stroke="#DEE5E9"/>
+<text x="560" y="422" class="id">灰度代理</text>
+<rect x="1045" y="310" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="335" class="label">宋韵青瓷</text>
+<text x="1060" y="352" class="id">songyun-celadon · 宋韵青瓷</text>
+<rect x="1060.0" y="367" width="88.4" height="48" fill="#6E9B96"/>
+<text x="1105.2" y="434" text-anchor="middle" class="hex">#6E9B96</text>
+<rect x="1060.0" y="445" width="88.4" height="8" fill="#4A4A4A" stroke="#DEE5E9"/>
+<rect x="1150.4" y="367" width="88.4" height="48" fill="#3D566C"/>
+<text x="1195.6" y="434" text-anchor="middle" class="hex">#3D566C</text>
+<rect x="1150.4" y="445" width="88.4" height="8" fill="#161616" stroke="#DEE5E9"/>
+<rect x="1240.8" y="367" width="88.4" height="48" fill="#9D5B5C"/>
+<text x="1286.0" y="434" text-anchor="middle" class="hex">#9D5B5C</text>
+<rect x="1240.8" y="445" width="88.4" height="8" fill="#272727" stroke="#DEE5E9"/>
+<rect x="1331.2" y="367" width="88.4" height="48" fill="#B7B8B1"/>
+<text x="1376.4" y="434" text-anchor="middle" class="hex">#B7B8B1</text>
+<rect x="1331.2" y="445" width="88.4" height="8" fill="#797979" stroke="#DEE5E9"/>
+<rect x="1421.6" y="367" width="88.4" height="48" fill="#76677E"/>
+<text x="1466.8" y="434" text-anchor="middle" class="hex">#76677E</text>
+<rect x="1421.6" y="445" width="88.4" height="8" fill="#262626" stroke="#DEE5E9"/>
+<text x="1060" y="422" class="id">灰度代理</text>
+<rect x="45" y="490" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="515" class="label">朱砂宫墙</text>
+<text x="60" y="532" class="id">gugong-muted · 朱砂宫墙</text>
+<rect x="60.0" y="547" width="88.4" height="48" fill="#A94B4A"/>
+<text x="105.2" y="614" text-anchor="middle" class="hex">#A94B4A</text>
+<rect x="60.0" y="625" width="88.4" height="8" fill="#242424" stroke="#DEE5E9"/>
+<rect x="150.4" y="547" width="88.4" height="48" fill="#578B83"/>
+<text x="195.6" y="614" text-anchor="middle" class="hex">#578B83</text>
+<rect x="150.4" y="625" width="88.4" height="8" fill="#383838" stroke="#DEE5E9"/>
+<rect x="240.8" y="547" width="88.4" height="48" fill="#C0903A"/>
+<text x="286.0" y="614" text-anchor="middle" class="hex">#C0903A</text>
+<rect x="240.8" y="625" width="88.4" height="8" fill="#505050" stroke="#DEE5E9"/>
+<rect x="331.2" y="547" width="88.4" height="48" fill="#49647B"/>
+<text x="376.4" y="614" text-anchor="middle" class="hex">#49647B</text>
+<rect x="331.2" y="625" width="88.4" height="8" fill="#1F1F1F" stroke="#DEE5E9"/>
+<rect x="421.6" y="547" width="88.4" height="48" fill="#86847D"/>
+<text x="466.8" y="614" text-anchor="middle" class="hex">#86847D</text>
+<rect x="421.6" y="625" width="88.4" height="8" fill="#3B3B3B" stroke="#DEE5E9"/>
+<text x="60" y="602" class="id">灰度代理</text>
+<rect x="545" y="490" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="515" class="label">草木土色</text>
+<text x="560" y="532" class="id">botanical-earth · 草木土色</text>
+<rect x="560.0" y="547" width="88.4" height="48" fill="#3F6B5A"/>
+<text x="605.2" y="614" text-anchor="middle" class="hex">#3F6B5A</text>
+<rect x="560.0" y="625" width="88.4" height="8" fill="#1F1F1F" stroke="#DEE5E9"/>
+<rect x="650.4" y="547" width="88.4" height="48" fill="#729B72"/>
+<text x="695.6" y="614" text-anchor="middle" class="hex">#729B72</text>
+<rect x="650.4" y="625" width="88.4" height="8" fill="#484848" stroke="#DEE5E9"/>
+<rect x="740.8" y="547" width="88.4" height="48" fill="#B58A43"/>
+<text x="786.0" y="614" text-anchor="middle" class="hex">#B58A43</text>
+<rect x="740.8" y="625" width="88.4" height="8" fill="#484848" stroke="#DEE5E9"/>
+<rect x="831.2" y="547" width="88.4" height="48" fill="#B66956"/>
+<text x="876.4" y="614" text-anchor="middle" class="hex">#B66956</text>
+<rect x="831.2" y="625" width="88.4" height="8" fill="#353535" stroke="#DEE5E9"/>
+<rect x="921.6" y="547" width="88.4" height="48" fill="#765E78"/>
+<text x="966.8" y="614" text-anchor="middle" class="hex">#765E78</text>
+<rect x="921.6" y="625" width="88.4" height="8" fill="#222222" stroke="#DEE5E9"/>
+<text x="560" y="602" class="id">灰度代理</text>
+<rect x="1045" y="490" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="515" class="label">北欧矿物</text>
+<text x="1060" y="532" class="id">nordic-mineral · 北欧矿物</text>
+<rect x="1060.0" y="547" width="88.4" height="48" fill="#416A80"/>
+<text x="1105.2" y="614" text-anchor="middle" class="hex">#416A80</text>
+<rect x="1060.0" y="625" width="88.4" height="8" fill="#212121" stroke="#DEE5E9"/>
+<rect x="1150.4" y="547" width="88.4" height="48" fill="#79A9B3"/>
+<text x="1195.6" y="614" text-anchor="middle" class="hex">#79A9B3</text>
+<rect x="1150.4" y="625" width="88.4" height="8" fill="#5B5B5B" stroke="#DEE5E9"/>
+<rect x="1240.8" y="547" width="88.4" height="48" fill="#718B70"/>
+<text x="1286.0" y="614" text-anchor="middle" class="hex">#718B70</text>
+<rect x="1240.8" y="625" width="88.4" height="8" fill="#3B3B3B" stroke="#DEE5E9"/>
+<rect x="1331.2" y="547" width="88.4" height="48" fill="#B58C4E"/>
+<text x="1376.4" y="614" text-anchor="middle" class="hex">#B58C4E</text>
+<rect x="1331.2" y="625" width="88.4" height="8" fill="#4A4A4A" stroke="#DEE5E9"/>
+<rect x="1421.6" y="547" width="88.4" height="48" fill="#AD7180"/>
+<text x="1466.8" y="614" text-anchor="middle" class="hex">#AD7180</text>
+<rect x="1421.6" y="625" width="88.4" height="8" fill="#393939" stroke="#DEE5E9"/>
+<text x="1060" y="602" class="id">灰度代理</text>
+<rect x="45" y="670" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="695" class="label">临床冷暖</text>
+<text x="60" y="712" class="id">clinical-cool-warm · 临床冷暖</text>
+<rect x="60.0" y="727" width="88.4" height="48" fill="#304F68"/>
+<text x="105.2" y="794" text-anchor="middle" class="hex">#304F68</text>
+<rect x="60.0" y="805" width="88.4" height="8" fill="#121212" stroke="#DEE5E9"/>
+<rect x="150.4" y="727" width="88.4" height="48" fill="#607D8B"/>
+<text x="195.6" y="794" text-anchor="middle" class="hex">#607D8B</text>
+<rect x="150.4" y="805" width="88.4" height="8" fill="#303030" stroke="#DEE5E9"/>
+<rect x="240.8" y="727" width="88.4" height="48" fill="#4B918A"/>
+<text x="286.0" y="794" text-anchor="middle" class="hex">#4B918A</text>
+<rect x="240.8" y="805" width="88.4" height="8" fill="#3C3C3C" stroke="#DEE5E9"/>
+<rect x="331.2" y="727" width="88.4" height="48" fill="#C46F6A"/>
+<text x="376.4" y="794" text-anchor="middle" class="hex">#C46F6A</text>
+<rect x="331.2" y="805" width="88.4" height="8" fill="#3E3E3E" stroke="#DEE5E9"/>
+<rect x="421.6" y="727" width="88.4" height="48" fill="#B68B3D"/>
+<text x="466.8" y="794" text-anchor="middle" class="hex">#B68B3D</text>
+<rect x="421.6" y="805" width="88.4" height="8" fill="#494949" stroke="#DEE5E9"/>
+<text x="60" y="782" class="id">灰度代理</text>
+<rect x="545" y="670" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="695" class="label">现代编辑部 · 克制</text>
+<text x="560" y="712" class="id">nature-muted · 现代编辑部</text>
+<rect x="560.0" y="727" width="88.4" height="48" fill="#365C78"/>
+<text x="605.2" y="794" text-anchor="middle" class="hex">#365C78</text>
+<rect x="560.0" y="805" width="88.4" height="8" fill="#191919" stroke="#DEE5E9"/>
+<rect x="650.4" y="727" width="88.4" height="48" fill="#4F8A86"/>
+<text x="695.6" y="794" text-anchor="middle" class="hex">#4F8A86</text>
+<rect x="650.4" y="805" width="88.4" height="8" fill="#373737" stroke="#DEE5E9"/>
+<rect x="740.8" y="727" width="88.4" height="48" fill="#B9833B"/>
+<text x="786.0" y="794" text-anchor="middle" class="hex">#B9833B</text>
+<rect x="740.8" y="805" width="88.4" height="8" fill="#444444" stroke="#DEE5E9"/>
+<rect x="831.2" y="727" width="88.4" height="48" fill="#A75F70"/>
+<text x="876.4" y="794" text-anchor="middle" class="hex">#A75F70</text>
+<rect x="831.2" y="805" width="88.4" height="8" fill="#2D2D2D" stroke="#DEE5E9"/>
+<rect x="921.6" y="727" width="88.4" height="48" fill="#81759A"/>
+<text x="966.8" y="794" text-anchor="middle" class="hex">#81759A</text>
+<rect x="921.6" y="805" width="88.4" height="8" fill="#323232" stroke="#DEE5E9"/>
+<text x="560" y="782" class="id">灰度代理</text>
+<rect x="1045" y="670" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="695" class="label">单色强调</text>
+<text x="1060" y="712" class="id">monochrome-accent · 单色强调</text>
+<rect x="1060.0" y="727" width="88.4" height="48" fill="#27343B"/>
+<text x="1105.2" y="794" text-anchor="middle" class="hex">#27343B</text>
+<rect x="1060.0" y="805" width="88.4" height="8" fill="#080808" stroke="#DEE5E9"/>
+<rect x="1150.4" y="727" width="88.4" height="48" fill="#63717A"/>
+<text x="1195.6" y="794" text-anchor="middle" class="hex">#63717A</text>
+<rect x="1150.4" y="805" width="88.4" height="8" fill="#282828" stroke="#DEE5E9"/>
+<rect x="1240.8" y="727" width="88.4" height="48" fill="#A9B0B3"/>
+<text x="1286.0" y="794" text-anchor="middle" class="hex">#A9B0B3</text>
+<rect x="1240.8" y="805" width="88.4" height="8" fill="#6D6D6D" stroke="#DEE5E9"/>
+<rect x="1331.2" y="727" width="88.4" height="48" fill="#E6E7E3"/>
+<text x="1376.4" y="794" text-anchor="middle" class="hex">#E6E7E3</text>
+<rect x="1331.2" y="805" width="88.4" height="8" fill="#CBCBCB" stroke="#DEE5E9"/>
+<rect x="1421.6" y="727" width="88.4" height="48" fill="#4B918A"/>
+<text x="1466.8" y="794" text-anchor="middle" class="hex">#4B918A</text>
+<rect x="1421.6" y="805" width="88.4" height="8" fill="#3C3C3C" stroke="#DEE5E9"/>
+<text x="1060" y="782" class="id">灰度代理</text>
+<rect x="45" y="850" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="875" class="label">柔和补充图</text>
+<text x="60" y="892" class="id">pastel-journal · 柔和补充图</text>
+<rect x="60.0" y="907" width="88.4" height="48" fill="#C6B3DA"/>
+<text x="105.2" y="974" text-anchor="middle" class="hex">#C6B3DA</text>
+<rect x="60.0" y="985" width="88.4" height="8" fill="#7E7E7E" stroke="#DEE5E9"/>
+<rect x="150.4" y="907" width="88.4" height="48" fill="#6986B6"/>
+<text x="195.6" y="974" text-anchor="middle" class="hex">#6986B6</text>
+<rect x="150.4" y="985" width="88.4" height="8" fill="#3C3C3C" stroke="#DEE5E9"/>
+<rect x="240.8" y="907" width="88.4" height="48" fill="#B0DCE5"/>
+<text x="286.0" y="974" text-anchor="middle" class="hex">#B0DCE5</text>
+<rect x="240.8" y="985" width="88.4" height="8" fill="#A8A8A8" stroke="#DEE5E9"/>
+<rect x="331.2" y="907" width="88.4" height="48" fill="#E3A9B5"/>
+<text x="376.4" y="974" text-anchor="middle" class="hex">#E3A9B5</text>
+<rect x="331.2" y="985" width="88.4" height="8" fill="#7B7B7B" stroke="#DEE5E9"/>
+<rect x="421.6" y="907" width="88.4" height="48" fill="#F3C77A"/>
+<text x="466.8" y="974" text-anchor="middle" class="hex">#F3C77A</text>
+<rect x="421.6" y="985" width="88.4" height="8" fill="#9C9C9C" stroke="#DEE5E9"/>
+<text x="60" y="962" class="id">灰度代理</text>
+<rect x="545" y="850" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="875" class="label">文人纸本</text>
+<text x="560" y="892" class="id">ink-paper-literati · 文人纸本</text>
+<rect x="560.0" y="907" width="88.4" height="48" fill="#34444D"/>
+<text x="605.2" y="974" text-anchor="middle" class="hex">#34444D</text>
+<rect x="560.0" y="985" width="88.4" height="8" fill="#0E0E0E" stroke="#DEE5E9"/>
+<rect x="650.4" y="907" width="88.4" height="48" fill="#607D86"/>
+<text x="695.6" y="974" text-anchor="middle" class="hex">#607D86</text>
+<rect x="650.4" y="985" width="88.4" height="8" fill="#303030" stroke="#DEE5E9"/>
+<rect x="740.8" y="907" width="88.4" height="48" fill="#8EA8A8"/>
+<text x="786.0" y="974" text-anchor="middle" class="hex">#8EA8A8</text>
+<rect x="740.8" y="985" width="88.4" height="8" fill="#5D5D5D" stroke="#DEE5E9"/>
+<rect x="831.2" y="907" width="88.4" height="48" fill="#B8A58F"/>
+<text x="876.4" y="974" text-anchor="middle" class="hex">#B8A58F</text>
+<rect x="831.2" y="985" width="88.4" height="8" fill="#646464" stroke="#DEE5E9"/>
+<rect x="921.6" y="907" width="88.4" height="48" fill="#A46C6C"/>
+<text x="966.8" y="974" text-anchor="middle" class="hex">#A46C6C</text>
+<rect x="921.6" y="985" width="88.4" height="8" fill="#323232" stroke="#DEE5E9"/>
+<text x="560" y="962" class="id">灰度代理</text>
+<rect x="1045" y="850" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="875" class="label">青花瓷</text>
+<text x="1060" y="892" class="id">qinghua-porcelain · 青花瓷</text>
+<rect x="1060.0" y="907" width="88.4" height="48" fill="#2F5D7E"/>
+<text x="1105.2" y="974" text-anchor="middle" class="hex">#2F5D7E</text>
+<rect x="1060.0" y="985" width="88.4" height="8" fill="#191919" stroke="#DEE5E9"/>
+<rect x="1150.4" y="907" width="88.4" height="48" fill="#4A82A3"/>
+<text x="1195.6" y="974" text-anchor="middle" class="hex">#4A82A3</text>
+<rect x="1150.4" y="985" width="88.4" height="8" fill="#333333" stroke="#DEE5E9"/>
+<rect x="1240.8" y="907" width="88.4" height="48" fill="#8FB6C1"/>
+<text x="1286.0" y="974" text-anchor="middle" class="hex">#8FB6C1</text>
+<rect x="1240.8" y="985" width="88.4" height="8" fill="#6E6E6E" stroke="#DEE5E9"/>
+<rect x="1331.2" y="907" width="88.4" height="48" fill="#D8B98A"/>
+<text x="1376.4" y="974" text-anchor="middle" class="hex">#D8B98A</text>
+<rect x="1331.2" y="985" width="88.4" height="8" fill="#828282" stroke="#DEE5E9"/>
+<rect x="1421.6" y="907" width="88.4" height="48" fill="#F3F0E8"/>
+<text x="1466.8" y="974" text-anchor="middle" class="hex">#F3F0E8</text>
+<rect x="1421.6" y="985" width="88.4" height="8" fill="#DEDEDE" stroke="#DEE5E9"/>
+<text x="1060" y="962" class="id">灰度代理</text>
+<rect x="45" y="1030" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="1055" class="label">茶褐植物</text>
+<text x="60" y="1072" class="id">tea-earth-botanical · 茶褐植物</text>
+<rect x="60.0" y="1087" width="88.4" height="48" fill="#85664D"/>
+<text x="105.2" y="1154" text-anchor="middle" class="hex">#85664D</text>
+<rect x="60.0" y="1165" width="88.4" height="8" fill="#262626" stroke="#DEE5E9"/>
+<rect x="150.4" y="1087" width="88.4" height="48" fill="#718B70"/>
+<text x="195.6" y="1154" text-anchor="middle" class="hex">#718B70</text>
+<rect x="150.4" y="1165" width="88.4" height="8" fill="#3B3B3B" stroke="#DEE5E9"/>
+<rect x="240.8" y="1087" width="88.4" height="48" fill="#98AA83"/>
+<text x="286.0" y="1154" text-anchor="middle" class="hex">#98AA83</text>
+<rect x="240.8" y="1165" width="88.4" height="8" fill="#5F5F5F" stroke="#DEE5E9"/>
+<rect x="331.2" y="1087" width="88.4" height="48" fill="#D8D0BD"/>
+<text x="376.4" y="1154" text-anchor="middle" class="hex">#D8D0BD</text>
+<rect x="331.2" y="1165" width="88.4" height="8" fill="#A2A2A2" stroke="#DEE5E9"/>
+<rect x="421.6" y="1087" width="88.4" height="48" fill="#A96868"/>
+<text x="466.8" y="1154" text-anchor="middle" class="hex">#A96868</text>
+<rect x="421.6" y="1165" width="88.4" height="8" fill="#313131" stroke="#DEE5E9"/>
+<text x="60" y="1142" class="id">灰度代理</text>
+<rect x="545" y="1030" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="1055" class="label">海岸矿物</text>
+<text x="560" y="1072" class="id">coastal-mineral · 海岸矿物</text>
+<rect x="560.0" y="1087" width="88.4" height="48" fill="#245C73"/>
+<text x="605.2" y="1154" text-anchor="middle" class="hex">#245C73</text>
+<rect x="560.0" y="1165" width="88.4" height="8" fill="#181818" stroke="#DEE5E9"/>
+<rect x="650.4" y="1087" width="88.4" height="48" fill="#4A8E91"/>
+<text x="695.6" y="1154" text-anchor="middle" class="hex">#4A8E91</text>
+<rect x="650.4" y="1165" width="88.4" height="8" fill="#3A3A3A" stroke="#DEE5E9"/>
+<rect x="740.8" y="1087" width="88.4" height="48" fill="#AAB8B2"/>
+<text x="786.0" y="1154" text-anchor="middle" class="hex">#AAB8B2</text>
+<rect x="740.8" y="1165" width="88.4" height="8" fill="#757575" stroke="#DEE5E9"/>
+<rect x="831.2" y="1087" width="88.4" height="48" fill="#C97868"/>
+<text x="876.4" y="1154" text-anchor="middle" class="hex">#C97868</text>
+<rect x="831.2" y="1165" width="88.4" height="8" fill="#444444" stroke="#DEE5E9"/>
+<rect x="921.6" y="1087" width="88.4" height="48" fill="#C59B69"/>
+<text x="966.8" y="1154" text-anchor="middle" class="hex">#C59B69</text>
+<rect x="921.6" y="1165" width="88.4" height="8" fill="#5D5D5D" stroke="#DEE5E9"/>
+<text x="560" y="1142" class="id">灰度代理</text>
+<rect x="1045" y="1030" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="1055" class="label">沙漠陶土</text>
+<text x="1060" y="1072" class="id">desert-clay · 沙漠陶土</text>
+<rect x="1060.0" y="1087" width="88.4" height="48" fill="#56666A"/>
+<text x="1105.2" y="1154" text-anchor="middle" class="hex">#56666A</text>
+<rect x="1060.0" y="1165" width="88.4" height="8" fill="#202020" stroke="#DEE5E9"/>
+<rect x="1150.4" y="1087" width="88.4" height="48" fill="#A96E58"/>
+<text x="1195.6" y="1154" text-anchor="middle" class="hex">#A96E58</text>
+<rect x="1150.4" y="1165" width="88.4" height="8" fill="#343434" stroke="#DEE5E9"/>
+<rect x="1240.8" y="1087" width="88.4" height="48" fill="#C68B67"/>
+<text x="1286.0" y="1154" text-anchor="middle" class="hex">#C68B67</text>
+<rect x="1240.8" y="1165" width="88.4" height="8" fill="#505050" stroke="#DEE5E9"/>
+<rect x="1331.2" y="1087" width="88.4" height="48" fill="#D3B083"/>
+<text x="1376.4" y="1154" text-anchor="middle" class="hex">#D3B083</text>
+<rect x="1331.2" y="1165" width="88.4" height="8" fill="#777777" stroke="#DEE5E9"/>
+<rect x="1421.6" y="1087" width="88.4" height="48" fill="#7A4E45"/>
+<text x="1466.8" y="1154" text-anchor="middle" class="hex">#7A4E45</text>
+<rect x="1421.6" y="1165" width="88.4" height="8" fill="#1A1A1A" stroke="#DEE5E9"/>
+<text x="1060" y="1142" class="id">灰度代理</text>
+<rect x="45" y="1210" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="1235" class="label">高山湖泊</text>
+<text x="60" y="1252" class="id">alpine-lake · 高山湖泊</text>
+<rect x="60.0" y="1267" width="88.4" height="48" fill="#365B69"/>
+<text x="105.2" y="1334" text-anchor="middle" class="hex">#365B69</text>
+<rect x="60.0" y="1345" width="88.4" height="8" fill="#181818" stroke="#DEE5E9"/>
+<rect x="150.4" y="1267" width="88.4" height="48" fill="#6E9293"/>
+<text x="195.6" y="1334" text-anchor="middle" class="hex">#6E9293</text>
+<rect x="150.4" y="1345" width="88.4" height="8" fill="#424242" stroke="#DEE5E9"/>
+<rect x="240.8" y="1267" width="88.4" height="48" fill="#A9C3B2"/>
+<text x="286.0" y="1334" text-anchor="middle" class="hex">#A9C3B2</text>
+<rect x="240.8" y="1345" width="88.4" height="8" fill="#818181" stroke="#DEE5E9"/>
+<rect x="331.2" y="1267" width="88.4" height="48" fill="#C49A68"/>
+<text x="376.4" y="1334" text-anchor="middle" class="hex">#C49A68</text>
+<rect x="331.2" y="1345" width="88.4" height="8" fill="#5B5B5B" stroke="#DEE5E9"/>
+<rect x="421.6" y="1267" width="88.4" height="48" fill="#8B6F72"/>
+<text x="466.8" y="1334" text-anchor="middle" class="hex">#8B6F72</text>
+<rect x="421.6" y="1345" width="88.4" height="8" fill="#2E2E2E" stroke="#DEE5E9"/>
+<text x="60" y="1322" class="id">灰度代理</text>
+<rect x="545" y="1210" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="1235" class="label">现代编辑部 · 宝石色</text>
+<text x="560" y="1252" class="id">editorial-jewel · 现代编辑部</text>
+<rect x="560.0" y="1267" width="88.4" height="48" fill="#274C77"/>
+<text x="605.2" y="1334" text-anchor="middle" class="hex">#274C77</text>
+<rect x="560.0" y="1345" width="88.4" height="8" fill="#121212" stroke="#DEE5E9"/>
+<rect x="650.4" y="1267" width="88.4" height="48" fill="#4F8C8C"/>
+<text x="695.6" y="1334" text-anchor="middle" class="hex">#4F8C8C</text>
+<rect x="650.4" y="1345" width="88.4" height="8" fill="#393939" stroke="#DEE5E9"/>
+<rect x="740.8" y="1267" width="88.4" height="48" fill="#D07C4A"/>
+<text x="786.0" y="1334" text-anchor="middle" class="hex">#D07C4A</text>
+<rect x="740.8" y="1345" width="88.4" height="8" fill="#484848" stroke="#DEE5E9"/>
+<rect x="831.2" y="1267" width="88.4" height="48" fill="#9A596B"/>
+<text x="876.4" y="1334" text-anchor="middle" class="hex">#9A596B</text>
+<rect x="831.2" y="1345" width="88.4" height="8" fill="#262626" stroke="#DEE5E9"/>
+<rect x="921.6" y="1267" width="88.4" height="48" fill="#7C6A9A"/>
+<text x="966.8" y="1334" text-anchor="middle" class="hex">#7C6A9A</text>
+<rect x="921.6" y="1345" width="88.4" height="8" fill="#2B2B2B" stroke="#DEE5E9"/>
+<text x="560" y="1322" class="id">灰度代理</text>
+<rect x="1045" y="1210" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="1235" class="label">石墨铜色</text>
+<text x="1060" y="1252" class="id">graphite-copper · 石墨铜色</text>
+<rect x="1060.0" y="1267" width="88.4" height="48" fill="#30343B"/>
+<text x="1105.2" y="1334" text-anchor="middle" class="hex">#30343B</text>
+<rect x="1060.0" y="1345" width="88.4" height="8" fill="#090909" stroke="#DEE5E9"/>
+<rect x="1150.4" y="1267" width="88.4" height="48" fill="#8F9BA3"/>
+<text x="1195.6" y="1334" text-anchor="middle" class="hex">#8F9BA3</text>
+<rect x="1150.4" y="1345" width="88.4" height="8" fill="#515151" stroke="#DEE5E9"/>
+<rect x="1240.8" y="1267" width="88.4" height="48" fill="#5A6470"/>
+<text x="1286.0" y="1334" text-anchor="middle" class="hex">#5A6470</text>
+<rect x="1240.8" y="1345" width="88.4" height="8" fill="#202020" stroke="#DEE5E9"/>
+<rect x="1331.2" y="1267" width="88.4" height="48" fill="#B57F55"/>
+<text x="1376.4" y="1334" text-anchor="middle" class="hex">#B57F55</text>
+<rect x="1331.2" y="1345" width="88.4" height="8" fill="#414141" stroke="#DEE5E9"/>
+<rect x="1421.6" y="1267" width="88.4" height="48" fill="#A85F59"/>
+<text x="1466.8" y="1334" text-anchor="middle" class="hex">#A85F59</text>
+<rect x="1421.6" y="1345" width="88.4" height="8" fill="#2C2C2C" stroke="#DEE5E9"/>
+<text x="1060" y="1322" class="id">灰度代理</text>
+<rect x="45" y="1390" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="1415" class="label">印象派低饱和</text>
+<text x="60" y="1432" class="id">impressionist-muted · 艺术化低饱和</text>
+<rect x="60.0" y="1447" width="88.4" height="48" fill="#496A81"/>
+<text x="105.2" y="1514" text-anchor="middle" class="hex">#496A81</text>
+<rect x="60.0" y="1525" width="88.4" height="8" fill="#222222" stroke="#DEE5E9"/>
+<rect x="150.4" y="1447" width="88.4" height="48" fill="#7F9E93"/>
+<text x="195.6" y="1514" text-anchor="middle" class="hex">#7F9E93</text>
+<rect x="150.4" y="1525" width="88.4" height="8" fill="#4F4F4F" stroke="#DEE5E9"/>
+<rect x="240.8" y="1447" width="88.4" height="48" fill="#C8A77C"/>
+<text x="286.0" y="1514" text-anchor="middle" class="hex">#C8A77C</text>
+<rect x="240.8" y="1525" width="88.4" height="8" fill="#696969" stroke="#DEE5E9"/>
+<rect x="331.2" y="1447" width="88.4" height="48" fill="#BA7A85"/>
+<text x="376.4" y="1514" text-anchor="middle" class="hex">#BA7A85</text>
+<rect x="331.2" y="1525" width="88.4" height="8" fill="#424242" stroke="#DEE5E9"/>
+<rect x="421.6" y="1447" width="88.4" height="48" fill="#8C7A9A"/>
+<text x="466.8" y="1514" text-anchor="middle" class="hex">#8C7A9A</text>
+<rect x="421.6" y="1525" width="88.4" height="8" fill="#383838" stroke="#DEE5E9"/>
+<text x="60" y="1502" class="id">灰度代理</text>
+<rect x="545" y="1390" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="1415" class="label">纸白到墨蓝</text>
+<text x="560" y="1432" class="id">paper-blue-sequential · 连续色带</text>
+<rect x="560.0" y="1447" width="88.4" height="48" fill="#F3F5F3"/>
+<text x="605.2" y="1514" text-anchor="middle" class="hex">#F3F5F3</text>
+<rect x="560.0" y="1525" width="88.4" height="8" fill="#E8E8E8" stroke="#DEE5E9"/>
+<rect x="650.4" y="1447" width="88.4" height="48" fill="#C9D9D8"/>
+<text x="695.6" y="1514" text-anchor="middle" class="hex">#C9D9D8</text>
+<rect x="650.4" y="1525" width="88.4" height="8" fill="#ABABAB" stroke="#DEE5E9"/>
+<rect x="740.8" y="1447" width="88.4" height="48" fill="#8FB8BB"/>
+<text x="786.0" y="1514" text-anchor="middle" class="hex">#8FB8BB</text>
+<rect x="740.8" y="1525" width="88.4" height="8" fill="#6F6F6F" stroke="#DEE5E9"/>
+<rect x="831.2" y="1447" width="88.4" height="48" fill="#527A8F"/>
+<text x="876.4" y="1514" text-anchor="middle" class="hex">#527A8F</text>
+<rect x="831.2" y="1525" width="88.4" height="8" fill="#2D2D2D" stroke="#DEE5E9"/>
+<rect x="921.6" y="1447" width="88.4" height="48" fill="#263F55"/>
+<text x="966.8" y="1514" text-anchor="middle" class="hex">#263F55</text>
+<rect x="921.6" y="1525" width="88.4" height="8" fill="#0C0C0C" stroke="#DEE5E9"/>
+<text x="560" y="1502" class="id">灰度代理</text>
+<rect x="1045" y="1390" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="1060" y="1415" class="label">青竹到森林</text>
+<text x="1060" y="1432" class="id">jade-ochre-sequential · 连续色带</text>
+<rect x="1060.0" y="1447" width="88.4" height="48" fill="#F5F1E9"/>
+<text x="1105.2" y="1514" text-anchor="middle" class="hex">#F5F1E9</text>
+<rect x="1060.0" y="1525" width="88.4" height="8" fill="#E1E1E1" stroke="#DEE5E9"/>
+<rect x="1150.4" y="1447" width="88.4" height="48" fill="#D6DDD1"/>
+<text x="1195.6" y="1514" text-anchor="middle" class="hex">#D6DDD1</text>
+<rect x="1150.4" y="1525" width="88.4" height="8" fill="#B4B4B4" stroke="#DEE5E9"/>
+<rect x="1240.8" y="1447" width="88.4" height="48" fill="#A8BDA7"/>
+<text x="1286.0" y="1514" text-anchor="middle" class="hex">#A8BDA7</text>
+<rect x="1240.8" y="1525" width="88.4" height="8" fill="#797979" stroke="#DEE5E9"/>
+<rect x="1331.2" y="1447" width="88.4" height="48" fill="#728F79"/>
+<text x="1376.4" y="1514" text-anchor="middle" class="hex">#728F79</text>
+<rect x="1331.2" y="1525" width="88.4" height="8" fill="#3F3F3F" stroke="#DEE5E9"/>
+<rect x="1421.6" y="1447" width="88.4" height="48" fill="#3F6B5A"/>
+<text x="1466.8" y="1514" text-anchor="middle" class="hex">#3F6B5A</text>
+<rect x="1421.6" y="1525" width="88.4" height="8" fill="#1F1F1F" stroke="#DEE5E9"/>
+<text x="1060" y="1502" class="id">灰度代理</text>
+<rect x="45" y="1570" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="60" y="1595" class="label">墨蓝—纸白—朱砂</text>
+<text x="60" y="1612" class="id">ink-cinnabar-diverging · 发散色带</text>
+<rect x="60.0" y="1627" width="88.4" height="48" fill="#3F6078"/>
+<text x="105.2" y="1694" text-anchor="middle" class="hex">#3F6078</text>
+<rect x="60.0" y="1705" width="88.4" height="8" fill="#1B1B1B" stroke="#DEE5E9"/>
+<rect x="150.4" y="1627" width="88.4" height="48" fill="#94AFB8"/>
+<text x="195.6" y="1694" text-anchor="middle" class="hex">#94AFB8</text>
+<rect x="150.4" y="1705" width="88.4" height="8" fill="#676767" stroke="#DEE5E9"/>
+<rect x="240.8" y="1627" width="88.4" height="48" fill="#F5F2EC"/>
+<text x="286.0" y="1694" text-anchor="middle" class="hex">#F5F2EC</text>
+<rect x="240.8" y="1705" width="88.4" height="8" fill="#E3E3E3" stroke="#DEE5E9"/>
+<rect x="331.2" y="1627" width="88.4" height="48" fill="#D89A91"/>
+<text x="376.4" y="1694" text-anchor="middle" class="hex">#D89A91</text>
+<rect x="331.2" y="1705" width="88.4" height="8" fill="#656565" stroke="#DEE5E9"/>
+<rect x="421.6" y="1627" width="88.4" height="48" fill="#A94B4A"/>
+<text x="466.8" y="1694" text-anchor="middle" class="hex">#A94B4A</text>
+<rect x="421.6" y="1705" width="88.4" height="8" fill="#242424" stroke="#DEE5E9"/>
+<text x="60" y="1682" class="id">灰度代理</text>
+<rect x="545" y="1570" width="482" height="162" rx="7" fill="#FFFFFF" stroke="#DEE5E9"/>
+<text x="560" y="1595" class="label">青竹—暖赭</text>
+<text x="560" y="1612" class="id">qingzhu-diverging · 发散色带</text>
+<rect x="560.0" y="1627" width="88.4" height="48" fill="#3F7180"/>
+<text x="605.2" y="1694" text-anchor="middle" class="hex">#3F7180</text>
+<rect x="560.0" y="1705" width="88.4" height="8" fill="#252525" stroke="#DEE5E9"/>
+<rect x="650.4" y="1627" width="88.4" height="48" fill="#9BBCC0"/>
+<text x="695.6" y="1694" text-anchor="middle" class="hex">#9BBCC0</text>
+<rect x="650.4" y="1705" width="88.4" height="8" fill="#777777" stroke="#DEE5E9"/>
+<rect x="740.8" y="1627" width="88.4" height="48" fill="#F5F1E8"/>
+<text x="786.0" y="1694" text-anchor="middle" class="hex">#F5F1E8</text>
+<rect x="740.8" y="1705" width="88.4" height="8" fill="#E1E1E1" stroke="#DEE5E9"/>
+<rect x="831.2" y="1627" width="88.4" height="48" fill="#E0B18A"/>
+<text x="876.4" y="1694" text-anchor="middle" class="hex">#E0B18A</text>
+<rect x="831.2" y="1705" width="88.4" height="8" fill="#7D7D7D" stroke="#DEE5E9"/>
+<rect x="921.6" y="1627" width="88.4" height="48" fill="#B66A4A"/>
+<text x="966.8" y="1694" text-anchor="middle" class="hex">#B66A4A</text>
+<rect x="921.6" y="1705" width="88.4" height="8" fill="#353535" stroke="#DEE5E9"/>
+<text x="560" y="1682" class="id">灰度代理</text>
+</svg>
