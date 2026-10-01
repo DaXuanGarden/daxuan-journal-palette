@@ -60,6 +60,26 @@ python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/trigger_eval.py /ho
 - 热图中点不明确：使用发散色带并明确中点的统计含义；没有有意义的中点时改用连续色带。
 - 多面板颜色漂移：建立一个全局命名映射，在每个面板中按同一键值调用。
 
+<!-- qiaomu-profile:start -->
+## 关于向阳乔木
+
+向阳乔木（乔向阳 / Joe）是一位实践型 AI 产品与内容创作者，长期把前沿 AI 变化转译成可复用的工作流、产品判断、AI 编程实践、AI 搜索实践和 GEO/AI 营销方法。
+
+- 个人网站: https://qiaomu.ai
+- 博客: https://blog.qiaomu.ai
+- X: https://x.com/vista8
+- GitHub: https://github.com/joeseesun/
+- 微信公众号: 向阳乔木推荐看
+
+### 支持与关注
+
+| 打赏支持 | 微信公众号 |
+|---|---|
+| <img src="assets/qiaomu-profile/qiaomu_reward_qr.png" alt="向阳乔木打赏二维码" width="180" /> | <img src="assets/qiaomu-profile/qiaomu_wechat_public_account_qr.jpg" alt="向阳乔木推荐看公众号二维码" width="180" /> |
+| 感谢支持乔木持续分享 AI 实践 | 扫码关注「向阳乔木推荐看」 |
+
+<!-- qiaomu-profile:end -->
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
