@@ -1,0 +1,31 @@
+{
+  "recommended_threshold": 0.34,
+  "positive_concepts": {
+    "skill": ["skill", "技能", "能力"],
+    "palette_action": ["配色", "色板", "palette", "选择", "设计", "审查", "检查"],
+    "journal_figure": ["期刊", "论文图", "科研图", "ggplot", "热图", "柱状图", "富集图", "figure", "多面板"],
+    "accessibility": ["色盲", "灰度", "印刷", "可读性", "对比度", "contrast"],
+    "art_style": ["中国水墨", "东方", "矿物", "敦煌", "宋韵", "北欧", "文人纸本", "青花瓷", "草木土色", "海岸矿物", "现代编辑部", "Nature", "Cell", "艺术"]
+  },
+  "description_required_concepts": ["skill", "palette_action", "journal_figure"],
+  "negative_patterns": ["网站", "网页", "UI", "品牌", "Logo", "照片", "白平衡", "统计检验", "p值", "差异分析", "只解释", "仅仅解释", "不需要修改"],
+  "should_trigger": [
+    {"text": "给 GO-BP 富集图设计中国水墨加矿物色，输出 HEX 和 ggplot2 映射。", "family": "primary"},
+    {"text": "给五组科研柱状图选不太浅、适合期刊投稿的高级配色，检查色盲和灰度。", "family": "accessibility"},
+    {"text": "为 Nature 风格的多面板论文图统一通路颜色，并给出 R 和 Python 代码。", "family": "cross-panel"},
+    {"text": "比较宋韵、敦煌矿物和北欧矿物三种科研图色板，说明白底印刷风险。", "family": "style-comparison"},
+    {"text": "审查这张热图的连续色带和中点设置，检查对比度、灰度和最终尺寸。", "family": "continuous"},
+    {"text": "为失眠和脂肪肝的通路富集图选择艺术化但适合投稿的配色。", "family": "domain"}
+  ],
+  "should_not_trigger": [
+    {"text": "给网站按钮做暗色模式和 UI 主题色。", "family": "web-ui"},
+    {"text": "帮我做一个品牌 Logo 和品牌色规范。", "family": "branding"},
+    {"text": "修复这张照片的白平衡和曝光。", "family": "photo"},
+    {"text": "分析 GWAS 结果并计算 p 值和多重检验。", "family": "statistics"}
+  ],
+  "near_neighbor": [
+    {"text": "只解释期刊图表常用的字体和尺寸，不需要设计配色。", "family": "typography-only"},
+    {"text": "帮我写论文讨论部分，解释失眠和脂肪肝的生物学意义。", "family": "writing"},
+    {"text": "整理实验数据并运行差异表达分析，不涉及图表配色。", "family": "analysis"}
+  ]
+}

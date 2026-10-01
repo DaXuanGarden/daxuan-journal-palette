@@ -1,0 +1,24 @@
+name: Validate palette skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate JSON and gallery generator
+        run: |
+          python3 -m json.tool manifest.json >/dev/null
+          python3 -m json.tool assets/palette-gallery/palettes.json >/dev/null
+          python3 -m py_compile scripts/build_palette_gallery.py
+          python3 scripts/build_palette_gallery.py --overwrite
+          git diff --exit-code -- assets/palette-gallery
+          test -s README.md
+          test -s SKILL.md
+          test -s LICENSE

@@ -1,0 +1,2612 @@
+{
+  "ok": true,
+  "complete": true,
+  "researched_at": "2026-10-01",
+  "queries": [
+    "scientific journal figure color palettes publication",
+    "ggplot publication palette color vision deficiency accessibility",
+    "Chinese ink wash palette scientific visualization",
+    "Nature Cell journal figure color style"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "scientific journal figure color palettes publication",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 19,
+      "skillsmp_candidates": 10
+    },
+    {
+      "query": "ggplot publication palette color vision deficiency accessibility",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 20,
+      "skillsmp_candidates": 9
+    },
+    {
+      "query": "Chinese ink wash palette scientific visualization",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 19,
+      "skillsmp_candidates": 10
+    },
+    {
+      "query": "Nature Cell journal figure color style",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 20,
+      "skillsmp_candidates": 10
+    }
+  ],
+  "candidate_family_count": 111,
+  "candidates": [
+    {
+      "family_key": "101-skills/superpowers:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "101-skills/superpowers",
+        "skill_name": "ai-image-generation",
+        "family_key": "101-skills/superpowers:ai-image-generation",
+        "skills_sh_installs": 595300,
+        "skills_sh_installs_display": "595.3K",
+        "skills_sh_url": "https://skills.sh/101-skills/superpowers/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:minimalist-ui",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "minimalist-ui",
+        "family_key": "leonxlnx/taste-skill:minimalist-ui",
+        "skills_sh_installs": 366700,
+        "skills_sh_installs_display": "366.7K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/minimalist-ui"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:stitch-design-taste",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "stitch-design-taste",
+        "family_key": "leonxlnx/taste-skill:stitch-design-taste",
+        "skills_sh_installs": 340800,
+        "skills_sh_installs_display": "340.8K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/stitch-design-taste"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:imagegen-frontend-web",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "imagegen-frontend-web",
+        "family_key": "leonxlnx/taste-skill:imagegen-frontend-web",
+        "skills_sh_installs": 325700,
+        "skills_sh_installs_display": "325.7K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/imagegen-frontend-web"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "qu-skills/superpowers:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "qu-skills/superpowers",
+        "skill_name": "ai-image-generation",
+        "family_key": "qu-skills/superpowers:ai-image-generation",
+        "skills_sh_installs": 313900,
+        "skills_sh_installs_display": "313.9K",
+        "skills_sh_url": "https://skills.sh/qu-skills/superpowers/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "emilkowalski/skills:emil-design-eng",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "emilkowalski/skills",
+        "skill_name": "emil-design-eng",
+        "family_key": "emilkowalski/skills:emil-design-eng",
+        "skills_sh_installs": 312300,
+        "skills_sh_installs_display": "312.3K",
+        "skills_sh_url": "https://skills.sh/emilkowalski/skills/emil-design-eng"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "magentosh/superpowers:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "magentosh/superpowers",
+        "skill_name": "ai-image-generation",
+        "family_key": "magentosh/superpowers:ai-image-generation",
+        "skills_sh_installs": 193700,
+        "skills_sh_installs_display": "193.7K",
+        "skills_sh_url": "https://skills.sh/magentosh/superpowers/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "skills-shell/superpowers:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "skills-shell/superpowers",
+        "skill_name": "ai-image-generation",
+        "family_key": "skills-shell/superpowers:ai-image-generation",
+        "skills_sh_installs": 169200,
+        "skills_sh_installs_display": "169.2K",
+        "skills_sh_url": "https://skills.sh/skills-shell/superpowers/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "its-a-skill-issue/superpowers:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "its-a-skill-issue/superpowers",
+        "skill_name": "ai-image-generation",
+        "family_key": "its-a-skill-issue/superpowers:ai-image-generation",
+        "skills_sh_installs": 162900,
+        "skills_sh_installs_display": "162.9K",
+        "skills_sh_url": "https://skills.sh/its-a-skill-issue/superpowers/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bankai-skills/superpowers:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "bankai-skills/superpowers",
+        "skill_name": "ai-image-generation",
+        "family_key": "bankai-skills/superpowers:ai-image-generation",
+        "skills_sh_installs": 147800,
+        "skills_sh_installs_display": "147.8K",
+        "skills_sh_url": "https://skills.sh/bankai-skills/superpowers/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/skills:canvas-design",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "anthropics/skills",
+        "skill_name": "canvas-design",
+        "family_key": "anthropics/skills:canvas-design",
+        "skills_sh_installs": 112700,
+        "skills_sh_installs_display": "112.7K",
+        "skills_sh_url": "https://skills.sh/anthropics/skills/canvas-design"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/skills:brand-guidelines",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "anthropics/skills",
+        "skill_name": "brand-guidelines",
+        "family_key": "anthropics/skills:brand-guidelines",
+        "skills_sh_installs": 98400,
+        "skills_sh_installs_display": "98.4K",
+        "skills_sh_url": "https://skills.sh/anthropics/skills/brand-guidelines"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "pbakaus/impeccable:audit",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "pbakaus/impeccable",
+        "skill_name": "audit",
+        "family_key": "pbakaus/impeccable:audit",
+        "skills_sh_installs": 84000,
+        "skills_sh_installs_display": "84K",
+        "skills_sh_url": "https://skills.sh/pbakaus/impeccable/audit"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/skills:algorithmic-art",
+      "queries": [
+        "Chinese ink wash palette scientific visualization",
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "anthropics/skills",
+        "skill_name": "algorithmic-art",
+        "family_key": "anthropics/skills:algorithmic-art",
+        "skills_sh_installs": 83900,
+        "skills_sh_installs_display": "83.9K",
+        "skills_sh_url": "https://skills.sh/anthropics/skills/algorithmic-art"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "pbakaus/impeccable:colorize",
+      "queries": [
+        "Nature Cell journal figure color style",
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "pbakaus/impeccable",
+        "skill_name": "colorize",
+        "family_key": "pbakaus/impeccable:colorize",
+        "skills_sh_installs": 83000,
+        "skills_sh_installs_display": "83K",
+        "skills_sh_url": "https://skills.sh/pbakaus/impeccable/colorize"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "addyosmani/web-quality-skills:accessibility",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "addyosmani/web-quality-skills",
+        "skill_name": "accessibility",
+        "family_key": "addyosmani/web-quality-skills:accessibility",
+        "skills_sh_installs": 57500,
+        "skills_sh_installs_display": "57.5K",
+        "skills_sh_url": "https://skills.sh/addyosmani/web-quality-skills/accessibility"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "addyosmani/agent-skills:frontend-ui-engineering",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "addyosmani/agent-skills",
+        "skill_name": "frontend-ui-engineering",
+        "family_key": "addyosmani/agent-skills:frontend-ui-engineering",
+        "skills_sh_installs": 48100,
+        "skills_sh_installs_display": "48.1K",
+        "skills_sh_url": "https://skills.sh/addyosmani/agent-skills/frontend-ui-engineering"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "pbakaus/impeccable:arrange",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "pbakaus/impeccable",
+        "skill_name": "arrange",
+        "family_key": "pbakaus/impeccable:arrange",
+        "skills_sh_installs": 40300,
+        "skills_sh_installs_display": "40.3K",
+        "skills_sh_url": "https://skills.sh/pbakaus/impeccable/arrange"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "101-skills/superpowers:character-design-sheet",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "101-skills/superpowers",
+        "skill_name": "character-design-sheet",
+        "family_key": "101-skills/superpowers:character-design-sheet",
+        "skills_sh_installs": 38200,
+        "skills_sh_installs_display": "38.2K",
+        "skills_sh_url": "https://skills.sh/101-skills/superpowers/character-design-sheet"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "firecrawl/firecrawl-workflows:firecrawl-research-papers",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "firecrawl/firecrawl-workflows",
+        "skill_name": "firecrawl-research-papers",
+        "family_key": "firecrawl/firecrawl-workflows:firecrawl-research-papers",
+        "skills_sh_installs": 33400,
+        "skills_sh_installs_display": "33.4K",
+        "skills_sh_url": "https://skills.sh/firecrawl/firecrawl-workflows/firecrawl-research-papers"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nextlevelbuilder/ui-ux-pro-max-skill:design-system",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+        "skill_name": "design-system",
+        "family_key": "nextlevelbuilder/ui-ux-pro-max-skill:design-system",
+        "skills_sh_installs": 33300,
+        "skills_sh_installs_display": "33.3K",
+        "skills_sh_url": "https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/design-system"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jimliu/baoyu-skills:baoyu-infographic",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "jimliu/baoyu-skills",
+        "skill_name": "baoyu-infographic",
+        "family_key": "jimliu/baoyu-skills:baoyu-infographic",
+        "skills_sh_installs": 32299,
+        "skills_sh_installs_display": "32.3K",
+        "skills_sh_url": "https://skills.sh/jimliu/baoyu-skills/baoyu-infographic"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jimliu/baoyu-skills:baoyu-article-illustrator",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "jimliu/baoyu-skills",
+        "skill_name": "baoyu-article-illustrator",
+        "family_key": "jimliu/baoyu-skills:baoyu-article-illustrator",
+        "skills_sh_installs": 31500,
+        "skills_sh_installs_display": "31.5K",
+        "skills_sh_url": "https://skills.sh/jimliu/baoyu-skills/baoyu-article-illustrator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "addyosmani/web-quality-skills:web-quality-audit",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "addyosmani/web-quality-skills",
+        "skill_name": "web-quality-audit",
+        "family_key": "addyosmani/web-quality-skills:web-quality-audit",
+        "skills_sh_installs": 28800,
+        "skills_sh_installs_display": "28.8K",
+        "skills_sh_url": "https://skills.sh/addyosmani/web-quality-skills/web-quality-audit"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "pbakaus/impeccable:layout",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "pbakaus/impeccable",
+        "skill_name": "layout",
+        "family_key": "pbakaus/impeccable:layout",
+        "skills_sh_installs": 27100,
+        "skills_sh_installs_display": "27.1K",
+        "skills_sh_url": "https://skills.sh/pbakaus/impeccable/layout"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jakubkrehel/skills:better-colors",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "jakubkrehel/skills",
+        "skill_name": "better-colors",
+        "family_key": "jakubkrehel/skills:better-colors",
+        "skills_sh_installs": 24800,
+        "skills_sh_installs_display": "24.8K",
+        "skills_sh_url": "https://skills.sh/jakubkrehel/skills/better-colors"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jakubkrehel/skills:better-interface",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "jakubkrehel/skills",
+        "skill_name": "better-interface",
+        "family_key": "jakubkrehel/skills:better-interface",
+        "skills_sh_installs": 22800,
+        "skills_sh_installs_display": "22.8K",
+        "skills_sh_url": "https://skills.sh/jakubkrehel/skills/better-interface"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jakubkrehel/skills:better-accessibility",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "jakubkrehel/skills",
+        "skill_name": "better-accessibility",
+        "family_key": "jakubkrehel/skills:better-accessibility",
+        "skills_sh_installs": 22200,
+        "skills_sh_installs_display": "22.2K",
+        "skills_sh_url": "https://skills.sh/jakubkrehel/skills/better-accessibility"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ibelick/ui-skills:fixing-accessibility",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "ibelick/ui-skills",
+        "skill_name": "fixing-accessibility",
+        "family_key": "ibelick/ui-skills:fixing-accessibility",
+        "skills_sh_installs": 19400,
+        "skills_sh_installs_display": "19.4K",
+        "skills_sh_url": "https://skills.sh/ibelick/ui-skills/fixing-accessibility"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-polishing",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "yuan1z0825/nature-skills",
+        "skill_name": "nature-polishing",
+        "family_key": "yuan1z0825/nature-skills:nature-polishing",
+        "skills_sh_installs": 15000,
+        "skills_sh_installs_display": "15K",
+        "skills_sh_url": "https://skills.sh/yuan1z0825/nature-skills/nature-polishing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wshobson/agents:accessibility-compliance",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "wshobson/agents",
+        "skill_name": "accessibility-compliance",
+        "family_key": "wshobson/agents:accessibility-compliance",
+        "skills_sh_installs": 13900,
+        "skills_sh_installs_display": "13.9K",
+        "skills_sh_url": "https://skills.sh/wshobson/agents/accessibility-compliance"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-paper2ppt",
+      "queries": [
+        "Chinese ink wash palette scientific visualization",
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "yuan1z0825/nature-skills",
+        "skill_name": "nature-paper2ppt",
+        "family_key": "yuan1z0825/nature-skills:nature-paper2ppt",
+        "skills_sh_installs": 13800,
+        "skills_sh_installs_display": "13.8K",
+        "skills_sh_url": "https://skills.sh/yuan1z0825/nature-skills/nature-paper2ppt"
+      },
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-paper2ppt",
+        "author": "Yuan1z0825",
+        "description": "Create or improve a Chinese academic PPTX from a scientific paper or research reading notes, with source figures and speaker notes. Use for 论文做PPT、文献汇报、组会PPT and paper-based conference or defense presentations.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-paper2ppt",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-paper2ppt",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-14T03:02:27+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-paper2ppt",
+        "family_key": "yuan1z0825/nature-skills:nature-paper2ppt",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skills.sh",
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-writing",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "yuan1z0825/nature-skills",
+        "skill_name": "nature-writing",
+        "family_key": "yuan1z0825/nature-skills:nature-writing",
+        "skills_sh_installs": 13300,
+        "skills_sh_installs_display": "13.3K",
+        "skills_sh_url": "https://skills.sh/yuan1z0825/nature-skills/nature-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wshobson/agents:visual-design-foundations",
+      "queries": [
+        "Chinese ink wash palette scientific visualization",
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "wshobson/agents",
+        "skill_name": "visual-design-foundations",
+        "family_key": "wshobson/agents:visual-design-foundations",
+        "skills_sh_installs": 12800,
+        "skills_sh_installs_display": "12.8K",
+        "skills_sh_url": "https://skills.sh/wshobson/agents/visual-design-foundations"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/knowledge-work-plugins:data-visualization",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "anthropics/knowledge-work-plugins",
+        "skill_name": "data-visualization",
+        "family_key": "anthropics/knowledge-work-plugins:data-visualization",
+        "skills_sh_installs": 12600,
+        "skills_sh_installs_display": "12.6K",
+        "skills_sh_url": "https://skills.sh/anthropics/knowledge-work-plugins/data-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-shared",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "yuan1z0825/nature-skills",
+        "skill_name": "nature-shared",
+        "family_key": "yuan1z0825/nature-skills:nature-shared",
+        "skills_sh_installs": 10700,
+        "skills_sh_installs_display": "10.7K",
+        "skills_sh_url": "https://skills.sh/yuan1z0825/nature-skills/nature-shared"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "github/awesome-copilot:power-bi-report-design-consultation",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "github/awesome-copilot",
+        "skill_name": "power-bi-report-design-consultation",
+        "family_key": "github/awesome-copilot:power-bi-report-design-consultation",
+        "skills_sh_installs": 9400,
+        "skills_sh_installs_display": "9.4K",
+        "skills_sh_url": "https://skills.sh/github/awesome-copilot/power-bi-report-design-consultation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:accessibility",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "affaan-m/ecc",
+        "skill_name": "accessibility",
+        "family_key": "affaan-m/ecc:accessibility",
+        "skills_sh_installs": 8100,
+        "skills_sh_installs_display": "8.1K",
+        "skills_sh_url": "https://skills.sh/affaan-m/ecc/accessibility"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/knowledge-work-plugins:create-viz",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "anthropics/knowledge-work-plugins",
+        "skill_name": "create-viz",
+        "family_key": "anthropics/knowledge-work-plugins:create-viz",
+        "skills_sh_installs": 5000,
+        "skills_sh_installs_display": "5K",
+        "skills_sh_url": "https://skills.sh/anthropics/knowledge-work-plugins/create-viz"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/knowledge-work-plugins:accessibility-review",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "anthropics/knowledge-work-plugins",
+        "skill_name": "accessibility-review",
+        "family_key": "anthropics/knowledge-work-plugins:accessibility-review",
+        "skills_sh_installs": 3800,
+        "skills_sh_installs_display": "3.8K",
+        "skills_sh_url": "https://skills.sh/anthropics/knowledge-work-plugins/accessibility-review"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "microsoft/vscode:accessibility",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ggplot publication palette color vision deficiency accessibility",
+        "owner_repo": "microsoft/vscode",
+        "skill_name": "accessibility",
+        "family_key": "microsoft/vscode:accessibility",
+        "skills_sh_installs": 3100,
+        "skills_sh_installs_display": "3.1K",
+        "skills_sh_url": "https://skills.sh/microsoft/vscode/accessibility"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "s1dashu/ip-as-logo-skill:ip-as-logo",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "s1dashu/ip-as-logo-skill",
+        "skill_name": "ip-as-logo",
+        "family_key": "s1dashu/ip-as-logo-skill:ip-as-logo",
+        "skills_sh_installs": 3000,
+        "skills_sh_installs_display": "3K",
+        "skills_sh_url": "https://skills.sh/s1dashu/ip-as-logo-skill/ip-as-logo"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vincentwei1021/video-shotcraft:video-shotcraft",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "vincentwei1021/video-shotcraft",
+        "skill_name": "video-shotcraft",
+        "family_key": "vincentwei1021/video-shotcraft:video-shotcraft",
+        "skills_sh_installs": 2900,
+        "skills_sh_installs_display": "2.9K",
+        "skills_sh_url": "https://skills.sh/vincentwei1021/video-shotcraft/video-shotcraft"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "owl-listener/designer-skills:illustration-style",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "owl-listener/designer-skills",
+        "skill_name": "illustration-style",
+        "family_key": "owl-listener/designer-skills:illustration-style",
+        "skills_sh_installs": 2200,
+        "skills_sh_installs_display": "2.2K",
+        "skills_sh_url": "https://skills.sh/owl-listener/designer-skills/illustration-style"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:scientific-visualization",
+      "queries": [
+        "Chinese ink wash palette scientific visualization",
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "k-dense-ai/scientific-agent-skills",
+        "skill_name": "scientific-visualization",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-visualization",
+        "skills_sh_installs": 2100,
+        "skills_sh_installs_display": "2.1K",
+        "skills_sh_url": "https://skills.sh/k-dense-ai/scientific-agent-skills/scientific-visualization"
+      },
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-visualization",
+        "author": "K-Dense-AI",
+        "description": "Create and audit truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly. Use for figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation, and journal export planning.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-visualization",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scientific-visualization",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-02T16:25:16+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/scientific-visualization",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-visualization",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skills.sh",
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "marimo-team/skills:implement-paper-auto",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "marimo-team/skills",
+        "skill_name": "implement-paper-auto",
+        "family_key": "marimo-team/skills:implement-paper-auto",
+        "skills_sh_installs": 2000,
+        "skills_sh_installs_display": "2K",
+        "skills_sh_url": "https://skills.sh/marimo-team/skills/implement-paper-auto"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:premium",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "premium",
+        "family_key": "bergside/awesome-design-skills:premium",
+        "skills_sh_installs": 1800,
+        "skills_sh_installs_display": "1.8K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/premium"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:seaborn",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "k-dense-ai/scientific-agent-skills",
+        "skill_name": "seaborn",
+        "family_key": "k-dense-ai/scientific-agent-skills:seaborn",
+        "skills_sh_installs": 1800,
+        "skills_sh_installs_display": "1.8K",
+        "skills_sh_url": "https://skills.sh/k-dense-ai/scientific-agent-skills/seaborn"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "op7418/guizang-material-illustration:guizang-material-illustration",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "op7418/guizang-material-illustration",
+        "skill_name": "guizang-material-illustration",
+        "family_key": "op7418/guizang-material-illustration:guizang-material-illustration",
+        "skills_sh_installs": 1700,
+        "skills_sh_installs_display": "1.7K",
+        "skills_sh_url": "https://skills.sh/op7418/guizang-material-illustration/guizang-material-illustration"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "agents365-ai/365-skills:imagencn",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "agents365-ai/365-skills",
+        "skill_name": "imagencn",
+        "family_key": "agents365-ai/365-skills:imagencn",
+        "skills_sh_installs": 1600,
+        "skills_sh_installs_display": "1.6K",
+        "skills_sh_url": "https://skills.sh/agents365-ai/365-skills/imagencn"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:bold",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "bold",
+        "family_key": "bergside/awesome-design-skills:bold",
+        "skills_sh_installs": 1600,
+        "skills_sh_installs_display": "1.6K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/bold"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:refined",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "refined",
+        "family_key": "bergside/awesome-design-skills:refined",
+        "skills_sh_installs": 1600,
+        "skills_sh_installs_display": "1.6K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/refined"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "davila7/claude-code-templates:scientific-visualization",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "davila7/claude-code-templates",
+        "skill_name": "scientific-visualization",
+        "family_key": "davila7/claude-code-templates:scientific-visualization",
+        "skills_sh_installs": 1600,
+        "skills_sh_installs_display": "1.6K",
+        "skills_sh_url": "https://skills.sh/davila7/claude-code-templates/scientific-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:artistic",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "artistic",
+        "family_key": "bergside/awesome-design-skills:artistic",
+        "skills_sh_installs": 1500,
+        "skills_sh_installs_display": "1.5K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/artistic"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:claude",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "claude",
+        "family_key": "bergside/awesome-design-skills:claude",
+        "skills_sh_installs": 1500,
+        "skills_sh_installs_display": "1.5K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/claude"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "master-cai/research-paper-writing-skills:research-paper-writing",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "master-cai/research-paper-writing-skills",
+        "skill_name": "research-paper-writing",
+        "family_key": "master-cai/research-paper-writing-skills:research-paper-writing",
+        "skills_sh_installs": 1500,
+        "skills_sh_installs_display": "1.5K",
+        "skills_sh_url": "https://skills.sh/master-cai/research-paper-writing-skills/research-paper-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:fiction",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "fiction",
+        "family_key": "bergside/awesome-design-skills:fiction",
+        "skills_sh_installs": 1400,
+        "skills_sh_installs_display": "1.4K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/fiction"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:riso",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "riso",
+        "family_key": "bergside/awesome-design-skills:riso",
+        "skills_sh_installs": 1400,
+        "skills_sh_installs_display": "1.4K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/riso"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mikubaka88/ccfa-skills:ccf-paper-to-exemplar",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "mikubaka88/ccfa-skills",
+        "skill_name": "ccf-paper-to-exemplar",
+        "family_key": "mikubaka88/ccfa-skills:ccf-paper-to-exemplar",
+        "skills_sh_installs": 1400,
+        "skills_sh_installs_display": "1.4K",
+        "skills_sh_url": "https://skills.sh/mikubaka88/ccfa-skills/ccf-paper-to-exemplar"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bergside/awesome-design-skills:pulse",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "bergside/awesome-design-skills",
+        "skill_name": "pulse",
+        "family_key": "bergside/awesome-design-skills:pulse",
+        "skills_sh_installs": 1200,
+        "skills_sh_installs_display": "1.2K",
+        "skills_sh_url": "https://skills.sh/bergside/awesome-design-skills/pulse"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ai-zixun/humanizer-zh:humanizer-zh",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "ai-zixun/humanizer-zh",
+        "skill_name": "humanizer-zh",
+        "family_key": "ai-zixun/humanizer-zh:humanizer-zh",
+        "skills_sh_installs": 1100,
+        "skills_sh_installs_display": "1.1K",
+        "skills_sh_url": "https://skills.sh/ai-zixun/humanizer-zh/humanizer-zh"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mengto/skills:orange-clean-paper-saas",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Nature Cell journal figure color style",
+        "owner_repo": "mengto/skills",
+        "skill_name": "orange-clean-paper-saas",
+        "family_key": "mengto/skills:orange-clean-paper-saas",
+        "skills_sh_installs": 1100,
+        "skills_sh_installs_display": "1.1K",
+        "skills_sh_url": "https://skills.sh/mengto/skills/orange-clean-paper-saas"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jesseovo/last30days-skill-cn:last30days-cn",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "jesseovo/last30days-skill-cn",
+        "skill_name": "last30days-cn",
+        "family_key": "jesseovo/last30days-skill-cn:last30days-cn",
+        "skills_sh_installs": 1000,
+        "skills_sh_installs_display": "1K",
+        "skills_sh_url": "https://skills.sh/jesseovo/last30days-skill-cn/last30days-cn"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "athevon/genjutsu:canvas-generative",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "athevon/genjutsu",
+        "skill_name": "canvas-generative",
+        "family_key": "athevon/genjutsu:canvas-generative",
+        "skills_sh_installs": 970,
+        "skills_sh_installs_display": "970",
+        "skills_sh_url": "https://skills.sh/athevon/genjutsu/canvas-generative"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "zlanqing/codex-claude-academic-skills:office-academic-skill",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "zlanqing/codex-claude-academic-skills",
+        "skill_name": "office-academic-skill",
+        "family_key": "zlanqing/codex-claude-academic-skills:office-academic-skill",
+        "skills_sh_installs": 778,
+        "skills_sh_installs_display": "778",
+        "skills_sh_url": "https://skills.sh/zlanqing/codex-claude-academic-skills/office-academic-skill"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "dembrandt/dembrandt-skills:algorithmic-color-palette",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "dembrandt/dembrandt-skills",
+        "skill_name": "algorithmic-color-palette",
+        "family_key": "dembrandt/dembrandt-skills:algorithmic-color-palette",
+        "skills_sh_installs": 714,
+        "skills_sh_installs_display": "714",
+        "skills_sh_url": "https://skills.sh/dembrandt/dembrandt-skills/algorithmic-color-palette"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sickn33/agentic-awesome-skills:humanize-chinese",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "sickn33/agentic-awesome-skills",
+        "skill_name": "humanize-chinese",
+        "family_key": "sickn33/agentic-awesome-skills:humanize-chinese",
+        "skills_sh_installs": 696,
+        "skills_sh_installs_display": "696",
+        "skills_sh_url": "https://skills.sh/sickn33/agentic-awesome-skills/humanize-chinese"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "iart-ai/explainer-video-skills:whiteboard-animation",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "iart-ai/explainer-video-skills",
+        "skill_name": "whiteboard-animation",
+        "family_key": "iart-ai/explainer-video-skills:whiteboard-animation",
+        "skills_sh_installs": 672,
+        "skills_sh_installs_display": "672",
+        "skills_sh_url": "https://skills.sh/iart-ai/explainer-video-skills/whiteboard-animation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "freestylefly/canghe-skills:canghe-xhs-images",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "freestylefly/canghe-skills",
+        "skill_name": "canghe-xhs-images",
+        "family_key": "freestylefly/canghe-skills:canghe-xhs-images",
+        "skills_sh_installs": 566,
+        "skills_sh_installs_display": "566",
+        "skills_sh_url": "https://skills.sh/freestylefly/canghe-skills/canghe-xhs-images"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "op7418/guizang-yingzao-skill:yingzao",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "op7418/guizang-yingzao-skill",
+        "skill_name": "yingzao",
+        "family_key": "op7418/guizang-yingzao-skill:yingzao",
+        "skills_sh_installs": 372,
+        "skills_sh_installs_display": "372",
+        "skills_sh_url": "https://skills.sh/op7418/guizang-yingzao-skill/yingzao"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "curiositech/some_claude_skills:design-archivist",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "curiositech/some_claude_skills",
+        "skill_name": "design-archivist",
+        "family_key": "curiositech/some_claude_skills:design-archivist",
+        "skills_sh_installs": 314,
+        "skills_sh_installs_display": "314",
+        "skills_sh_url": "https://skills.sh/curiositech/some_claude_skills/design-archivist"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "hunduncn/xpai-doubao-web:xpai-doubao-web",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Chinese ink wash palette scientific visualization",
+        "owner_repo": "hunduncn/xpai-doubao-web",
+        "skill_name": "xpai-doubao-web",
+        "family_key": "hunduncn/xpai-doubao-web:xpai-doubao-web",
+        "skills_sh_installs": 276,
+        "skills_sh_installs_display": "276",
+        "skills_sh_url": "https://skills.sh/hunduncn/xpai-doubao-web/xpai-doubao-web"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "inference-sh/skills:ai-image-generation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "inference-sh/skills",
+        "skill_name": "ai-image-generation",
+        "family_key": "inference-sh/skills:ai-image-generation",
+        "skills_sh_installs": 14,
+        "skills_sh_installs_display": "14",
+        "skills_sh_url": "https://skills.sh/inference-sh/skills/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "inference-sh/skills:character-design-sheet",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific journal figure color palettes publication",
+        "owner_repo": "inference-sh/skills",
+        "skill_name": "character-design-sheet",
+        "family_key": "inference-sh/skills:character-design-sheet",
+        "skills_sh_installs": 11,
+        "skills_sh_installs_display": "11",
+        "skills_sh_url": "https://skills.sh/inference-sh/skills/character-design-sheet"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:literature-review",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "literature-review",
+        "author": "affaan-m",
+        "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging. Use when the task is to find, screen, synthesize, and cite a body of academic or technical literature.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-thinking-literature-review",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-thinking-literature-review",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-08-12T03:58:14+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-thinking-literature-review",
+        "family_key": "affaan-m/ecc:literature-review",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:prompt-optimizer",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "prompt-optimizer",
+        "author": "affaan-m",
+        "description": "Analyze raw prompts, identify intent and gaps, match ECC components (skills/commands/agents/hooks), and output a ready-to-paste optimized prompt. Advisory role only — never executes the task itself. TRIGGER when: user says \"optimize prompt\", \"improve my prompt\", \"how to write a prompt for\", \"help me prompt\", \"rewrite this prompt\", or explicitly asks to enhance prompt quality. Also triggers on Chinese equivalents: \"优化prompt\", \"改进prompt\", \"怎么写prompt\", \"帮我优化这个指令\". DO NOT TRIGGER when: user wants the task executed directly, or says \"just do it\" / \"直接做\". DO NOT TRIGGER when user says \"优化代码\", \"优化性能\", \"optimize performance\", \"optimize this code\" — those are refactoring/performance tasks, not prompt optimization.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/prompt-optimizer",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-prompt-optimizer",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-08-11T23:36:48+00:00",
+        "source_key": "affaan-m/ecc:skills/prompt-optimizer",
+        "family_key": "affaan-m/ecc:prompt-optimizer",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:scholar-evaluation",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scholar-evaluation",
+        "author": "affaan-m",
+        "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback. Use when evaluating academic or scientific work — papers, proposals, methods sections, or evidence quality — against a repeatable rubric.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-thinking-scholar-evaluation",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-thinking-scholar-evaluation",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-08-12T03:58:14+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-thinking-scholar-evaluation",
+        "family_key": "affaan-m/ecc:scholar-evaluation",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:weread-year-in-review-video-template",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "weread-year-in-review-video-template",
+        "author": "nexu-io",
+        "description": "WeRead-inspired HyperFrames video template for vertical annual reading reports,\npersonal reading dashboards, book-note recaps, and shareable year-in-review\nstories. Use when users want a 9:16 HTML-to-MP4 reading report with warm paper\ntexture, editorial Chinese typography, book-page metaphors, data highlights,\nand deterministic motion.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/skills/weread-year-in-review-video-template",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/skills-weread-year-in-review-video-template",
+        "repo_stars": 97471,
+        "catalog_updated_at": "2026-06-02T10:19:12+00:00",
+        "source_key": "nexu-io/open-design:skills/weread-year-in-review-video-template",
+        "family_key": "nexu-io/open-design:weread-year-in-review-video-template",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bytedance/deer-flow:academic-paper-review",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "academic-paper-review",
+        "author": "bytedance",
+        "description": "Use this skill when the user requests to review, analyze, critique, or summarize academic papers, research articles, preprints, or scientific publications. Supports comprehensive structured reviews covering methodology assessment, contribution evaluation, literature positioning, and constructive feedback generation. Trigger on queries involving paper URLs, uploaded PDFs, arXiv links, or requests like \"review this paper\", \"analyze this research\", \"summarize this study\", or \"write a peer review\".",
+        "content_language": "en",
+        "github_url": "https://github.com/bytedance/deer-flow/tree/main/skills/public/academic-paper-review",
+        "skillsmp_url": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-academic-paper-review",
+        "repo_stars": 83053,
+        "catalog_updated_at": "2026-04-05T02:19:35+00:00",
+        "source_key": "bytedance/deer-flow:skills/public/academic-paper-review",
+        "family_key": "bytedance/deer-flow:academic-paper-review",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bytedance/deer-flow:zh-output-example",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "zh-output-example",
+        "author": "bytedance",
+        "description": "Reviews Chinese skill documentation for publication readiness. Invoke when the user asks in Chinese to review a skill.",
+        "content_language": "en",
+        "github_url": "https://github.com/bytedance/deer-flow/tree/main/skills/public/skill-reviewer/evals/fixtures/zh-output",
+        "skillsmp_url": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-skill-reviewer-evals-fixtures-zh-output",
+        "repo_stars": 83053,
+        "catalog_updated_at": "2026-07-11T07:58:07+00:00",
+        "source_key": "bytedance/deer-flow:skills/public/skill-reviewer/evals/fixtures/zh-output",
+        "family_key": "bytedance/deer-flow:zh-output-example",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "calesthio/openmontage:doubao-tts",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "doubao-tts",
+        "author": "calesthio",
+        "description": "Generate Mandarin and multilingual narration with Volcengine Doubao Speech 2.0. Use when creating Chinese voiceovers, when the user prefers Doubao/Volcengine/火山引擎/豆包 TTS, or when narration needs character-level timestamp metadata for subtitles.",
+        "content_language": "en",
+        "github_url": "https://github.com/calesthio/OpenMontage/tree/main/.agents/skills/doubao-tts",
+        "skillsmp_url": "https://skillsmp.com/creators/calesthio/openmontage/agents-skills-doubao-tts",
+        "repo_stars": 61569,
+        "catalog_updated_at": "2026-05-04T13:40:17+00:00",
+        "source_key": "calesthio/openmontage:.agents/skills/doubao-tts",
+        "family_key": "calesthio/openmontage:doubao-tts",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "1c7/chinese-independent-developer:chinese-indie-dev",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "chinese-indie-dev",
+        "author": "1c7",
+        "description": "处理 1c7/chinese-independent-developer 仓库的项目提交。 检查 issue #160 新评论、新开的 Issue、新开的 PR， 将有效项目添加到对应 README，关闭垃圾内容。 当用户要求“收录项目”“处理提交”“处理 issue”“跑一下列表”或运行中国独立开发者列表维护流程时使用。",
+        "content_language": "zh",
+        "github_url": "https://github.com/1c7/chinese-independent-developer/tree/master/.claude/skills/chinese-indie-dev",
+        "skillsmp_url": "https://skillsmp.com/creators/1c7/chinese-independent-developer/claude-skills-chinese-indie-dev",
+        "repo_stars": 61556,
+        "catalog_updated_at": "2026-09-27T15:55:11+00:00",
+        "source_key": "1c7/chinese-independent-developer:.claude/skills/chinese-indie-dev",
+        "family_key": "1c7/chinese-independent-developer:chinese-indie-dev",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "chen08209/flclash:localization",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "localization",
+        "author": "chen08209",
+        "description": "Use when changing FlClash UI text, scanning for hardcoded Chinese strings, updating ARB localization, or fixing generated locale output in this repository.",
+        "content_language": "en",
+        "github_url": "https://github.com/chen08209/FlClash/tree/main/.agents/skills/localization",
+        "skillsmp_url": "https://skillsmp.com/creators/chen08209/flclash/agents-skills-localization",
+        "repo_stars": 53618,
+        "catalog_updated_at": "2026-09-10T04:42:52+00:00",
+        "source_key": "chen08209/flclash:.agents/skills/localization",
+        "family_key": "chen08209/flclash:localization",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:literature-review",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "literature-review",
+        "author": "K-Dense-AI",
+        "description": "Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). This skill should be used when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/literature-review",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-literature-review",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-02T16:25:16+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/literature-review",
+        "family_key": "k-dense-ai/scientific-agent-skills:literature-review",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:matplotlib",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "matplotlib",
+        "author": "K-Dense-AI",
+        "description": "Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualization.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/matplotlib",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-matplotlib",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-02T16:25:16+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/matplotlib",
+        "family_key": "k-dense-ai/scientific-agent-skills:matplotlib",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:scientific-brainstorming",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-brainstorming",
+        "author": "K-Dense-AI",
+        "description": "Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, adversarial review, and decision logs. Use for early-stage research brainstorming or prioritizing candidate directions; hand off empirical validation, study design, ethics or regulatory review, and clinical questions to appropriate experts or skills.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-brainstorming",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scientific-brainstorming",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-02T16:25:16+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/scientific-brainstorming",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-brainstorming",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:scientific-critical-thinking",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-critical-thinking",
+        "author": "K-Dense-AI",
+        "description": "Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane Risk of Bias), or teaching critical analysis. Best for understanding evidence quality, identifying flaws. For formal peer review writing use peer-review.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-critical-thinking",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scientific-critical-thinking",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-10T22:54:37+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/scientific-critical-thinking",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-critical-thinking",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:scientific-schematics",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-schematics",
+        "author": "K-Dense-AI",
+        "description": "Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.6 Flash for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-schematics",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scientific-schematics",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-02T16:25:16+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/scientific-schematics",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-schematics",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:scientific-slides",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-slides",
+        "author": "K-Dense-AI",
+        "description": "Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-slides",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scientific-slides",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-10T22:54:37+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/scientific-slides",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-slides",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "k-dense-ai/scientific-agent-skills:scientific-writing",
+      "queries": [
+        "scientific journal figure color palettes publication"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-writing",
+        "author": "K-Dense-AI",
+        "description": "Draft, revise, and audit scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls, and local consistency checks. Use for manuscript sections, references, declarations, tables, figures, or submission preparation when scientific accuracy and traceability matter.",
+        "content_language": "en",
+        "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/scientific-writing",
+        "skillsmp_url": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scientific-writing",
+        "repo_stars": 46512,
+        "catalog_updated_at": "2026-09-02T16:25:16+00:00",
+        "source_key": "k-dense-ai/scientific-agent-skills:skills/scientific-writing",
+        "family_key": "k-dense-ai/scientific-agent-skills:scientific-writing",
+        "aliases": [],
+        "query": "scientific journal figure color palettes publication"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-academic-search",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-academic-search",
+        "author": "Yuan1z0825",
+        "description": "Search literature across sources, verify or manage citations, and build MeSH strategies or citation-impact audits. Use for 文献检索、引文核对、参考文献管理、严格他引 and evidence-backed citer profiles; not for translating a paper or drafting manuscript prose.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-academic-search",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-academic-search",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-23T09:37:57+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-academic-search",
+        "family_key": "yuan1z0825/nature-skills:nature-academic-search",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-citation",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-citation",
+        "author": "Yuan1z0825",
+        "description": "Find and verify Nature/CNS-family literature supporting manuscript claims, with claim-to-source mapping and reference-manager export. Use for Nature系列引用、CNS支撑文献、分段补引用 when this journal scope is requested; use broader literature search for unrestricted sources.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-citation",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-citation",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-23T09:21:19+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-citation",
+        "family_key": "yuan1z0825/nature-skills:nature-citation",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-data",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-data",
+        "author": "Yuan1z0825",
+        "description": "Draft or audit manuscript Data/Code Availability statements, dataset access routes, repository plans, and FAIR metadata. Use for 数据可用性声明、数据共享、数据仓库选择 and dataset citations; not general data cleaning or statistical analysis.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-data",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-data",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-14T03:02:27+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-data",
+        "family_key": "yuan1z0825/nature-skills:nature-data",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-downloader",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-downloader",
+        "author": "Yuan1z0825",
+        "description": "Use when a user needs lawful academic full text, CNKI institutional access, English OA retrieval, publisher API access, institutional browser fallback, or supporting information downloads.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-downloader",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-downloader",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-18T04:48:31+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-downloader",
+        "family_key": "yuan1z0825/nature-skills:nature-downloader",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-experiment-log",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-experiment-log",
+        "author": "Yuan1z0825",
+        "description": "标准化实验日志记录——直接上传或读取本地图片、语音和文字，产出带 YAML frontmatter 的 Markdown；可选集成飞书 CLI 与 Obsidian。",
+        "content_language": "zh",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-experiment-log",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-experiment-log",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-08-03T04:27:28+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-experiment-log",
+        "family_key": "yuan1z0825/nature-skills:nature-experiment-log",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-figure",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-figure",
+        "author": "Yuan1z0825",
+        "description": "Create, revise, audit, and export manuscript scientific figures in Python or R. Use for 论文配图、科研绘图、多面板图 and submission-ready plots, or explicitly requested AI-generated graphical abstracts and mechanism schematics. Not for interactive dashboards, data cleaning, or statistics-only analysis.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-figure",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-figure",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-14T03:02:27+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-figure",
+        "family_key": "yuan1z0825/nature-skills:nature-figure",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-image2ppt",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-image2ppt",
+        "author": "Yuan1z0825",
+        "description": "Reconstruct slide images, screenshots, scanned PDFs, or image-only PPTX files as object-level editable PowerPoint. Use for 图片转可编辑PPT、截图还原PPT and diagram reconstruction; not authoring a new deck from research notes.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-image2ppt",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-image2ppt",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-15T14:13:51+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-image2ppt",
+        "family_key": "yuan1z0825/nature-skills:nature-image2ppt",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-literature-pipeline",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-literature-pipeline",
+        "author": "Yuan1z0825",
+        "description": "Complete automated literature discovery pipeline: multi-source search → six-dimension scoring → fine reading → formatted delivery → archival.\nCombines a configurable engine with daily cron-driven application layer. Works with Feishu, Telegram, or any messaging platform.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-literature-pipeline",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-literature-pipeline",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-08-03T06:14:24+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-literature-pipeline",
+        "family_key": "yuan1z0825/nature-skills:nature-literature-pipeline",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-paper-card",
+      "queries": [
+        "Nature Cell journal figure color style"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-paper-card",
+        "author": "Yuan1z0825",
+        "description": "Build a structured deep-reading Paper Card for one scientific paper, analysing methods, experiment-to-claim evidence, limitations, and research ideas. Use for 论文精读卡、方法拆解、证据链分析; not full-paper bilingual translation or formal peer review.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-paper-card",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-paper-card",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-14T03:02:27+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-paper-card",
+        "family_key": "yuan1z0825/nature-skills:nature-paper-card",
+        "aliases": [],
+        "query": "Nature Cell journal figure color style"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-paper-to-patent",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-paper-to-patent",
+        "author": "Yuan1z0825",
+        "description": "Turn research papers or inventor materials into evidence-grounded Chinese invention patent drafts and technical disclosures. Use for 技术交底书、专利撰写、现有技术对比 and Chinese DOCX patent packages; not general manuscript writing.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-paper-to-patent",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-paper-to-patent",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-22T02:55:33+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-paper-to-patent",
+        "family_key": "yuan1z0825/nature-skills:nature-paper-to-patent",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-reader",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-reader",
+        "author": "Yuan1z0825",
+        "description": "Create source-grounded Chinese-English paper readers with aligned text, figures, tables, and equations. Use for 全文翻译、中英文对照、论文精读 or source-linked questions about a paper; respect a requested excerpt or question without generating a full reader.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-reader",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-reader",
+        "repo_stars": 44811,
+        "catalog_updated_at": "2026-09-14T03:02:27+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-reader",
+        "family_key": "yuan1z0825/nature-skills:nature-reader",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thu-maic/openmaic:k12-core-literacy-planning",
+      "queries": [
+        "Chinese ink wash palette scientific visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "k12-core-literacy-planning",
+        "author": "THU-MAIC",
+        "description": "Chinese K-12 core-literacy course design for a single OpenMAIC classroom. Use when a teacher asks for 中小学课程、核心素养、素养导向、2022 课标、真实情境、任务群、表现性评价, or wants a grade-and-subject lesson designed around authentic tasks rather than content delivery. Covers Chinese, mathematics, languages, science, humanities, technology, arts, PE and labor education across primary, junior-high and senior-high stages.",
+        "content_language": "en",
+        "github_url": "https://github.com/THU-MAIC/OpenMAIC/tree/main/skills/agent-runtime/k12-core-literacy-planning",
+        "skillsmp_url": "https://skillsmp.com/creators/thu-maic/openmaic/skills-agent-runtime-k12-core-literacy-planning",
+        "repo_stars": 39288,
+        "catalog_updated_at": "2026-08-27T11:26:25+00:00",
+        "source_key": "thu-maic/openmaic:skills/agent-runtime/k12-core-literacy-planning",
+        "family_key": "thu-maic/openmaic:k12-core-literacy-planning",
+        "aliases": [],
+        "query": "Chinese ink wash palette scientific visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "brycewang-stanford/auto-empirical-research-skills:full-empirical-analysis-skill-r",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "full-empirical-analysis-skill-r",
+        "author": "brycewang-stanford",
+        "description": "Classical end-to-end empirical analysis workflow in the modern tidyverse + econometrics R ecosystem — dplyr + tidyr + haven + fixest + sandwich + lmtest + clubSandwich + AER + ivreg + did + bacondecomp + HonestDiD + eventstudyr + rdrobust + rddensity + Synth + gsynth + synthdid + MatchIt + WeightIt + cobalt + ebal + grf + DoubleML + mediation + marginaleffects + modelsummary + kableExtra + gt + ggplot2 + ggpubr + cowplot + binsreg. **Defaults to economics empirical-paper style** (AER / QJE / AEJ) — every run produces a publication-ready output set with a multi-column regression table (M1→M6 progressive controls/FE) as the centerpiece, plus Table 1 (descriptives), mechanism / heterogeneity / robustness tables, and event-study + coefficient + trend figures. Covers the full 8-step R pipeline an applied economist runs on every paper — (1) data import & cleaning (read_dta/read_csv, naniar, janitor, validate-merges), (2) variable construction (mutate/across/winsorize/group_by + lag/lead with dplyr), (3) descriptive",
+        "content_language": "en",
+        "github_url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/00.3-Full-empirical-analysis-skill_R",
+        "skillsmp_url": "https://skillsmp.com/creators/brycewang-stanford/auto-empirical-research-skills/skills-00-3-full-empirical-analysis-skill-r",
+        "repo_stars": 4389,
+        "catalog_updated_at": "2026-09-02T10:51:14+00:00",
+        "source_key": "brycewang-stanford/auto-empirical-research-skills:skills/00.3-full-empirical-analysis-skill_r",
+        "family_key": "brycewang-stanford/auto-empirical-research-skills:full-empirical-analysis-skill-r",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/plugins/empirical-analysis-r/skills/pipeline"
+          }
+        ],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "brycewang-stanford/auto-empirical-research-skills:plotnine",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "plotnine",
+        "author": "brycewang-stanford",
+        "description": "plotnine static visualization (ggplot2 syntax for Python). Geoms, aesthetics, scales, coordinates, facets, themes. Use for static publication-quality figures with grammar-of-graphics syntax. For interactive charts use plotly; for maps use geopandas.",
+        "content_language": "en",
+        "github_url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/17-DAAF-Contribution-Community-daaf/dot-claude/skills/plotnine",
+        "skillsmp_url": "https://skillsmp.com/creators/brycewang-stanford/auto-empirical-research-skills/skills-17-daaf-contribution-community-daaf-dot-claude-skills-plotnine",
+        "repo_stars": 4389,
+        "catalog_updated_at": "2026-04-03T02:07:17+00:00",
+        "source_key": "brycewang-stanford/auto-empirical-research-skills:skills/17-daaf-contribution-community-daaf/dot-claude/skills/plotnine",
+        "family_key": "brycewang-stanford/auto-empirical-research-skills:plotnine",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "brycewang-stanford/auto-empirical-research-skills:r-python-translation",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "r-python-translation",
+        "author": "brycewang-stanford",
+        "description": "R-to-Python translation for data analysis. Maps R packages (tidyverse, ggplot2, fixest, survey, sf, plm) to Python equivalents (polars, plotnine, pyfixest, svy, geopandas). Use when user has R background or requests R-equivalent code comments.",
+        "content_language": "en",
+        "github_url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/17-DAAF-Contribution-Community-daaf/dot-claude/skills/r-python-translation",
+        "skillsmp_url": "https://skillsmp.com/creators/brycewang-stanford/auto-empirical-research-skills/skills-17-daaf-contribution-community-daaf-dot-claude-skills-r-python-translation",
+        "repo_stars": 4389,
+        "catalog_updated_at": "2026-04-03T02:07:17+00:00",
+        "source_key": "brycewang-stanford/auto-empirical-research-skills:skills/17-daaf-contribution-community-daaf/dot-claude/skills/r-python-translation",
+        "family_key": "brycewang-stanford/auto-empirical-research-skills:r-python-translation",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "researai/deepscientist:nature-figure",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-figure",
+        "author": "ResearAI",
+        "description": "Submission-grade Nature/high-impact journal figure workflow for Python or R. Use whenever the user asks to create, revise, audit, or polish manuscript figures, multi-panel scientific plots, or journal-ready SVG/PDF/TIFF outputs, especially for Nature-family or other high-impact journals. Before plotting, define the figure's conclusion, evidence logic, export needs, and review risks. If the user has not chosen Python or R, ask \"Python or R?\" and stop. Use only the selected backend for figure generation, previewing, exporting, and QA. Supports matplotlib/seaborn and ggplot2/patchwork/ComplexHeatmap. Not for dashboards or Illustrator/Figma-first infographics.",
+        "content_language": "en",
+        "github_url": "https://github.com/ResearAI/DeepScientist/tree/main/src/skills/nature-figure",
+        "skillsmp_url": "https://skillsmp.com/creators/researai/deepscientist/src-skills-nature-figure",
+        "repo_stars": 3338,
+        "catalog_updated_at": "2026-05-04T12:13:58+00:00",
+        "source_key": "researai/deepscientist:src/skills/nature-figure",
+        "family_key": "researai/deepscientist:nature-figure",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gptomics/bioskills:bio-data-visualization-ggplot2-fundamentals",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bio-data-visualization-ggplot2-fundamentals",
+        "author": "GPTomics",
+        "description": "Build publication-quality figures in R with ggplot2 using the grammar of graphics (data + aesthetics + geometries + scales + facets + themes) with CVD-safe palettes, cairo_pdf TrueType embedding, programmatic aes via tidy evaluation, and the theme_classic publication baseline. Use when producing static figures in R for papers, presentations, or reports.",
+        "content_language": "en",
+        "github_url": "https://github.com/GPTomics/bioSkills/tree/main/data-visualization/ggplot2-fundamentals",
+        "skillsmp_url": "https://skillsmp.com/creators/gptomics/bioskills/data-visualization-ggplot2-fundamentals",
+        "repo_stars": 1208,
+        "catalog_updated_at": "2026-05-24T23:05:30+00:00",
+        "source_key": "gptomics/bioskills:data-visualization/ggplot2-fundamentals",
+        "family_key": "gptomics/bioskills:bio-data-visualization-ggplot2-fundamentals",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gptomics/bioskills:bio-data-visualization-upset-plots",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bio-data-visualization-upset-plots",
+        "author": "GPTomics",
+        "description": "Build UpSet plots to visualize set intersections beyond 4 sets (where Venn fails) using ComplexUpset (modern, ggplot2-grammar) or the unmaintained UpSetR, with explicit cardinality vs degree sorting, attribute panels, and query highlighting. Use when comparing overlap across many gene sets, peak sets, variant lists, or any set membership matrix where Venn diagrams become illegible.",
+        "content_language": "en",
+        "github_url": "https://github.com/GPTomics/bioSkills/tree/main/data-visualization/upset-plots",
+        "skillsmp_url": "https://skillsmp.com/creators/gptomics/bioskills/data-visualization-upset-plots",
+        "repo_stars": 1208,
+        "catalog_updated_at": "2026-05-24T23:05:30+00:00",
+        "source_key": "gptomics/bioskills:data-visualization/upset-plots",
+        "family_key": "gptomics/bioskills:bio-data-visualization-upset-plots",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gptomics/bioskills:bio-differential-expression-de-visualization",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bio-differential-expression-de-visualization",
+        "author": "GPTomics",
+        "description": "Creates DE-specific diagnostic and result visualizations using DESeq2/edgeR built-in functions and lightweight ggplot2 wrappers. Covers MA plot (with the shrunken-LFC compression effect), volcano (with the apeglm caveat that p-values are unchanged), PCA on VST/rlog (never raw counts), sample distance heatmaps, top-DE-gene heatmaps with the row-scaling trap, dispersion / BCV plot interpretation, p-value histogram diagnostics, plotCounts for individual genes, blind=TRUE vs FALSE rationale, and the n=3 visualization stake. Use when generating DE diagnostic plots, choosing VST vs rlog for visualization, troubleshooting suspicious plot patterns (shifted MA cloud, batch-dominated PCA, anti-conservative p-value histogram), or building a standard QC figure panel.",
+        "content_language": "en",
+        "github_url": "https://github.com/GPTomics/bioSkills/tree/main/differential-expression/de-visualization",
+        "skillsmp_url": "https://skillsmp.com/creators/gptomics/bioskills/differential-expression-de-visualization",
+        "repo_stars": 1208,
+        "catalog_updated_at": "2026-05-25T18:23:30+00:00",
+        "source_key": "gptomics/bioskills:differential-expression/de-visualization",
+        "family_key": "gptomics/bioskills:bio-differential-expression-de-visualization",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gptomics/bioskills:bio-pathway-enrichment-visualization",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bio-pathway-enrichment-visualization",
+        "author": "GPTomics",
+        "description": "Turns an enrichResult or gseaResult from clusterProfiler/enrichplot into a figure that collapses or shows gene-set redundancy, using dotplot, barplot, cnetplot, emapplot, treeplot, ridgeplot, gseaplot2, and upsetplot. Covers why a default top-20 GO dotplot is one biological theme drawn twenty times (the DAG/nesting guarantees redundant overlapping terms), so the figure is a modeling choice between SHOWING redundancy (pairwise_termsim -> emapplot/treeplot) and DELETING it (simplify/REVIGO); why cnetplot/emapplot/treeplot need pairwise_termsim first; why enrichplot ships no barplot for gseaResult (a bar cannot carry a signed NES); why GeneRatio is not fold enrichment; and why showCategory silently truncates. Use when plotting ORA or GSEA results, collapsing redundant GO terms visually, encoding a dotplot, or building a publication enrichment figure. Statistics come from go-enrichment and gsea; generic ggplot -> data-visualization/ggplot2-fundamentals.",
+        "content_language": "en",
+        "github_url": "https://github.com/GPTomics/bioSkills/tree/main/pathway-analysis/enrichment-visualization",
+        "skillsmp_url": "https://skillsmp.com/creators/gptomics/bioskills/pathway-analysis-enrichment-visualization",
+        "repo_stars": 1208,
+        "catalog_updated_at": "2026-06-16T14:22:31+00:00",
+        "source_key": "gptomics/bioskills:pathway-analysis/enrichment-visualization",
+        "family_key": "gptomics/bioskills:bio-pathway-enrichment-visualization",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gptomics/bioskills:bio-reporting-figure-export",
+      "queries": [
+        "ggplot publication palette color vision deficiency accessibility"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bio-reporting-figure-export",
+        "author": "GPTomics",
+        "description": "Exports publication-ready figures with the correct vector/raster split, embedded editable fonts, color-space-robust palettes, and journal-correct sizing and resolution in matplotlib and ggplot2. Use when preparing figures for journal submission, exporting a dense single-cell or GWAS plot without producing an unopenable vector file, or fixing fonts and colors that break in print.",
+        "content_language": "en",
+        "github_url": "https://github.com/GPTomics/bioSkills/tree/main/reporting/figure-export",
+        "skillsmp_url": "https://skillsmp.com/creators/gptomics/bioskills/reporting-figure-export",
+        "repo_stars": 1208,
+        "catalog_updated_at": "2026-06-20T01:48:02+00:00",
+        "source_key": "gptomics/bioskills:reporting/figure-export",
+        "family_key": "gptomics/bioskills:bio-reporting-figure-export",
+        "aliases": [],
+        "query": "ggplot publication palette color vision deficiency accessibility"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}
