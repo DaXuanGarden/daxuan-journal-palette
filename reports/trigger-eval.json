@@ -4,14 +4,15 @@
   "description_concepts": [
     "accessibility",
     "art_style",
+    "card_draw",
     "journal_figure",
     "palette_action",
     "skill"
   ],
   "missing_description_concepts": [],
   "summary": {
-    "total": 13,
-    "passed": 13,
+    "total": 15,
+    "passed": 15,
     "false_positive": 0,
     "false_negative": 0,
     "pass_rate": 1.0
@@ -100,6 +101,33 @@
           "art_style",
           "journal_figure",
           "palette_action"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "在内置风格之外，随机抽 5 张公共领域作品，选一张提取配色用于科研图。",
+        "family": "open-card-draw",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "card_draw",
+          "journal_figure",
+          "palette_action"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "生成 5 张现代水墨视觉卡片，我选一张后提取颜色做白底论文图。",
+        "family": "generated-card-draw",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "card_draw",
+          "journal_figure"
         ],
         "negative_pattern": null
       }

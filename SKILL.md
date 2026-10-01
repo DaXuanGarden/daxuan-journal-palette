@@ -1,10 +1,10 @@
 ---
 name: daxuan-journal-palette
 description: |
-  这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。
+  这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、开放抽卡、公共领域作品、随机视觉卡片、从图片提取配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。
 metadata:
   author: Daxuan
-  version: "0.3.1"
+  version: "0.4.0"
   maturity: production
 ---
 
@@ -26,6 +26,7 @@ GitHub: https://github.com/joeseesun/
 - 白底密集图默认选择中等明度、低到中等饱和度的色板；浅粉、米黄、雾蓝只用于较大面积或有描边的填充。
 - 用户选择风格 A 时，白底密集图优先使用 `ink-mineral-a-sunlit`：`#6D98AF`、`#7DACA3`、`#CBA064`、`#CE8793`、`#A28BAF`。它保留 A 的色相关系，但把明度提高到更适合白底缩印的中间范围；原始较深版本仍保留为 `ink-mineral-a`。
 - 不承诺“期刊必然接受”或“绝对色盲安全”；实际可读性必须结合图形几何、最终尺寸和输出介质检查。
+- 用户想探索内置库之外的视觉风格时，进入 [card-draw-workflow](references/card-draw-workflow.md)：先抽 3–5 张公共领域或生成式卡片，让用户选图，再提取候选色、做语义映射和实际图形审查。不要未经选择、来源记录和审查就把图片颜色当作最终科研色板。
 - 不触发：网站/应用 UI、品牌 Logo、照片白平衡、统计检验、GWAS 结果解读和一般论文写作；只讨论字体/尺寸而不涉及配色时也不触发本 Skill。
 
 ## Style Router
@@ -50,15 +51,17 @@ GitHub: https://github.com/joeseesun/
 | `nature-figure` | claim-first 图形契约、中性背景 + 信号色、跨面板语义固定 | 作为通用出版设计原则，不声称 Nature 官方色板 |
 | `journal-ggplot-stylebook` | 命名向量、`theme_classic()`/`theme_prism()`、R/ggplot2 导出习惯 | 只补充绘图实现，不替代颜色语义或统计审查 |
 | `scientific-visualization` 类工作流 | 介质、尺寸、导出和证据边界 | 保留本 Skill 的中国/东方艺术谱系和轻量输出契约 |
+| `imagegen` | 生成 3–5 张无文字视觉卡片供用户选择 | 标记为 `generated`，保留 prompt 和生成记录，不声称公共领域或艺术家原作 |
 
 ## Compact Workflow
 
 1. 记录对象：图表类型、语义变量、类别数、顺序、背景、画布/缩印尺寸、期刊或媒介、输出格式。
-2. 选视觉家族：写明家族、关键词（如“纸本、低饱和、冷暖平衡”）和不适用场景；从 [style-taxonomy](references/style-taxonomy.md) 选家族，从 [palette-atlas](references/palette-atlas.md) 选配方。
-3. 选色族：定性、连续、发散、循环，或“中性灰 + 一个强调色”；连续/发散色带要明确方向和中点。
-4. 生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。
-5. 审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 EasyPlot 的 palette audit；诊断结果不是认证结论。
-6. 交付：给出一套主方案，最多补充两套备选；说明适用场景、风格理由、风险、假设和需要人工确认的点。
+2. 决定探索路径：内置配方、`open-public`、`prompted-generated` 或 `hybrid`；抽卡时先展示 3–5 张候选卡片和来源。
+3. 选视觉家族：写明家族、关键词（如“纸本、低饱和、冷暖平衡”）和不适用场景；从 [style-taxonomy](references/style-taxonomy.md) 选家族，从 [palette-atlas](references/palette-atlas.md) 选配方，或从选中的卡片提取候选色。
+4. 选色族：定性、连续、发散、循环，或“中性灰 + 一个强调色”；连续/发散色带要明确方向和中点。
+5. 生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。
+6. 审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 EasyPlot 的 palette audit；诊断结果不是认证结论。
+7. 交付：给出一套主方案和不超过两套备选；说明抽卡来源或生成记录、适用场景、风格理由、风险、假设和需要人工确认的点。
 
 ## Output Contract
 
@@ -85,6 +88,7 @@ GitHub: https://github.com/joeseesun/
 - 输出字段和审阅清单：[output-contract](references/output-contract.md)
 - 可视化色板画廊的源文件、生成器和使用方法：[palette-gallery](references/palette-gallery.md)
 - 艺术家视觉原则、公开仓库、博物馆开放数据和来源记录：[artistic-inspiration](references/artistic-inspiration.md)
+- 开放抽卡、图像提色、来源记录和内置化规则：[card-draw-workflow](references/card-draw-workflow.md)
 - GitHub public skill 仓库结构和发布顺序：[github-publishing](references/github-publishing.md)
 
 ## Gate Ladder

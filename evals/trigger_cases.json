@@ -5,7 +5,8 @@
     "palette_action": ["配色", "色板", "palette", "选择", "设计", "审查", "检查"],
     "journal_figure": ["期刊", "论文图", "科研图", "ggplot", "热图", "柱状图", "富集图", "figure", "多面板"],
     "accessibility": ["色盲", "灰度", "印刷", "可读性", "对比度", "contrast"],
-    "art_style": ["中国水墨", "东方", "矿物", "敦煌", "宋韵", "北欧", "文人纸本", "青花瓷", "草木土色", "海岸矿物", "现代编辑部", "Nature", "Cell", "艺术"]
+    "art_style": ["中国水墨", "东方", "矿物", "敦煌", "宋韵", "北欧", "文人纸本", "青花瓷", "草木土色", "海岸矿物", "现代编辑部", "Nature", "Cell", "艺术"],
+    "card_draw": ["抽卡", "公共领域", "视觉卡片", "随机抽", "图片提取", "生成式"]
   },
   "description_required_concepts": ["skill", "palette_action", "journal_figure"],
   "negative_patterns": ["网站", "网页", "UI", "品牌", "Logo", "照片", "白平衡", "统计检验", "p值", "差异分析", "只解释", "仅仅解释", "不需要修改"],
@@ -15,7 +16,9 @@
     {"text": "为 Nature 风格的多面板论文图统一通路颜色，并给出 R 和 Python 代码。", "family": "cross-panel"},
     {"text": "比较宋韵、敦煌矿物和北欧矿物三种科研图色板，说明白底印刷风险。", "family": "style-comparison"},
     {"text": "审查这张热图的连续色带和中点设置，检查对比度、灰度和最终尺寸。", "family": "continuous"},
-    {"text": "为失眠和脂肪肝的通路富集图选择艺术化但适合投稿的配色。", "family": "domain"}
+    {"text": "为失眠和脂肪肝的通路富集图选择艺术化但适合投稿的配色。", "family": "domain"},
+    {"text": "在内置风格之外，随机抽 5 张公共领域作品，选一张提取配色用于科研图。", "family": "open-card-draw"},
+    {"text": "生成 5 张现代水墨视觉卡片，我选一张后提取颜色做白底论文图。", "family": "generated-card-draw"}
   ],
   "should_not_trigger": [
     {"text": "给网站按钮做暗色模式和 UI 主题色。", "family": "web-ui"},

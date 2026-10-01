@@ -10,6 +10,8 @@ HEX 文本适合复制，但不适合比较。这个 Skill 使用“机器可读
 - `assets/palette-gallery/palettes.csv`：适合 R/Python 或人工整理的长表。
 - `assets/palette-gallery/manifest.json`：生成记录和输出清单。
 
+抽卡得到的候选色不直接写入这个注册表。先保留抽卡 JSON、图像来源或生成记录，再通过 [card-draw-workflow](card-draw-workflow.md) 完成语义映射和审查；确认后才加入 `palettes.json`。
+
 ## 生成命令
 
 在 Skill 目录运行：

@@ -29,6 +29,12 @@
     visual_preview:
       html: "assets/palette-gallery/index.html"
       svg: "assets/palette-gallery/palette-atlas.svg"
+    card_draw:
+      mode: "open-public | prompted-generated | hybrid | none"
+      cards: []
+      selected_card: null
+      extracted_palette: null
+      selection_status: "not-requested | awaiting-selection | selected | reviewed"
 
 ## Review questions
 
@@ -44,6 +50,9 @@
 - 哪些判断是设计建议，哪些是已运行的检查，哪些仍是 missing evidence？
 - 是否记录了原始色板 ID、明度/饱和度调整和审查工具版本？
 - 是否给作者提供了可直接查看的 HTML/SVG 预览，而不是只给 HEX 文本？
+- 如果使用抽卡，作者是否先看过 3–5 张候选图并明确选择了 `card_id`？
+- 抽卡来源、版权状态、生成 prompt、提色算法和明度/饱和度调整是否可追溯？
+- 抽卡图片是否只作为视觉输入，最终颜色是否重新按图表语义分配？
 
 ## R/ggplot2 example
 
