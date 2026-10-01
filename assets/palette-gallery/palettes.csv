@@ -1,131 +1,161 @@
-﻿id,label,family,kind,index,name,hex,keywords,best_for,avoid_for
-ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,1,ink_blue,#6D98AF,纸本|低饱和|冷暖平衡,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
-ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,2,mineral_teal,#7DACA3,纸本|低饱和|冷暖平衡,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
-ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,3,ochre,#CBA064,纸本|低饱和|冷暖平衡,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
-ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,4,cinnabar_rose,#CE8793,纸本|低饱和|冷暖平衡,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
-ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,5,ink_plum,#A28BAF,纸本|低饱和|冷暖平衡,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
-ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,1,ink_blue,#527A8F,墨色|矿物|视觉重量,深底机制图、少量大色块,白底密集小点和浅色文字
-ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,2,mineral_teal,#5B8C85,墨色|矿物|视觉重量,深底机制图、少量大色块,白底密集小点和浅色文字
-ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,3,ochre,#B7833F,墨色|矿物|视觉重量,深底机制图、少量大色块,白底密集小点和浅色文字
-ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,4,cinnabar_rose,#A75A66,墨色|矿物|视觉重量,深底机制图、少量大色块,白底密集小点和浅色文字
-ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,5,ink_plum,#8A6F99,墨色|矿物|视觉重量,深底机制图、少量大色块,白底密集小点和浅色文字
-ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,1,ink,#27343B,墨蓝|青绿|朱砂|单一强调,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
-ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,2,indigo,#3F6078,墨蓝|青绿|朱砂|单一强调,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
-ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,3,celadon,#709B91,墨蓝|青绿|朱砂|单一强调,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
-ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,4,cinnabar,#B94E52,墨蓝|青绿|朱砂|单一强调,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
-ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,5,ochre,#C28A3A,墨蓝|青绿|朱砂|单一强调,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
-jiangnan-muted,江南烟雨,江南烟雨,qualitative,1,river_teal,#4F8A83,雾青|藕粉|黛蓝|柔和,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
-jiangnan-muted,江南烟雨,江南烟雨,qualitative,2,lotus_pink,#C98291,雾青|藕粉|黛蓝|柔和,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
-jiangnan-muted,江南烟雨,江南烟雨,qualitative,3,dai_blue,#4D6680,雾青|藕粉|黛蓝|柔和,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
-jiangnan-muted,江南烟雨,江南烟雨,qualitative,4,tea_brown,#9B7653,雾青|藕粉|黛蓝|柔和,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
-jiangnan-muted,江南烟雨,江南烟雨,qualitative,5,mist_plum,#806D88,雾青|藕粉|黛蓝|柔和,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
-dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,1,lapis,#3E6E8F,石青|朱红|石绿|金赭,通路模块、富集类别、概念图,金赭作为大面积浅背景
-dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,2,vermilion,#B65B50,石青|朱红|石绿|金赭,通路模块、富集类别、概念图,金赭作为大面积浅背景
-dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,3,malachite,#5C8D78,石青|朱红|石绿|金赭,通路模块、富集类别、概念图,金赭作为大面积浅背景
-dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,4,gilded_ochre,#C28B3C,石青|朱红|石绿|金赭,通路模块、富集类别、概念图,金赭作为大面积浅背景
-dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,5,desert_lilac,#8B7190,石青|朱红|石绿|金赭,通路模块、富集类别、概念图,金赭作为大面积浅背景
-songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,1,celadon,#6E9B96,青瓷|墨蓝|米灰|克制,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
-songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,2,deep_ink,#3D566C,青瓷|墨蓝|米灰|克制,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
-songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,3,date_red,#9D5B5C,青瓷|墨蓝|米灰|克制,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
-songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,4,paper_gray,#B7B8B1,青瓷|墨蓝|米灰|克制,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
-songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,5,plum,#76677E,青瓷|墨蓝|米灰|克制,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
-gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,1,palace_red,#A94B4A,宫墙红|玉青|御赭|墨蓝,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
-gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,2,jade,#578B83,宫墙红|玉青|御赭|墨蓝,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
-gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,3,imperial_ochre,#C0903A,宫墙红|玉青|御赭|墨蓝,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
-gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,4,ink_blue,#49647B,宫墙红|玉青|御赭|墨蓝,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
-gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,5,stone,#86847D,宫墙红|玉青|御赭|墨蓝,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
-botanical-earth,草木土色,草木土色,qualitative,1,forest,#3F6B5A,森林|叶绿|土黄|陶土,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
-botanical-earth,草木土色,草木土色,qualitative,2,leaf,#729B72,森林|叶绿|土黄|陶土,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
-botanical-earth,草木土色,草木土色,qualitative,3,ochre,#B58A43,森林|叶绿|土黄|陶土,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
-botanical-earth,草木土色,草木土色,qualitative,4,terracotta,#B66956,森林|叶绿|土黄|陶土,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
-botanical-earth,草木土色,草木土色,qualitative,5,plum,#765E78,森林|叶绿|土黄|陶土,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
-nordic-mineral,北欧矿物,北欧矿物,qualitative,1,fjord,#416A80,峡湾蓝|冰青|苔绿|冷静,白底高密度图、缩印图,冰青作为小面积无描边填充
-nordic-mineral,北欧矿物,北欧矿物,qualitative,2,ice,#79A9B3,峡湾蓝|冰青|苔绿|冷静,白底高密度图、缩印图,冰青作为小面积无描边填充
-nordic-mineral,北欧矿物,北欧矿物,qualitative,3,moss,#718B70,峡湾蓝|冰青|苔绿|冷静,白底高密度图、缩印图,冰青作为小面积无描边填充
-nordic-mineral,北欧矿物,北欧矿物,qualitative,4,ochre,#B58C4E,峡湾蓝|冰青|苔绿|冷静,白底高密度图、缩印图,冰青作为小面积无描边填充
-nordic-mineral,北欧矿物,北欧矿物,qualitative,5,dusty_rose,#AD7180,峡湾蓝|冰青|苔绿|冷静,白底高密度图、缩印图,冰青作为小面积无描边填充
-clinical-cool-warm,临床冷暖,临床冷暖,qualitative,1,navy,#304F68,海军蓝|板岩|青绿|珊瑚,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
-clinical-cool-warm,临床冷暖,临床冷暖,qualitative,2,slate,#607D8B,海军蓝|板岩|青绿|珊瑚,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
-clinical-cool-warm,临床冷暖,临床冷暖,qualitative,3,teal,#4B918A,海军蓝|板岩|青绿|珊瑚,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
-clinical-cool-warm,临床冷暖,临床冷暖,qualitative,4,coral,#C46F6A,海军蓝|板岩|青绿|珊瑚,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
-clinical-cool-warm,临床冷暖,临床冷暖,qualitative,5,mustard,#B68B3D,海军蓝|板岩|青绿|珊瑚,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
-nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,1,deep_blue,#365C78,白底|低饱和|清晰层次,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
-nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,2,teal,#4F8A86,白底|低饱和|清晰层次,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
-nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,3,amber,#B9833B,白底|低饱和|清晰层次,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
-nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,4,rose,#A75F70,白底|低饱和|清晰层次,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
-nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,5,lavender,#81759A,白底|低饱和|清晰层次,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
-monochrome-accent,单色强调,单色强调,neutral-accent,1,ink,#27343B,中性灰|叙事|单一重点,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
-monochrome-accent,单色强调,单色强调,neutral-accent,2,slate,#63717A,中性灰|叙事|单一重点,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
-monochrome-accent,单色强调,单色强调,neutral-accent,3,silver,#A9B0B3,中性灰|叙事|单一重点,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
-monochrome-accent,单色强调,单色强调,neutral-accent,4,paper,#E6E7E3,中性灰|叙事|单一重点,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
-monochrome-accent,单色强调,单色强调,neutral-accent,5,accent_teal,#4B918A,中性灰|叙事|单一重点,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
-pastel-journal,柔和补充图,柔和补充图,qualitative,1,lavender,#C6B3DA,淡紫|雾蓝|藕粉|杏色,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
-pastel-journal,柔和补充图,柔和补充图,qualitative,2,blue,#6986B6,淡紫|雾蓝|藕粉|杏色,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
-pastel-journal,柔和补充图,柔和补充图,qualitative,3,cyan,#B0DCE5,淡紫|雾蓝|藕粉|杏色,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
-pastel-journal,柔和补充图,柔和补充图,qualitative,4,rose,#E3A9B5,淡紫|雾蓝|藕粉|杏色,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
-pastel-journal,柔和补充图,柔和补充图,qualitative,5,apricot,#F3C77A,淡紫|雾蓝|藕粉|杏色,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
-ink-paper-literati,文人纸本,文人纸本,qualitative,1,graphite,#34444D,宣纸|石墨|灰青|枣红,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
-ink-paper-literati,文人纸本,文人纸本,qualitative,2,slate_ink,#607D86,宣纸|石墨|灰青|枣红,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
-ink-paper-literati,文人纸本,文人纸本,qualitative,3,paper_celadon,#8EA8A8,宣纸|石墨|灰青|枣红,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
-ink-paper-literati,文人纸本,文人纸本,qualitative,4,tea_brown,#B8A58F,宣纸|石墨|灰青|枣红,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
-ink-paper-literati,文人纸本,文人纸本,qualitative,5,date_red,#A46C6C,宣纸|石墨|灰青|枣红,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
-qinghua-porcelain,青花瓷,青花瓷,qualitative,1,cobalt,#2F5D7E,深钴|釉蓝|青白|暖米,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
-qinghua-porcelain,青花瓷,青花瓷,qualitative,2,glaze_blue,#4A82A3,深钴|釉蓝|青白|暖米,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
-qinghua-porcelain,青花瓷,青花瓷,qualitative,3,celadon_white,#8FB6C1,深钴|釉蓝|青白|暖米,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
-qinghua-porcelain,青花瓷,青花瓷,qualitative,4,warm_kaolin,#D8B98A,深钴|釉蓝|青白|暖米,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
-qinghua-porcelain,青花瓷,青花瓷,qualitative,5,porcelain,#F3F0E8,深钴|釉蓝|青白|暖米,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
-tea-earth-botanical,茶褐植物,茶褐植物,qualitative,1,tea,#85664D,茶褐|苔绿|米纸|果实红,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
-tea-earth-botanical,茶褐植物,茶褐植物,qualitative,2,moss,#718B70,茶褐|苔绿|米纸|果实红,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
-tea-earth-botanical,茶褐植物,茶褐植物,qualitative,3,leaf,#98AA83,茶褐|苔绿|米纸|果实红,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
-tea-earth-botanical,茶褐植物,茶褐植物,qualitative,4,paper,#D8D0BD,茶褐|苔绿|米纸|果实红,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
-tea-earth-botanical,茶褐植物,茶褐植物,qualitative,5,berry,#A96868,茶褐|苔绿|米纸|果实红,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
-coastal-mineral,海岸矿物,海岸矿物,qualitative,1,deep_coast,#245C73,海蓝|孔雀青|贝灰|珊瑚,环境、空间、单细胞分群,青绿和蓝色明度过近
-coastal-mineral,海岸矿物,海岸矿物,qualitative,2,peacock,#4A8E91,海蓝|孔雀青|贝灰|珊瑚,环境、空间、单细胞分群,青绿和蓝色明度过近
-coastal-mineral,海岸矿物,海岸矿物,qualitative,3,shell_gray,#AAB8B2,海蓝|孔雀青|贝灰|珊瑚,环境、空间、单细胞分群,青绿和蓝色明度过近
-coastal-mineral,海岸矿物,海岸矿物,qualitative,4,coral,#C97868,海蓝|孔雀青|贝灰|珊瑚,环境、空间、单细胞分群,青绿和蓝色明度过近
-coastal-mineral,海岸矿物,海岸矿物,qualitative,5,sand_gold,#C59B69,海蓝|孔雀青|贝灰|珊瑚,环境、空间、单细胞分群,青绿和蓝色明度过近
-desert-clay,沙漠陶土,沙漠陶土,qualitative,1,smoke,#56666A,赭红|陶土|沙金|烟灰,空间热点、模块、地理图,所有暖色都被解释为风险或升高
-desert-clay,沙漠陶土,沙漠陶土,qualitative,2,clay,#A96E58,赭红|陶土|沙金|烟灰,空间热点、模块、地理图,所有暖色都被解释为风险或升高
-desert-clay,沙漠陶土,沙漠陶土,qualitative,3,terracotta,#C68B67,赭红|陶土|沙金|烟灰,空间热点、模块、地理图,所有暖色都被解释为风险或升高
-desert-clay,沙漠陶土,沙漠陶土,qualitative,4,desert_gold,#D3B083,赭红|陶土|沙金|烟灰,空间热点、模块、地理图,所有暖色都被解释为风险或升高
-desert-clay,沙漠陶土,沙漠陶土,qualitative,5,date,#7A4E45,赭红|陶土|沙金|烟灰,空间热点、模块、地理图,所有暖色都被解释为风险或升高
-alpine-lake,高山湖泊,高山湖泊,qualitative,1,lake,#365B69,深湖蓝|雾青|松绿|岩石金,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
-alpine-lake,高山湖泊,高山湖泊,qualitative,2,mist,#6E9293,深湖蓝|雾青|松绿|岩石金,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
-alpine-lake,高山湖泊,高山湖泊,qualitative,3,pine,#A9C3B2,深湖蓝|雾青|松绿|岩石金,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
-alpine-lake,高山湖泊,高山湖泊,qualitative,4,rock_gold,#C49A68,深湖蓝|雾青|松绿|岩石金,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
-alpine-lake,高山湖泊,高山湖泊,qualitative,5,berry_plum,#8B6F72,深湖蓝|雾青|松绿|岩石金,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
-editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,1,editorial_blue,#274C77,深蓝|青绿|琥珀|有限强调,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
-editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,2,editorial_teal,#4F8C8C,深蓝|青绿|琥珀|有限强调,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
-editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,3,amber,#D07C4A,深蓝|青绿|琥珀|有限强调,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
-editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,4,rose,#9A596B,深蓝|青绿|琥珀|有限强调,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
-editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,5,violet_gray,#7C6A9A,深蓝|青绿|琥珀|有限强调,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
-graphite-copper,石墨铜色,石墨铜色,neutral-accent,1,graphite,#30343B,石墨|银灰|铜色|结构,模型比较、结构图、重点结果,超过 4 个同等重要类别
-graphite-copper,石墨铜色,石墨铜色,neutral-accent,2,silver,#8F9BA3,石墨|银灰|铜色|结构,模型比较、结构图、重点结果,超过 4 个同等重要类别
-graphite-copper,石墨铜色,石墨铜色,neutral-accent,3,slate,#5A6470,石墨|银灰|铜色|结构,模型比较、结构图、重点结果,超过 4 个同等重要类别
-graphite-copper,石墨铜色,石墨铜色,neutral-accent,4,copper,#B57F55,石墨|银灰|铜色|结构,模型比较、结构图、重点结果,超过 4 个同等重要类别
-graphite-copper,石墨铜色,石墨铜色,neutral-accent,5,brick,#A85F59,石墨|银灰|铜色|结构,模型比较、结构图、重点结果,超过 4 个同等重要类别
-impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,1,blue_gray,#496A81,蓝灰|鼠尾草|赭石|柔和,低密度示意图和补充图,小点、细线和灰度优先的主结果
-impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,2,sage,#7F9E93,蓝灰|鼠尾草|赭石|柔和,低密度示意图和补充图,小点、细线和灰度优先的主结果
-impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,3,ochre,#C8A77C,蓝灰|鼠尾草|赭石|柔和,低密度示意图和补充图,小点、细线和灰度优先的主结果
-impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,4,rose,#BA7A85,蓝灰|鼠尾草|赭石|柔和,低密度示意图和补充图,小点、细线和灰度优先的主结果
-impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,5,lavender,#8C7A9A,蓝灰|鼠尾草|赭石|柔和,低密度示意图和补充图,小点、细线和灰度优先的主结果
-paper-blue-sequential,纸白到墨蓝,连续色带,sequential,1,low,#F3F5F3,明度单调|纸白|深蓝,计数、强度、显著性或密度,正负效应或没有明确低高方向
-paper-blue-sequential,纸白到墨蓝,连续色带,sequential,2,low_mid,#C9D9D8,明度单调|纸白|深蓝,计数、强度、显著性或密度,正负效应或没有明确低高方向
-paper-blue-sequential,纸白到墨蓝,连续色带,sequential,3,mid,#8FB8BB,明度单调|纸白|深蓝,计数、强度、显著性或密度,正负效应或没有明确低高方向
-paper-blue-sequential,纸白到墨蓝,连续色带,sequential,4,high_mid,#527A8F,明度单调|纸白|深蓝,计数、强度、显著性或密度,正负效应或没有明确低高方向
-paper-blue-sequential,纸白到墨蓝,连续色带,sequential,5,high,#263F55,明度单调|纸白|深蓝,计数、强度、显著性或密度,正负效应或没有明确低高方向
-jade-ochre-sequential,青竹到森林,连续色带,sequential,1,low,#F5F1E9,草木|青竹|森林|明度单调,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
-jade-ochre-sequential,青竹到森林,连续色带,sequential,2,low_mid,#D6DDD1,草木|青竹|森林|明度单调,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
-jade-ochre-sequential,青竹到森林,连续色带,sequential,3,mid,#A8BDA7,草木|青竹|森林|明度单调,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
-jade-ochre-sequential,青竹到森林,连续色带,sequential,4,high_mid,#728F79,草木|青竹|森林|明度单调,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
-jade-ochre-sequential,青竹到森林,连续色带,sequential,5,high,#3F6B5A,草木|青竹|森林|明度单调,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
-ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,1,negative_high,#3F6078,明确中点|冷暖两端|纸白中心,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
-ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,2,negative_low,#94AFB8,明确中点|冷暖两端|纸白中心,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
-ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,3,center,#F5F2EC,明确中点|冷暖两端|纸白中心,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
-ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,4,positive_low,#D89A91,明确中点|冷暖两端|纸白中心,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
-ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,5,positive_high,#A94B4A,明确中点|冷暖两端|纸白中心,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
-qingzhu-diverging,青竹—暖赭,发散色带,diverging,1,negative_high,#3F7180,青竹|暖赭|中点,有明确中点的东方风格效应图,用色相代替统计方向定义
-qingzhu-diverging,青竹—暖赭,发散色带,diverging,2,negative_low,#9BBCC0,青竹|暖赭|中点,有明确中点的东方风格效应图,用色相代替统计方向定义
-qingzhu-diverging,青竹—暖赭,发散色带,diverging,3,center,#F5F1E8,青竹|暖赭|中点,有明确中点的东方风格效应图,用色相代替统计方向定义
-qingzhu-diverging,青竹—暖赭,发散色带,diverging,4,positive_low,#E0B18A,青竹|暖赭|中点,有明确中点的东方风格效应图,用色相代替统计方向定义
-qingzhu-diverging,青竹—暖赭,发散色带,diverging,5,positive_high,#B66A4A,青竹|暖赭|中点,有明确中点的东方风格效应图,用色相代替统计方向定义
+id,label,family,kind,index,name,hex,keywords,inspiration,best_for,avoid_for
+ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,1,ink_blue,#6D98AF,纸本|低饱和|冷暖平衡,,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
+ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,2,mineral_teal,#7DACA3,纸本|低饱和|冷暖平衡,,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
+ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,3,ochre,#CBA064,纸本|低饱和|冷暖平衡,,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
+ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,4,cinnabar_rose,#CE8793,纸本|低饱和|冷暖平衡,,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
+ink-mineral-a-sunlit,水墨矿物 A · 白底优化,东方纸墨,qualitative,5,ink_plum,#A28BAF,纸本|低饱和|冷暖平衡,,白底富集图、机制图、5 组以内分类,深色底大面积填充或超过 7 组
+ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,1,ink_blue,#527A8F,墨色|矿物|视觉重量,,深底机制图、少量大色块,白底密集小点和浅色文字
+ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,2,mineral_teal,#5B8C85,墨色|矿物|视觉重量,,深底机制图、少量大色块,白底密集小点和浅色文字
+ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,3,ochre,#B7833F,墨色|矿物|视觉重量,,深底机制图、少量大色块,白底密集小点和浅色文字
+ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,4,cinnabar_rose,#A75A66,墨色|矿物|视觉重量,,深底机制图、少量大色块,白底密集小点和浅色文字
+ink-mineral-a,水墨矿物 A · 深色,东方纸墨,qualitative,5,ink_plum,#8A6F99,墨色|矿物|视觉重量,,深底机制图、少量大色块,白底密集小点和浅色文字
+ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,1,ink,#27343B,墨蓝|青绿|朱砂|单一强调,,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
+ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,2,indigo,#3F6078,墨蓝|青绿|朱砂|单一强调,,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
+ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,3,celadon,#709B91,墨蓝|青绿|朱砂|单一强调,,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
+ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,4,cinnabar,#B94E52,墨蓝|青绿|朱砂|单一强调,,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
+ink-cinnabar,墨色朱砂,朱砂宫墙,qualitative,5,ochre,#C28A3A,墨蓝|青绿|朱砂|单一强调,,主结论、机制节点、重点标注,用红绿表达未经定义的正负方向
+jiangnan-muted,江南烟雨,江南烟雨,qualitative,1,river_teal,#4F8A83,雾青|藕粉|黛蓝|柔和,,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
+jiangnan-muted,江南烟雨,江南烟雨,qualitative,2,lotus_pink,#C98291,雾青|藕粉|黛蓝|柔和,,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
+jiangnan-muted,江南烟雨,江南烟雨,qualitative,3,dai_blue,#4D6680,雾青|藕粉|黛蓝|柔和,,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
+jiangnan-muted,江南烟雨,江南烟雨,qualitative,4,tea_brown,#9B7653,雾青|藕粉|黛蓝|柔和,,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
+jiangnan-muted,江南烟雨,江南烟雨,qualitative,5,mist_plum,#806D88,雾青|藕粉|黛蓝|柔和,,组织/细胞分类、普通密度分面,极小点、细线和无描边浅填充
+dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,1,lapis,#3E6E8F,石青|朱红|石绿|金赭,,通路模块、富集类别、概念图,金赭作为大面积浅背景
+dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,2,vermilion,#B65B50,石青|朱红|石绿|金赭,,通路模块、富集类别、概念图,金赭作为大面积浅背景
+dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,3,malachite,#5C8D78,石青|朱红|石绿|金赭,,通路模块、富集类别、概念图,金赭作为大面积浅背景
+dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,4,gilded_ochre,#C28B3C,石青|朱红|石绿|金赭,,通路模块、富集类别、概念图,金赭作为大面积浅背景
+dunhuang-mineral,敦煌矿物,敦煌矿物,qualitative,5,desert_lilac,#8B7190,石青|朱红|石绿|金赭,,通路模块、富集类别、概念图,金赭作为大面积浅背景
+songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,1,celadon,#6E9B96,青瓷|墨蓝|米灰|克制,,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
+songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,2,deep_ink,#3D566C,青瓷|墨蓝|米灰|克制,,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
+songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,3,date_red,#9D5B5C,青瓷|墨蓝|米灰|克制,,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
+songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,4,paper_gray,#B7B8B1,青瓷|墨蓝|米灰|克制,,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
+songyun-celadon,宋韵青瓷,宋韵青瓷,qualitative,5,plum,#76677E,青瓷|墨蓝|米灰|克制,,正文主图、补充图、时间序列,把纸灰作为关键组别唯一编码
+gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,1,palace_red,#A94B4A,宫墙红|玉青|御赭|墨蓝,,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
+gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,2,jade,#578B83,宫墙红|玉青|御赭|墨蓝,,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
+gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,3,imperial_ochre,#C0903A,宫墙红|玉青|御赭|墨蓝,,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
+gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,4,ink_blue,#49647B,宫墙红|玉青|御赭|墨蓝,,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
+gugong-muted,朱砂宫墙,朱砂宫墙,qualitative,5,stone,#86847D,宫墙红|玉青|御赭|墨蓝,,少量高亮、分类标签、机制节点,黄色大面积背景和红色风险暗示
+botanical-earth,草木土色,草木土色,qualitative,1,forest,#3F6B5A,森林|叶绿|土黄|陶土,,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
+botanical-earth,草木土色,草木土色,qualitative,2,leaf,#729B72,森林|叶绿|土黄|陶土,,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
+botanical-earth,草木土色,草木土色,qualitative,3,ochre,#B58A43,森林|叶绿|土黄|陶土,,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
+botanical-earth,草木土色,草木土色,qualitative,4,terracotta,#B66956,森林|叶绿|土黄|陶土,,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
+botanical-earth,草木土色,草木土色,qualitative,5,plum,#765E78,森林|叶绿|土黄|陶土,,代谢、炎症、生态和器官机制图,多个绿色相近且没有形状辅助
+nordic-mineral,北欧矿物,北欧矿物,qualitative,1,fjord,#416A80,峡湾蓝|冰青|苔绿|冷静,,白底高密度图、缩印图,冰青作为小面积无描边填充
+nordic-mineral,北欧矿物,北欧矿物,qualitative,2,ice,#79A9B3,峡湾蓝|冰青|苔绿|冷静,,白底高密度图、缩印图,冰青作为小面积无描边填充
+nordic-mineral,北欧矿物,北欧矿物,qualitative,3,moss,#718B70,峡湾蓝|冰青|苔绿|冷静,,白底高密度图、缩印图,冰青作为小面积无描边填充
+nordic-mineral,北欧矿物,北欧矿物,qualitative,4,ochre,#B58C4E,峡湾蓝|冰青|苔绿|冷静,,白底高密度图、缩印图,冰青作为小面积无描边填充
+nordic-mineral,北欧矿物,北欧矿物,qualitative,5,dusty_rose,#AD7180,峡湾蓝|冰青|苔绿|冷静,,白底高密度图、缩印图,冰青作为小面积无描边填充
+clinical-cool-warm,临床冷暖,临床冷暖,qualitative,1,navy,#304F68,海军蓝|板岩|青绿|珊瑚,,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
+clinical-cool-warm,临床冷暖,临床冷暖,qualitative,2,slate,#607D8B,海军蓝|板岩|青绿|珊瑚,,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
+clinical-cool-warm,临床冷暖,临床冷暖,qualitative,3,teal,#4B918A,海军蓝|板岩|青绿|珊瑚,,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
+clinical-cool-warm,临床冷暖,临床冷暖,qualitative,4,coral,#C46F6A,海军蓝|板岩|青绿|珊瑚,,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
+clinical-cool-warm,临床冷暖,临床冷暖,qualitative,5,mustard,#B68B3D,海军蓝|板岩|青绿|珊瑚,,病例/对照、临床指标、标志物,珊瑚和芥末同时承担主要类别
+nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,1,deep_blue,#365C78,白底|低饱和|清晰层次,,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
+nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,2,teal,#4F8A86,白底|低饱和|清晰层次,,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
+nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,3,amber,#B9833B,白底|低饱和|清晰层次,,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
+nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,4,rose,#A75F70,白底|低饱和|清晰层次,,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
+nature-muted,现代编辑部 · 克制,现代编辑部,qualitative,5,lavender,#81759A,白底|低饱和|清晰层次,,生物医学主图和跨面板结果,把期刊名称当作官方色板声明
+monochrome-accent,单色强调,单色强调,neutral-accent,1,ink,#27343B,中性灰|叙事|单一重点,,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
+monochrome-accent,单色强调,单色强调,neutral-accent,2,slate,#63717A,中性灰|叙事|单一重点,,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
+monochrome-accent,单色强调,单色强调,neutral-accent,3,silver,#A9B0B3,中性灰|叙事|单一重点,,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
+monochrome-accent,单色强调,单色强调,neutral-accent,4,paper,#E6E7E3,中性灰|叙事|单一重点,,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
+monochrome-accent,单色强调,单色强调,neutral-accent,5,accent_teal,#4B918A,中性灰|叙事|单一重点,,对照组 + 主结果、叙事型图,所有类别同等重要的 5 组以上比较
+pastel-journal,柔和补充图,柔和补充图,qualitative,1,lavender,#C6B3DA,淡紫|雾蓝|藕粉|杏色,,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
+pastel-journal,柔和补充图,柔和补充图,qualitative,2,blue,#6986B6,淡紫|雾蓝|藕粉|杏色,,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
+pastel-journal,柔和补充图,柔和补充图,qualitative,3,cyan,#B0DCE5,淡紫|雾蓝|藕粉|杏色,,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
+pastel-journal,柔和补充图,柔和补充图,qualitative,4,rose,#E3A9B5,淡紫|雾蓝|藕粉|杏色,,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
+pastel-journal,柔和补充图,柔和补充图,qualitative,5,apricot,#F3C77A,淡紫|雾蓝|藕粉|杏色,,低密度补充图和流程示意,灰度优先或极小尺寸的关键结果
+ink-paper-literati,文人纸本,文人纸本,qualitative,1,graphite,#34444D,宣纸|石墨|灰青|枣红,,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
+ink-paper-literati,文人纸本,文人纸本,qualitative,2,slate_ink,#607D86,宣纸|石墨|灰青|枣红,,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
+ink-paper-literati,文人纸本,文人纸本,qualitative,3,paper_celadon,#8EA8A8,宣纸|石墨|灰青|枣红,,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
+ink-paper-literati,文人纸本,文人纸本,qualitative,4,tea_brown,#B8A58F,宣纸|石墨|灰青|枣红,,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
+ink-paper-literati,文人纸本,文人纸本,qualitative,5,date_red,#A46C6C,宣纸|石墨|灰青|枣红,,网络图、线图、注释密集机制图,全部类别都用灰色而没有明度层次
+qinghua-porcelain,青花瓷,青花瓷,qualitative,1,cobalt,#2F5D7E,深钴|釉蓝|青白|暖米,,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
+qinghua-porcelain,青花瓷,青花瓷,qualitative,2,glaze_blue,#4A82A3,深钴|釉蓝|青白|暖米,,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
+qinghua-porcelain,青花瓷,青花瓷,qualitative,3,celadon_white,#8FB6C1,深钴|釉蓝|青白|暖米,,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
+qinghua-porcelain,青花瓷,青花瓷,qualitative,4,warm_kaolin,#D8B98A,深钴|釉蓝|青白|暖米,,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
+qinghua-porcelain,青花瓷,青花瓷,qualitative,5,porcelain,#F3F0E8,深钴|釉蓝|青白|暖米,,热图注释、空间图、分组气泡,相近蓝色类别不加明度或形状辅助
+tea-earth-botanical,茶褐植物,茶褐植物,qualitative,1,tea,#85664D,茶褐|苔绿|米纸|果实红,,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
+tea-earth-botanical,茶褐植物,茶褐植物,qualitative,2,moss,#718B70,茶褐|苔绿|米纸|果实红,,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
+tea-earth-botanical,茶褐植物,茶褐植物,qualitative,3,leaf,#98AA83,茶褐|苔绿|米纸|果实红,,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
+tea-earth-botanical,茶褐植物,茶褐植物,qualitative,4,paper,#D8D0BD,茶褐|苔绿|米纸|果实红,,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
+tea-earth-botanical,茶褐植物,茶褐植物,qualitative,5,berry,#A96868,茶褐|苔绿|米纸|果实红,,生物过程、器官来源、实验流程,棕色和橙色承担相邻关键类别
+coastal-mineral,海岸矿物,海岸矿物,qualitative,1,deep_coast,#245C73,海蓝|孔雀青|贝灰|珊瑚,,环境、空间、单细胞分群,青绿和蓝色明度过近
+coastal-mineral,海岸矿物,海岸矿物,qualitative,2,peacock,#4A8E91,海蓝|孔雀青|贝灰|珊瑚,,环境、空间、单细胞分群,青绿和蓝色明度过近
+coastal-mineral,海岸矿物,海岸矿物,qualitative,3,shell_gray,#AAB8B2,海蓝|孔雀青|贝灰|珊瑚,,环境、空间、单细胞分群,青绿和蓝色明度过近
+coastal-mineral,海岸矿物,海岸矿物,qualitative,4,coral,#C97868,海蓝|孔雀青|贝灰|珊瑚,,环境、空间、单细胞分群,青绿和蓝色明度过近
+coastal-mineral,海岸矿物,海岸矿物,qualitative,5,sand_gold,#C59B69,海蓝|孔雀青|贝灰|珊瑚,,环境、空间、单细胞分群,青绿和蓝色明度过近
+desert-clay,沙漠陶土,沙漠陶土,qualitative,1,smoke,#56666A,赭红|陶土|沙金|烟灰,,空间热点、模块、地理图,所有暖色都被解释为风险或升高
+desert-clay,沙漠陶土,沙漠陶土,qualitative,2,clay,#A96E58,赭红|陶土|沙金|烟灰,,空间热点、模块、地理图,所有暖色都被解释为风险或升高
+desert-clay,沙漠陶土,沙漠陶土,qualitative,3,terracotta,#C68B67,赭红|陶土|沙金|烟灰,,空间热点、模块、地理图,所有暖色都被解释为风险或升高
+desert-clay,沙漠陶土,沙漠陶土,qualitative,4,desert_gold,#D3B083,赭红|陶土|沙金|烟灰,,空间热点、模块、地理图,所有暖色都被解释为风险或升高
+desert-clay,沙漠陶土,沙漠陶土,qualitative,5,date,#7A4E45,赭红|陶土|沙金|烟灰,,空间热点、模块、地理图,所有暖色都被解释为风险或升高
+alpine-lake,高山湖泊,高山湖泊,qualitative,1,lake,#365B69,深湖蓝|雾青|松绿|岩石金,,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
+alpine-lake,高山湖泊,高山湖泊,qualitative,2,mist,#6E9293,深湖蓝|雾青|松绿|岩石金,,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
+alpine-lake,高山湖泊,高山湖泊,qualitative,3,pine,#A9C3B2,深湖蓝|雾青|松绿|岩石金,,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
+alpine-lake,高山湖泊,高山湖泊,qualitative,4,rock_gold,#C49A68,深湖蓝|雾青|松绿|岩石金,,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
+alpine-lake,高山湖泊,高山湖泊,qualitative,5,berry_plum,#8B6F72,深湖蓝|雾青|松绿|岩石金,,纵向队列、生态、网络和轨迹,冷色小差异在印刷中无辅助编码
+editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,1,editorial_blue,#274C77,深蓝|青绿|琥珀|有限强调,,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
+editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,2,editorial_teal,#4F8C8C,深蓝|青绿|琥珀|有限强调,,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
+editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,3,amber,#D07C4A,深蓝|青绿|琥珀|有限强调,,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
+editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,4,rose,#9A596B,深蓝|青绿|琥珀|有限强调,,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
+editorial-jewel,现代编辑部 · 宝石色,现代编辑部,qualitative,5,violet_gray,#7C6A9A,深蓝|青绿|琥珀|有限强调,,生物医学主图、跨面板结果,过度模仿期刊色而忽略数据语义
+graphite-copper,石墨铜色,石墨铜色,neutral-accent,1,graphite,#30343B,石墨|银灰|铜色|结构,,模型比较、结构图、重点结果,超过 4 个同等重要类别
+graphite-copper,石墨铜色,石墨铜色,neutral-accent,2,silver,#8F9BA3,石墨|银灰|铜色|结构,,模型比较、结构图、重点结果,超过 4 个同等重要类别
+graphite-copper,石墨铜色,石墨铜色,neutral-accent,3,slate,#5A6470,石墨|银灰|铜色|结构,,模型比较、结构图、重点结果,超过 4 个同等重要类别
+graphite-copper,石墨铜色,石墨铜色,neutral-accent,4,copper,#B57F55,石墨|银灰|铜色|结构,,模型比较、结构图、重点结果,超过 4 个同等重要类别
+graphite-copper,石墨铜色,石墨铜色,neutral-accent,5,brick,#A85F59,石墨|银灰|铜色|结构,,模型比较、结构图、重点结果,超过 4 个同等重要类别
+impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,1,blue_gray,#496A81,蓝灰|鼠尾草|赭石|柔和,,低密度示意图和补充图,小点、细线和灰度优先的主结果
+impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,2,sage,#7F9E93,蓝灰|鼠尾草|赭石|柔和,,低密度示意图和补充图,小点、细线和灰度优先的主结果
+impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,3,ochre,#C8A77C,蓝灰|鼠尾草|赭石|柔和,,低密度示意图和补充图,小点、细线和灰度优先的主结果
+impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,4,rose,#BA7A85,蓝灰|鼠尾草|赭石|柔和,,低密度示意图和补充图,小点、细线和灰度优先的主结果
+impressionist-muted,印象派低饱和,艺术化低饱和,qualitative,5,lavender,#8C7A9A,蓝灰|鼠尾草|赭石|柔和,,低密度示意图和补充图,小点、细线和灰度优先的主结果
+paper-blue-sequential,纸白到墨蓝,连续色带,sequential,1,low,#F3F5F3,明度单调|纸白|深蓝,,计数、强度、显著性或密度,正负效应或没有明确低高方向
+paper-blue-sequential,纸白到墨蓝,连续色带,sequential,2,low_mid,#C9D9D8,明度单调|纸白|深蓝,,计数、强度、显著性或密度,正负效应或没有明确低高方向
+paper-blue-sequential,纸白到墨蓝,连续色带,sequential,3,mid,#8FB8BB,明度单调|纸白|深蓝,,计数、强度、显著性或密度,正负效应或没有明确低高方向
+paper-blue-sequential,纸白到墨蓝,连续色带,sequential,4,high_mid,#527A8F,明度单调|纸白|深蓝,,计数、强度、显著性或密度,正负效应或没有明确低高方向
+paper-blue-sequential,纸白到墨蓝,连续色带,sequential,5,high,#263F55,明度单调|纸白|深蓝,,计数、强度、显著性或密度,正负效应或没有明确低高方向
+jade-ochre-sequential,青竹到森林,连续色带,sequential,1,low,#F5F1E9,草木|青竹|森林|明度单调,,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
+jade-ochre-sequential,青竹到森林,连续色带,sequential,2,low_mid,#D6DDD1,草木|青竹|森林|明度单调,,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
+jade-ochre-sequential,青竹到森林,连续色带,sequential,3,mid,#A8BDA7,草木|青竹|森林|明度单调,,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
+jade-ochre-sequential,青竹到森林,连续色带,sequential,4,high_mid,#728F79,草木|青竹|森林|明度单调,,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
+jade-ochre-sequential,青竹到森林,连续色带,sequential,5,high,#3F6B5A,草木|青竹|森林|明度单调,,代谢、组织或生态强度,把颜色端点解释为好/坏而没有定义
+ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,1,negative_high,#3F6078,明确中点|冷暖两端|纸白中心,,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
+ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,2,negative_low,#94AFB8,明确中点|冷暖两端|纸白中心,,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
+ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,3,center,#F5F2EC,明确中点|冷暖两端|纸白中心,,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
+ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,4,positive_low,#D89A91,明确中点|冷暖两端|纸白中心,,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
+ink-cinnabar-diverging,墨蓝—纸白—朱砂,发散色带,diverging,5,positive_high,#A94B4A,明确中点|冷暖两端|纸白中心,,正负效应、相关性和以 0 为中心的指标,没有有意义中点的连续值
+qingzhu-diverging,青竹—暖赭,发散色带,diverging,1,negative_high,#3F7180,青竹|暖赭|中点,,有明确中点的东方风格效应图,用色相代替统计方向定义
+qingzhu-diverging,青竹—暖赭,发散色带,diverging,2,negative_low,#9BBCC0,青竹|暖赭|中点,,有明确中点的东方风格效应图,用色相代替统计方向定义
+qingzhu-diverging,青竹—暖赭,发散色带,diverging,3,center,#F5F1E8,青竹|暖赭|中点,,有明确中点的东方风格效应图,用色相代替统计方向定义
+qingzhu-diverging,青竹—暖赭,发散色带,diverging,4,positive_low,#E0B18A,青竹|暖赭|中点,,有明确中点的东方风格效应图,用色相代替统计方向定义
+qingzhu-diverging,青竹—暖赭,发散色带,diverging,5,positive_high,#B66A4A,青竹|暖赭|中点,,有明确中点的东方风格效应图,用色相代替统计方向定义
+monet-atmospheric,大气蓝绿 · 印象派启发,印象派大气,qualitative,1,atmosphere_blue,#547C84,相邻冷暖|雾感|低饱和|大色面,Monet-inspired visual principle,低密度分面、机制示意和大面积填充,密集小点、细线或灰度优先的主结果
+monet-atmospheric,大气蓝绿 · 印象派启发,印象派大气,qualitative,2,mist_teal,#8BAEAB,相邻冷暖|雾感|低饱和|大色面,Monet-inspired visual principle,低密度分面、机制示意和大面积填充,密集小点、细线或灰度优先的主结果
+monet-atmospheric,大气蓝绿 · 印象派启发,印象派大气,qualitative,3,paper_green,#BFD2C6,相邻冷暖|雾感|低饱和|大色面,Monet-inspired visual principle,低密度分面、机制示意和大面积填充,密集小点、细线或灰度优先的主结果
+monet-atmospheric,大气蓝绿 · 印象派启发,印象派大气,qualitative,4,warm_ochre,#D8B08C,相邻冷暖|雾感|低饱和|大色面,Monet-inspired visual principle,低密度分面、机制示意和大面积填充,密集小点、细线或灰度优先的主结果
+monet-atmospheric,大气蓝绿 · 印象派启发,印象派大气,qualitative,5,violet_gray,#8A768B,相邻冷暖|雾感|低饱和|大色面,Monet-inspired visual principle,低密度分面、机制示意和大面积填充,密集小点、细线或灰度优先的主结果
+van-gogh-accent,深蓝与金黄 · 强调色,梵高式强调,qualitative,1,deep_blue,#174A67,蓝黄互补|高饱和锚点|有限强调,Van Gogh-inspired complementary contrast,主结果标注、少量机制节点和重点比较,把每个类别都设为高饱和或用红绿表达方向
+van-gogh-accent,深蓝与金黄 · 强调色,梵高式强调,qualitative,2,sky_teal,#4F8FA4,蓝黄互补|高饱和锚点|有限强调,Van Gogh-inspired complementary contrast,主结果标注、少量机制节点和重点比较,把每个类别都设为高饱和或用红绿表达方向
+van-gogh-accent,深蓝与金黄 · 强调色,梵高式强调,qualitative,3,sun_yellow,#F2C84B,蓝黄互补|高饱和锚点|有限强调,Van Gogh-inspired complementary contrast,主结果标注、少量机制节点和重点比较,把每个类别都设为高饱和或用红绿表达方向
+van-gogh-accent,深蓝与金黄 · 强调色,梵高式强调,qualitative,4,warm_coral,#D9775B,蓝黄互补|高饱和锚点|有限强调,Van Gogh-inspired complementary contrast,主结果标注、少量机制节点和重点比较,把每个类别都设为高饱和或用红绿表达方向
+van-gogh-accent,深蓝与金黄 · 强调色,梵高式强调,qualitative,5,ink,#2B3A42,蓝黄互补|高饱和锚点|有限强调,Van Gogh-inspired complementary contrast,主结果标注、少量机制节点和重点比较,把每个类别都设为高饱和或用红绿表达方向
+matisse-flat,平面朱蓝 · 几何构成,平面构成,qualitative,1,cobalt,#214E70,平面色块|互补|轮廓清楚|机制图,Matisse/Fauvist-inspired flat colour,流程图、机制图、分区示意和图形摘要,高密度散点、连续数值或没有标签的多类别图
+matisse-flat,平面朱蓝 · 几何构成,平面构成,qualitative,2,vermilion,#D8584B,平面色块|互补|轮廓清楚|机制图,Matisse/Fauvist-inspired flat colour,流程图、机制图、分区示意和图形摘要,高密度散点、连续数值或没有标签的多类别图
+matisse-flat,平面朱蓝 · 几何构成,平面构成,qualitative,3,gold,#E6B83F,平面色块|互补|轮廓清楚|机制图,Matisse/Fauvist-inspired flat colour,流程图、机制图、分区示意和图形摘要,高密度散点、连续数值或没有标签的多类别图
+matisse-flat,平面朱蓝 · 几何构成,平面构成,qualitative,4,jade,#4F8A6D,平面色块|互补|轮廓清楚|机制图,Matisse/Fauvist-inspired flat colour,流程图、机制图、分区示意和图形摘要,高密度散点、连续数值或没有标签的多类别图
+matisse-flat,平面朱蓝 · 几何构成,平面构成,qualitative,5,paper,#F1E6CE,平面色块|互补|轮廓清楚|机制图,Matisse/Fauvist-inspired flat colour,流程图、机制图、分区示意和图形摘要,高密度散点、连续数值或没有标签的多类别图
+rothko-field,宽阔色域 · 中性强调,色域叙事,neutral-accent,1,plum_ink,#453B4A,宽阔色面|近邻色|主结果|留白,Rothko-inspired field relationship,对照组 + 主结果、叙事型图和宽面板背景,需要所有类别同等区分的密集分类图
+rothko-field,宽阔色域 · 中性强调,色域叙事,neutral-accent,2,russet,#7C5A5B,宽阔色面|近邻色|主结果|留白,Rothko-inspired field relationship,对照组 + 主结果、叙事型图和宽面板背景,需要所有类别同等区分的密集分类图
+rothko-field,宽阔色域 · 中性强调,色域叙事,neutral-accent,3,clay,#B1775B,宽阔色面|近邻色|主结果|留白,Rothko-inspired field relationship,对照组 + 主结果、叙事型图和宽面板背景,需要所有类别同等区分的密集分类图
+rothko-field,宽阔色域 · 中性强调,色域叙事,neutral-accent,4,ochre,#D2A663,宽阔色面|近邻色|主结果|留白,Rothko-inspired field relationship,对照组 + 主结果、叙事型图和宽面板背景,需要所有类别同等区分的密集分类图
+rothko-field,宽阔色域 · 中性强调,色域叙事,neutral-accent,5,paper,#E3D2B7,宽阔色面|近邻色|主结果|留白,Rothko-inspired field relationship,对照组 + 主结果、叙事型图和宽面板背景,需要所有类别同等区分的密集分类图
+hokusai-indigo,靛蓝朱砂 · 版画纸本,版画靛蓝,qualitative,1,indigo,#1E4C6B,靛蓝|朱砂|稻草色|纸色,Hokusai/ukiyo-e-inspired print grammar,空间图、流程图、注释丰富的机制图,把纸色用于小面积关键类别或把朱砂解释为风险方向
+hokusai-indigo,靛蓝朱砂 · 版画纸本,版画靛蓝,qualitative,2,glaze_blue,#5F8BA0,靛蓝|朱砂|稻草色|纸色,Hokusai/ukiyo-e-inspired print grammar,空间图、流程图、注释丰富的机制图,把纸色用于小面积关键类别或把朱砂解释为风险方向
+hokusai-indigo,靛蓝朱砂 · 版画纸本,版画靛蓝,qualitative,3,straw,#D8B16A,靛蓝|朱砂|稻草色|纸色,Hokusai/ukiyo-e-inspired print grammar,空间图、流程图、注释丰富的机制图,把纸色用于小面积关键类别或把朱砂解释为风险方向
+hokusai-indigo,靛蓝朱砂 · 版画纸本,版画靛蓝,qualitative,4,vermilion,#B9544A,靛蓝|朱砂|稻草色|纸色,Hokusai/ukiyo-e-inspired print grammar,空间图、流程图、注释丰富的机制图,把纸色用于小面积关键类别或把朱砂解释为风险方向
+hokusai-indigo,靛蓝朱砂 · 版画纸本,版画靛蓝,qualitative,5,paper,#E8DED0,靛蓝|朱砂|稻草色|纸色,Hokusai/ukiyo-e-inspired print grammar,空间图、流程图、注释丰富的机制图,把纸色用于小面积关键类别或把朱砂解释为风险方向
+modern-ink-mineral,现代水墨 · 矿物锚点,现代水墨矿物,qualitative,1,ink,#2E3941,墨灰|灰青|矿物色|跨面板,modern ink/mineral visual principle,网络图、组学机制图和跨面板结果,超过 6 组且没有标签、形状或分面辅助
+modern-ink-mineral,现代水墨 · 矿物锚点,现代水墨矿物,qualitative,2,slate_blue,#496B7D,墨灰|灰青|矿物色|跨面板,modern ink/mineral visual principle,网络图、组学机制图和跨面板结果,超过 6 组且没有标签、形状或分面辅助
+modern-ink-mineral,现代水墨 · 矿物锚点,现代水墨矿物,qualitative,3,celadon,#7D9C96,墨灰|灰青|矿物色|跨面板,modern ink/mineral visual principle,网络图、组学机制图和跨面板结果,超过 6 组且没有标签、形状或分面辅助
+modern-ink-mineral,现代水墨 · 矿物锚点,现代水墨矿物,qualitative,4,mineral_clay,#B17E62,墨灰|灰青|矿物色|跨面板,modern ink/mineral visual principle,网络图、组学机制图和跨面板结果,超过 6 组且没有标签、形状或分面辅助
+modern-ink-mineral,现代水墨 · 矿物锚点,现代水墨矿物,qualitative,5,paper,#D8D1C4,墨灰|灰青|矿物色|跨面板,modern ink/mineral visual principle,网络图、组学机制图和跨面板结果,超过 6 组且没有标签、形状或分面辅助

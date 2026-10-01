@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.3.0
+- Skill: daxuan-journal-palette 0.3.1
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
@@ -32,7 +32,13 @@
 
 - Added a JSON-backed palette gallery with 26 cards, interactive HTML filtering, SVG overview, CSV export and grayscale proxies.
 - Added a standard-library-only gallery builder so palette updates regenerate all visual outputs deterministically.
-- Added MIT LICENSE, GitHub Actions validation and a GitHub public-release reference. Actual remote creation and push remain pending the authenticated `DaXuanGarden` GitHub account.
+- Added MIT LICENSE, GitHub Actions validation and a GitHub public-release reference. The public repository is `https://github.com/DaXuanGarden/daxuan-journal-palette` and release `v0.3.0` is published.
+
+## 8. 0.3.1 artistic-source expansion
+
+- Added `references/artistic-inspiration.md` with source tiers for palette repositories, museum open data, rights/provenance fields and artist-principle-to-figure translations.
+- Added six visual translation recipes: atmospheric impressionism, blue/yellow accent, flat geometric colour, field relationships, indigo print grammar and modern ink/mineral.
+- Extended the gallery registry and CSV/HTML output with optional inspiration metadata while preserving backwards compatibility for existing palette cards.
 
 ## 4. Advantages and evidence
 
@@ -45,7 +51,7 @@
 
 ## 5. Verification and limits
 
-The package is intended for local team reuse. Validation, trigger evaluation and IR export are run after creation. No publication, remote write or external installation is performed. The selected ink-mineral-a palette was manually applied to the insomnia/NAFLD GO-BP figure script as a first use case; this is not an automatic recoloring service. A passing trigger/package check demonstrates routing and package integrity; it does not prove that every HEX combination is color-vision safe, print-safe or preferred by a journal.
+The package is intended for local team reuse and public GitHub distribution. Validation, trigger evaluation and IR export are run after creation. The selected ink-mineral-a palette was manually applied to the insomnia/NAFLD GO-BP figure script as a first use case; this is not an automatic recoloring service. A passing trigger/package check demonstrates routing and package integrity; it does not prove that every HEX combination is color-vision safe, print-safe or preferred by a journal.
 
 Copyright (c) 向阳乔木  
 X: https://x.com/vista8  

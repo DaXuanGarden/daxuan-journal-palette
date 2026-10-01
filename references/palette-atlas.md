@@ -337,6 +337,78 @@ rose           #BA7A85
 lavender       #8C7A9A
 ```
 
+### `monet-atmospheric`
+
+以相邻蓝绿、柔和赭石和灰紫构成大气层次。这里借鉴的是“相邻冷暖 + 大色面”的视觉原则，不是某幅画的颜色复原；优先用于低密度分面和大面积填充。
+
+```text
+atmosphere_blue #547C84
+mist_teal       #8BAEAB
+paper_green     #BFD2C6
+warm_ochre      #D8B08C
+violet_gray     #8A768B
+```
+
+### `van-gogh-accent`
+
+深蓝承载主体，金黄或珊瑚只作小面积锚点，适合主结果标注和少量机制节点。高饱和色不要同时承担所有分类。
+
+```text
+deep_blue       #174A67
+sky_teal        #4F8FA4
+sun_yellow      #F2C84B
+warm_coral      #D9775B
+ink             #2B3A42
+```
+
+### `matisse-flat`
+
+平面互补色适合流程图、机制图和图形摘要。用标签、形状或轮廓补足分类语义，不用于高密度小点。
+
+```text
+cobalt          #214E70
+vermilion       #D8584B
+gold            #E6B83F
+jade            #4F8A6D
+paper           #F1E6CE
+```
+
+### `rothko-field`
+
+近邻色域和留白建立叙事层次，适合中性对照 + 单一强调的宽面板图。颜色边界不代表统计方向，仍需单独定义语义。
+
+```text
+plum_ink        #453B4A
+russet          #7C5A5B
+clay            #B1775B
+ochre           #D2A663
+paper           #E3D2B7
+```
+
+### `hokusai-indigo`
+
+靛蓝、暖朱、稻草色和纸色构成版画式秩序，适合空间图、流程图和注释丰富的机制图。这里使用的是版画语汇，不声称历史调色复原。
+
+```text
+indigo          #1E4C6B
+glaze_blue      #5F8BA0
+straw           #D8B16A
+vermilion       #B9544A
+paper           #E8DED0
+```
+
+### `modern-ink-mineral`
+
+墨灰先建立结构，再以灰青、青瓷和矿物陶土作锚点。适合组学网络和多面板图；最后的纸色只用于背景或低权重类别。
+
+```text
+ink             #2E3941
+slate_blue      #496B7D
+celadon         #7D9C96
+mineral_clay    #B17E62
+paper           #D8D1C4
+```
+
 ## G. 配方使用规则
 
 - `qualitative` 配方按语义顺序直接分配，不按色相、明度或字母顺序自动重排。

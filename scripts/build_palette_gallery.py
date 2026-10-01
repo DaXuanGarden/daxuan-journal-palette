@@ -64,6 +64,7 @@ def card(palette: dict) -> str:
             palette["label"],
             palette["family"],
             palette["kind"],
+            *palette.get("inspiration", []),
             *palette["keywords"],
             palette["best_for"],
             palette["avoid_for"],
@@ -73,7 +74,7 @@ def card(palette: dict) -> str:
 <div class="card-head"><div><h2>{esc(palette["label"])}</h2><code>{esc(palette["id"])}</code></div><span>{esc(palette["kind"])}</span></div>
 <div class="swatches" aria-label="原色">{swatches}</div>
 <div class="gray-label">灰度代理</div><div class="gray-swatches" aria-label="灰度代理">{gray_swatches}</div>
-<dl><dt>关键词</dt><dd>{esc(" · ".join(palette["keywords"]))}</dd><dt>适合</dt><dd>{esc(palette["best_for"])}</dd><dt>注意</dt><dd>{esc(palette["avoid_for"])}</dd></dl>
+<dl><dt>关键词</dt><dd>{esc(" · ".join(palette["keywords"]))}</dd><dt>灵感</dt><dd>{esc(" · ".join(palette.get("inspiration", [])) or "本地设计配方")}</dd><dt>适合</dt><dd>{esc(palette["best_for"])}</dd><dt>注意</dt><dd>{esc(palette["avoid_for"])}</dd></dl>
 <button type="button" class="copy" data-copy="{esc(palette["id"])}">复制色板 ID</button></article>'''
 
 
@@ -145,12 +146,12 @@ def write_outputs(output: Path, palettes: list[dict], overwrite: bool) -> None:
             raise FileExistsError("outputs exist; pass --overwrite: " + ", ".join(map(str, existing)))
     (output / "index.html").write_text(html_page(palettes), encoding="utf-8")
     (output / "palette-atlas.svg").write_text(svg_page(palettes), encoding="utf-8")
-    with (output / "palettes.csv").open("w", encoding="utf-8-sig", newline="") as stream:
-        writer = csv.writer(stream)
-        writer.writerow(["id", "label", "family", "kind", "index", "name", "hex", "keywords", "best_for", "avoid_for"])
+    with (output / "palettes.csv").open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.writer(stream, lineterminator="\n")
+        writer.writerow(["id", "label", "family", "kind", "index", "name", "hex", "keywords", "inspiration", "best_for", "avoid_for"])
         for palette in palettes:
             for index, (name, colour) in enumerate(zip(palette["names"], palette["colors"]), start=1):
-                writer.writerow([palette["id"], palette["label"], palette["family"], palette["kind"], index, name, colour, "|".join(palette["keywords"]), palette["best_for"], palette["avoid_for"]])
+                writer.writerow([palette["id"], palette["label"], palette["family"], palette["kind"], index, name, colour, "|".join(palette["keywords"]), "|".join(palette.get("inspiration", [])), palette["best_for"], palette["avoid_for"]])
     manifest = {"schema_version": "1.0.0", "count": len(palettes), "source": "palettes.json", "outputs": [path.name for path in targets]}
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 

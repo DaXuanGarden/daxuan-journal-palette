@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "count": 26,
+  "count": 32,
   "source": "palettes.json",
   "outputs": [
     "index.html",
