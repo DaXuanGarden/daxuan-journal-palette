@@ -1,6 +1,6 @@
 # Daxuan Journal Palette
 
-一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.5.1。
+一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.5.2。
 
 ## Prerequisites
 
@@ -10,6 +10,26 @@
 - [ ] 已确定图表类型、类别顺序、目标栏宽和输出介质
 
 开放公共领域抽卡需要网络；内置色板、静态画廊和生成式卡片提示不依赖网络。
+
+## 30 秒开始
+
+![Daxuan Journal Palette 快速使用流程](assets/quickstart/usage-flow.svg)
+
+只需提供三个信息：**图表类型、组数/类别数、白底或深底**。Skill 会先返回 1 套主方案和最多 2 套备选，并说明适用图表与风险；只有你明确说“抽卡”或“从图片提色”时，才进入图像流程。
+
+| 你的目标 | 直接这样说 | 默认行为 |
+|---|---|---|
+| 快速得到可投稿方案 | “五组白底 GO 富集图，东方水墨风格” | 内置路由，返回 1+2 套方案 |
+| 比较几种审美 | “比较宋韵、敦煌和北欧矿物，适合白底多面板” | 先比较风格，再给主方案 |
+| 开放探索 | “随机抽 5 张蓝绿色公共领域作品” | 抽 5 张，先选图再提色 |
+| 只看一个灵感 | “随机一张现代水墨视觉卡片” | 只生成/返回 1 张 |
+| 审查已有配色 | “审查这张热图的连续色带和灰度风险” | 保留数据语义，检查可读性 |
+
+### 默认白底示例
+
+![ink-mineral-a-sunlit 默认科研配色](assets/quickstart/default-palette.svg)
+
+这套 `ink-mineral-a-sunlit` 是白底五组以内的默认起点。它不是期刊官方色板，也不是历史颜色复原；最终仍需结合图形尺寸、灰度和输出介质审查。
 
 ## 你可以直接这样说
 
@@ -34,6 +54,22 @@
 
 它适合白底的富集图、机制图和五组以内的定性分类。它是设计色板，不是历史色彩复原；较深的 `ink-mineral-a` 仍可用于深色底图或需要更强重量感的图。
 
+快速路由只读取轻量索引；完整 HEX 配方、艺术来源和审查细节按需展开。命令行可以用 `--compact` 获取简短结果，用 `--limit 1` 只保留主方案：
+
+```bash
+python3 scripts/route_palette.py "五组白底 GO 富集图，东方水墨风格" --compact
+```
+
+典型的紧凑结果是：
+
+```text
+模式：fast-built-in
+主方案：ink-mineral-a-sunlit
+备选：dunhuang-mineral、hokusai-indigo
+类型：qualitative；组数：5；背景：white
+下一步只需确认：图表类型、组数、白底/深底
+```
+
 可用的艺术家族包括：水墨矿物、文人纸本、江南烟雨、宋韵青瓷、青花瓷、敦煌矿物、朱砂宫墙、草木土色、茶褐植物、北欧矿物、海岸矿物、沙漠陶土、高山湖泊、现代编辑部、临床冷暖、石墨铜色、单色强调、柔和补充图，以及印象派大气、梵高式强调、马蒂斯式平面、Rothko 式色域、浮世绘靛蓝和现代水墨矿物。它们是视觉设计标签，不代表任何期刊官方色板或历史色彩复原。艺术来源和公开仓库见 [references/artistic-inspiration.md](references/artistic-inspiration.md)。
 
 画廊由 [scripts/build_palette_gallery.py](scripts/build_palette_gallery.py) 从 `palettes.json` 生成。HTML 用于筛选和复制，SVG 用于矢量查看，CSV 用于 R/Python 整理；灰度代理仅用于快速发现明度风险。
@@ -50,6 +86,21 @@ python3 scripts/route_palette.py "随机抽一张蓝绿色公共领域作品"
 ```
 
 仓库包含 MIT LICENSE 和 GitHub Actions 校验，可作为 public GitHub skill 发布；具体发布和版本标签顺序见 [references/github-publishing.md](references/github-publishing.md)。
+
+## 图片、画廊与公开来源
+
+| 资源 | 用途 |
+|---|---|
+| [快速使用流程图](assets/quickstart/usage-flow.svg) | 查看“需求 → 路由 → 确认 → 交付”的基本理念 |
+| [默认白底色板图](assets/quickstart/default-palette.svg) | 直观看到默认五色，而不是只看 HEX |
+| [交互式画廊](assets/palette-gallery/index.html) | 按风格、图表类型和关键词筛选，复制色板 ID |
+| [SVG 色板总览](assets/palette-gallery/palette-atlas.svg) | 适合浏览、打印和矢量编辑 |
+| [CSV 色板表](assets/palette-gallery/palettes.csv) | 供 R/Python 或表格工具继续整理 |
+| [快速路由索引](assets/palette-gallery/palette-index.json) | 查看关键词、色板 ID、适用图表和风险 |
+| [艺术灵感与公开仓库](references/artistic-inspiration.md) | MetBrewer、scico、accessible-color-cycles、PNWColors 等 |
+| [开放抽卡工作流](references/card-draw-workflow.md) | 公共领域、生成式和混合抽卡的完整步骤 |
+
+可进一步浏览的公开来源：[The Met Open Access API](https://metmuseum.github.io/)、[National Gallery of Art Open Access](https://www.nga.gov/artworks/free-images-and-open-access)、[Rijksmuseum Data Services](https://data.rijksmuseum.nl/)、[Art Institute of Chicago API](https://api.artic.edu/docs/)、[Color for geoscience](https://dominicroye.github.io/color-for-geoscience/) 和 [SciPalette](https://scipalette.fantasticjoe.com/)。使用外部图像时，保留对象页、权利状态、提色算法和调整记录。
 
 ## 使用边界
 

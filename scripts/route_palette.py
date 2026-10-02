@@ -95,12 +95,34 @@ def route(request: str, limit: int = 3) -> dict:
     }
 
 
+def compact_summary(result: dict) -> str:
+    """Render the fast lane as a short human-readable handoff."""
+    alternatives = result["alternatives"]
+    alternative_ids = "、".join(item["palette_id"] for item in alternatives) or "无"
+    lines = [
+        f"模式：{result['mode']}",
+        f"主方案：{result['primary']['palette_id']}",
+        f"备选：{alternative_ids}",
+        f"类型：{result['figure_type']}；组数：{result['groups']}；背景：{result['background']}",
+        f"首要风险：{result['primary']['risk']}",
+        "下一步：图表类型、组数、白底/深底",
+    ]
+    if result["draw_count"]:
+        lines.append(f"抽卡数量：{result['draw_count']} 张")
+    return "\n".join(lines)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("request", nargs="+", help="short Chinese or English palette request")
     parser.add_argument("--limit", type=int, default=3, choices=(1, 2, 3))
+    parser.add_argument("--compact", action="store_true", help="print a short human-readable summary")
     args = parser.parse_args()
-    print(json.dumps(route(" ".join(args.request), args.limit), ensure_ascii=False, indent=2))
+    result = route(" ".join(args.request), args.limit)
+    if args.compact:
+        print(compact_summary(result))
+    else:
+        print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

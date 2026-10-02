@@ -39,6 +39,13 @@ class FastRouterTests(unittest.TestCase):
         router = load_router()
         self.assertEqual(router.route("这张图用水墨配色")["mode"], "fast-built-in")
 
+    def test_compact_summary_keeps_primary_and_risk(self) -> None:
+        router = load_router()
+        summary = router.compact_summary(router.route("五组白底 GO 富集图，东方水墨风格"))
+        self.assertIn("主方案：ink-mineral-a-sunlit", summary)
+        self.assertIn("备选：dunhuang-mineral、hokusai-indigo", summary)
+        self.assertIn("首要风险：", summary)
+
     def test_diverging_request_still_gets_two_alternatives(self) -> None:
         router = load_router()
         result = router.route("正负效应发散图")
