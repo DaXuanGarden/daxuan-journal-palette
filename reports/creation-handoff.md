@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.5.2
+- Skill: daxuan-journal-palette 0.5.3
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
