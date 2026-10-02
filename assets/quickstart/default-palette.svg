@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">ink-mineral-a-sunlit 默认白底科研配色</title>
+  <desc id="desc">五色定性色板，适合白底、五组以内的富集图、机制图和分类图。</desc>
+  <rect width="1200" height="360" fill="#fbfaf7"/>
+  <text x="64" y="60" fill="#263746" font-family="Arial, Microsoft YaHei, sans-serif" font-size="25" font-weight="700">默认示例：ink-mineral-a-sunlit</text>
+  <text x="64" y="94" fill="#667680" font-family="Arial, Microsoft YaHei, sans-serif" font-size="17">白底 · 定性 · 五组以内 · 富集图 / 机制图</text>
+  <g font-family="Arial, Microsoft YaHei, sans-serif" font-size="16">
+    <rect x="64" y="132" width="200" height="116" rx="8" fill="#6D98AF"/>
+    <rect x="280" y="132" width="200" height="116" rx="8" fill="#7DACA3"/>
+    <rect x="496" y="132" width="200" height="116" rx="8" fill="#CBA064"/>
+    <rect x="712" y="132" width="200" height="116" rx="8" fill="#CE8793"/>
+    <rect x="928" y="132" width="208" height="116" rx="8" fill="#A28BAF"/>
+    <text x="164" y="278" text-anchor="middle" fill="#304652">#6D98AF</text>
+    <text x="380" y="278" text-anchor="middle" fill="#304652">#7DACA3</text>
+    <text x="596" y="278" text-anchor="middle" fill="#304652">#CBA064</text>
+    <text x="812" y="278" text-anchor="middle" fill="#304652">#CE8793</text>
+    <text x="1032" y="278" text-anchor="middle" fill="#304652">#A28BAF</text>
+  </g>
+  <text x="64" y="322" fill="#667680" font-family="Arial, Microsoft YaHei, sans-serif" font-size="15">提示：浅色小点、细线和灰度相邻色需要在实际图形中复核。</text>
+</svg>
