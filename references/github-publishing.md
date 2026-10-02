@@ -29,4 +29,4 @@ python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/publish_skill.py \
   --no-sync-local
 ```
 
-只做读取审计时加 `--dry-run`；如果希望 PR 通过后由人工合并，加 `--no-merge`。版本标签应与 `manifest.json` 一致；本次修复使用 `v0.5.3`。
+只做读取审计时加 `--dry-run`；如果希望 PR 通过后由人工合并，加 `--no-merge`。版本标签应与 `manifest.json` 一致；本次修复使用 `v0.5.4`。
