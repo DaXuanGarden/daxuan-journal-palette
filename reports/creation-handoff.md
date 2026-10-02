@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.5.0
+- Skill: daxuan-journal-palette 0.5.1
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
@@ -67,6 +67,5 @@
 
 The package is intended for local team reuse and public GitHub distribution. Validation, trigger evaluation and IR export are run after creation. The selected ink-mineral-a palette was manually applied to the insomnia/NAFLD GO-BP figure script as a first use case; this is not an automatic recoloring service. The open card draw is an exploratory input workflow, not an automatic recoloring service. A passing trigger/package check demonstrates routing and package integrity; it does not prove that every HEX combination is color-vision safe, print-safe or preferred by a journal.
 
-Copyright (c) 向阳乔木  
-X: https://x.com/vista8  
-GitHub: https://github.com/joeseesun/
+Copyright (c) 大轩  
+GitHub: https://github.com/DaXuanGarden

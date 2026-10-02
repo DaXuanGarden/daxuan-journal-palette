@@ -3,11 +3,11 @@
   "generated_at": "2026-10-02",
   "package": {
     "name": "daxuan-journal-palette",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "owner": {
-      "name": "向阳乔木",
-      "x": "https://x.com/vista8",
-      "github": "https://github.com/joeseesun/"
+      "name": "大轩",
+      "github": "https://github.com/DaXuanGarden",
+      "gitlab": "https://gitlab.com/DaXuanGarden"
     },
     "maturity_tier": "production",
     "lifecycle_stage": "fast-router",

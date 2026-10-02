@@ -1,6 +1,6 @@
 # Daxuan Journal Palette
 
-一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.5.0。
+一个面向科研论文图表的配色 Skill：把图表语义、艺术风格和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.5.1。
 
 ## Prerequisites
 
@@ -76,30 +76,23 @@ python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/trigger_eval.py /ho
 - 热图中点不明确：使用发散色带并明确中点的统计含义；没有有意义的中点时改用连续色带。
 - 多面板颜色漂移：建立一个全局命名映射，在每个面板中按同一键值调用。
 
-<!-- qiaomu-profile:start -->
-## 关于向阳乔木
+## 关于大轩
 
-向阳乔木（乔向阳 / Joe）是一位实践型 AI 产品与内容创作者，长期把前沿 AI 变化转译成可复用的工作流、产品判断、AI 编程实践、AI 搜索实践和 GEO/AI 营销方法。
+本项目由大轩维护，面向科研绘图、组学分析和可复用的 AI 科研工作流。
 
-- 个人网站: https://qiaomu.ai
-- 博客: https://blog.qiaomu.ai
-- X: https://x.com/vista8
-- GitHub: https://github.com/joeseesun/
-- 微信公众号: 向阳乔木推荐看
+- GitHub: [DaXuanGarden](https://github.com/DaXuanGarden)
+- GitLab: [DaXuanGarden](https://gitlab.com/DaXuanGarden)
+- 微信公众号: 大轩的成长花园
 
-### 支持与关注
+### 关注公众号
 
-| 打赏支持 | 微信公众号 |
-|---|---|
-| <img src="assets/qiaomu-profile/qiaomu_reward_qr.png" alt="向阳乔木打赏二维码" width="180" /> | <img src="assets/qiaomu-profile/qiaomu_wechat_public_account_qr.jpg" alt="向阳乔木推荐看公众号二维码" width="180" /> |
-| 感谢支持乔木持续分享 AI 实践 | 扫码关注「向阳乔木推荐看」 |
+扫描下方二维码，或在微信中搜索「大轩的成长花园」：
 
-<!-- qiaomu-profile:end -->
+<p><img src="assets/daxuan-profile/daxuan_wechat_search.png" alt="大轩的成长花园微信公众号二维码" width="720" /></p>
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
 
-Copyright (c) 向阳乔木  
-X: https://x.com/vista8  
-GitHub: https://github.com/joeseesun/
+Copyright (c) 大轩  
+GitHub: https://github.com/DaXuanGarden
