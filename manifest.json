@@ -1,6 +1,6 @@
 {
   "name": "daxuan-journal-palette",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "owner": {
     "name": "大轩",
     "github": "https://github.com/DaXuanGarden",
@@ -17,7 +17,7 @@
     "job_to_be_done": "为科研图表选择、映射和审查适合期刊传播的艺术化配色，并输出可复用代码。",
     "target_users": ["GWAS/omics researchers", "R and Python figure authors", "journal figure reviewers"],
     "inputs": ["figure type", "semantic groups", "category order", "background", "final size", "target journal or medium", "optional card-draw description or selected image", "card manifest plus figure-specific SCI candidate request"],
-    "outputs": ["compact primary and alternatives route", "style family and rationale", "semantic HEX mapping", "layer mapping contract", "preference constraints and rejected candidates", "bounded human review questions", "author decision log", "visual palette preview", "normal/CVD/grayscale/target-size preview card", "R/ggplot2 code", "Python code", "accessibility and print audit", "optional SCI application profile and gate", "provenance", "assumptions", "optional draw cards and extracted candidate palette", "joint visual-card/SCI semantic candidate preview"],
+    "outputs": ["compact primary and alternatives route", "style family and rationale", "semantic HEX mapping", "layer mapping contract", "preference constraints and rejected candidates", "candidate diversity audit with family and CIE76 distance", "bounded human review questions", "author decision log", "visual palette preview", "normal/CVD/grayscale/target-size preview card", "R/ggplot2 code", "Python code", "accessibility and print audit", "optional SCI application profile and gate", "provenance", "assumptions", "optional draw cards and extracted candidate palette", "joint visual-card/SCI semantic candidate preview"],
     "exclusions": ["brand identity", "web UI themes", "photo correction", "statistical analysis", "journal acceptance guarantee"]
   },
   "qiaomu_defaults": {

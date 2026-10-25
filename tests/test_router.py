@@ -49,8 +49,27 @@ class FastRouterTests(unittest.TestCase):
         router = load_router()
         summary = router.compact_summary(router.route("五组白底 GO 富集图，东方水墨风格"))
         self.assertIn("主方案：ink-mineral-a-sunlit", summary)
-        self.assertIn("备选：dunhuang-mineral、hokusai-indigo", summary)
+        self.assertIn("备选：hokusai-indigo、botanical-earth", summary)
         self.assertIn("首要风险：", summary)
+
+    def test_candidate_gate_separates_visual_families(self) -> None:
+        router = load_router()
+        result = router.route("五组白底环形热图")
+        diversity = result["candidate_diversity"]
+        self.assertTrue(diversity["pass"])
+        self.assertEqual(diversity["distinct_families"], 3)
+        self.assertGreaterEqual(diversity["observed_min_delta_e"], diversity["minimum_delta_e"])
+        self.assertTrue(all(card["distinctness"] in {"primary", "pass"} for card in [result["primary"], *result["alternatives"]]))
+        self.assertTrue(any(item["palette_id"] == "dunhuang-mineral" for item in diversity["rejected_candidates"]))
+
+    def test_palette_distance_detects_near_duplicates(self) -> None:
+        router = load_router()
+        self.assertAlmostEqual(
+            router.palette_distance(["#6D98AF"], ["#6D98AF"]),
+            0.0,
+            places=6,
+        )
+        self.assertLess(router.palette_distance(["#6D98AF"], ["#6E99B0"]), 1.0)
 
     def test_route_returns_bounded_human_review_handoff(self) -> None:
         router = load_router()

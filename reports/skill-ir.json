@@ -3,7 +3,7 @@
   "generated_at": "2026-10-25",
   "package": {
     "name": "daxuan-journal-palette",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "owner": {
       "name": "大轩",
       "github": "https://github.com/DaXuanGarden",
@@ -38,6 +38,7 @@
       "semantic HEX mapping",
       "layer mapping contract",
       "preference constraints and rejected candidates",
+      "candidate diversity audit with family and CIE76 distance",
       "bounded human review questions",
       "author decision log",
       "visual palette preview",

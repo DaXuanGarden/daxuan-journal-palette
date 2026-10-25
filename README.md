@@ -1,6 +1,6 @@
 # Daxuan Journal Palette
 
-一个面向科研论文图表的配色 Skill：把图表语义、作者审美和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.7.0。
+一个面向科研论文图表的配色 Skill：把图表语义、作者审美和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.8.0。
 
 ## 这个 Skill 的亮点：抽卡式找到配色
 
@@ -78,6 +78,12 @@ python3 scripts/author_review.py record \
 ```
 
 这套流程把作者审美保留为决策输入，把机器检查保留为证据输入；数据、统计语义和几何不会因为一次颜色反馈被悄悄改动。完整协议见 [`references/human-review-protocol.md`](references/human-review-protocol.md)。
+
+### 候选不再“换汤不换药”
+
+快速路由现在会对主方案和备选运行视觉多样性门：候选必须来自不同的视觉家族，并且与已选方案的对称平均最近色距离达到默认 `ΔE76 ≥ 18`。低于阈值或同一家族的色板会写入 `rejected_candidates`，不会继续占用 A/B/C 名额。每张候选卡同时返回 `visual_family`、`distance_from_primary_delta_e` 和 `distinctness`；如果索引中没有足够的远距离候选，输出会明确标记 `fallback_used`，便于作者决定是否扩大风格范围。
+
+该检查只是候选筛选信号，不能替代实际图形的灰度、色觉、缩印和出版审查；完整字段见 [`references/output-contract.md`](references/output-contract.md)。
 
 完整的字段映射、调用规则和输出契约见 [`references/sci-color-palettes-bridge.md`](references/sci-color-palettes-bridge.md)。
 

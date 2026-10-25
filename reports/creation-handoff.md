@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.7.0
+- Skill: daxuan-journal-palette 0.8.0
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
@@ -67,6 +67,13 @@
 - Added `scripts/joint_palette_draw.py` to combine a seeded 1–10 card draw with SCI-ranked categorical, diverging-heatmap and circular-layer candidates.
 - Added `references/joint-card-sci-workflow.md` to make the separation explicit: image palettes guide mood, intact SCI ramps carry semantic meaning, and cross-layer colour splicing is prohibited.
 - Added JSON, PNG and HTML outputs and regression tests; the current 10-card project replay is stored outside the public Skill under the GWAS QA directory.
+
+## 11. 0.8.0 candidate-diversity expansion
+
+- Added `scripts/palette_distance.py`, a dependency-free CIE76/CIELAB screening helper for palette-pair distance.
+- Updated `scripts/route_palette.py` to require distinct visual families and a default symmetric mean-nearest `ΔE76 >= 18` for A/B/C candidates; near-duplicates are returned in `rejected_candidates` with reasons.
+- Added per-candidate family, distance and distinctness fields plus a machine-readable `candidate_diversity` audit and explicit fallback reporting.
+- Added regression tests and documented the gate in the output contract and human-review workflow.
 
 ## 4. Advantages and evidence
 

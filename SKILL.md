@@ -4,7 +4,7 @@ description: |
   这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、开放抽卡、公共领域作品、随机视觉卡片、从图片提取配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。
 metadata:
   author: Daxuan
-  version: "0.7.0"
+  version: "0.8.0"
   maturity: production
 ---
 
@@ -28,6 +28,7 @@ GitHub: https://github.com/DaXuanGarden
 - 用户想探索内置库之外的视觉风格时，进入 [card-draw-workflow](references/card-draw-workflow.md)：先抽 3–5 张公共领域或生成式卡片，让用户选图，再提取候选色、做语义映射和实际图形审查。明确要求“色彩丰富、多彩或高饱和”时，先进行缩略图色彩丰富度筛选，避免灰度或棕褐色图片占满候选池。不要未经选择、来源记录和审查就把图片颜色当作最终科研色板。
 - 用户同时要求“抽卡”和 SCI/期刊适配时，使用 [joint-card-sci-workflow](references/joint-card-sci-workflow.md) 与 `scripts/joint_palette_draw.py`：图片卡只提供视觉线索，SCI 色板按分类、发散热图或环形热图语义筛选；输出 JSON、PNG 和 HTML 联合预览，并记录 seed、匹配距离和来源。不要把图片色与 SCI 色板跨语义拼接。
 - 普通请求先使用 `palette-index.json` 和 `route_palette.py` 快速路由，只返回 1 套主方案和最多 2 套备选；完整配方、来源和审查细节按需读取，不默认展开整个色板库。
+- A/B/C 候选必须通过视觉多样性门：路由器用无外部依赖的 CIE76 对称平均最近色距离筛选，并优先保留不同 `family` 的候选；默认最小距离为 `ΔE76 = 18`。低于阈值或同一家族的候选会写入 `rejected_candidates`，不会伪装成独立方向。
 - 只有用户明确提出“抽卡、随机作品、公共领域卡片、生成视觉卡片、图片提取”等意图时才进入图像流程；抽卡默认 5 张，明确说“一张/单张”时只抽 1 张，显式数量可扩展到 10 张。
 - 默认只追问三个缺失信息：图表类型、组数/类别数、白底或深底；其余视觉家族、密度和风险先依据索引自动推断。
 - 不触发：网站/应用 UI、品牌 Logo、照片白平衡、统计检验、GWAS 结果解读和一般论文写作；只讨论字体/尺寸而不涉及配色时也不触发本 Skill。
@@ -59,10 +60,11 @@ GitHub: https://github.com/DaXuanGarden
 配色迭代采用“机器提出受约束候选，作者选择方向，机器记录并复现”的闭环：
 
 1. 先给 1 个主方案和最多 2 个备选，三套候选使用同一数据、几何、标签和导出参数；
-2. 只询问三个方向：视觉方向（保持/更亮/更鲜明/更暖/更冷静）、优先级（均衡/可读性/审美/打印与 CVD）和改动范围（只改配色/配色加图例/整图打磨）；
-3. 作者选择后，使用 [`scripts/author_review.py`](scripts/author_review.py) 保存 `status`、选择、自由文本反馈和约束；自然语言中的“不要绿色、太暗、太灰”等必须转成 `preference_constraints`；
-4. 作者没有选择前，停在 `awaiting_author`，不得改写生产图；选择后才生成下一轮预览；
-5. 任何涉及数据、语义映射或统计标记的改变都要另行确认，配色审阅不能悄悄改变科学含义。
+2. 备选必须标出 `visual_family`、相对主方案的 `distance_from_primary_delta_e` 和 `distinctness`；同一家族或低于 `ΔE76 = 18` 的方案先淘汰。只有路由库不足时才允许回退，并明确标记 `fallback_used`；
+3. 只询问三个方向：视觉方向（保持/更亮/更鲜明/更暖/更冷静）、优先级（均衡/可读性/审美/打印与 CVD）和改动范围（只改配色/配色加图例/整图打磨）；
+4. 作者选择后，使用 [`scripts/author_review.py`](scripts/author_review.py) 保存 `status`、选择、自由文本反馈和约束；自然语言中的“不要绿色、太暗、太灰”等必须转成 `preference_constraints`；
+5. 作者没有选择前，停在 `awaiting_author`，不得改写生产图；选择后才生成下一轮预览；
+6. 任何涉及数据、语义映射或统计标记的改变都要另行确认，配色审阅不能悄悄改变科学含义。
 
 `route_palette.py` 会返回同一套 `human_review` 问题和暂停点；需要长期记录时，用 `author_review.py create` 生成 review brief，再用 `author_review.py record` 追加决策日志。这样作者的审美判断保留在流程里，但最终图仍经过灰度、色觉、缩印和人工复核。
 
@@ -88,16 +90,17 @@ GitHub: https://github.com/DaXuanGarden
 ## Compact Workflow
 
 1. 读取快速索引：识别图表语义、关键词、组数和背景；默认只选 1 个主路由和最多 2 个备选。
-2. 判断是否明确进入抽卡；未明确提出图像探索时，停留在内置色板快速路径。
-3. 对期刊/临床/数据库/色盲/灰度/打印请求，调用 `sci_palette_bridge.py` 做应用档案排序；Daxuan 仍负责视觉家族和图形落地。
-4. 只追问缺失的三个关键参数：图表类型、组数/类别数、白底或深底；其余信息先写入 assumptions。
-5. 选视觉家族：从索引给出 palette ID、适用图表和主要风险；需要详细 HEX 时再读取 `palette-atlas`。
-6. 生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。定性类别使用 `sp.select()`，连续/发散数据使用 `sp.ramp()` 或 `div-*`，不混合两个定性色板。
-7. 输出 `human_review`：展示主方案和备选，提出三个有限问题，明确 `awaiting_author` 暂停点；作者未选择前不改生产图。
-8. 作者选择后，调用 `author_review.py record` 记录选择与反馈，把文字转成约束，再重新生成候选和预览。
-9. 审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 SCI 的 `sp.check()`/`sp.report()` 与 EasyPlot 的 palette audit；诊断结果不是认证结论。
-10. 生成真实预览：使用 `scripts/render_palette_preview.py` 输出 normal/grayscale/protanopia/deuteranopia/target-size 五联卡；最终环形图还要复查图例、裁切、字体和层间冲突。
-11. 交付：默认给 1 套主方案和最多 2 套备选；把来源、算法、偏好约束、作者决策和审查工具写入 `provenance`，正文只展示简短摘要。
+2. 对候选运行视觉多样性门：记录视觉家族、CIE76 距离、阈值、被拒绝候选和必要的回退；不要把三个相近色板包装成三个审美方向。
+3. 判断是否明确进入抽卡；未明确提出图像探索时，停留在内置色板快速路径。
+4. 对期刊/临床/数据库/色盲/灰度/打印请求，调用 `sci_palette_bridge.py` 做应用档案排序；Daxuan 仍负责视觉家族和图形落地。
+5. 只追问缺失的三个关键参数：图表类型、组数/类别数、白底或深底；其余信息先写入 assumptions。
+6. 选视觉家族：从索引给出 palette ID、适用图表和主要风险；需要详细 HEX 时再读取 `palette-atlas`。
+7. 生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。定性类别使用 `sp.select()`，连续/发散数据使用 `sp.ramp()` 或 `div-*`，不混合两个定性色板。
+8. 输出 `human_review`：展示主方案和备选，提出三个有限问题，明确 `awaiting_author` 暂停点；作者未选择前不改生产图。
+9. 作者选择后，调用 `author_review.py record` 记录选择与反馈，把文字转成约束，再重新生成候选和预览。
+10. 审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 SCI 的 `sp.check()`/`sp.report()` 与 EasyPlot 的 palette audit；诊断结果不是认证结论。
+11. 生成真实预览：使用 `scripts/render_palette_preview.py` 输出 normal/grayscale/protanopia/deuteranopia/target-size 五联卡；最终环形图还要复查图例、裁切、字体和层间冲突。
+12. 交付：默认给 1 套主方案和最多 2 套备选；把来源、算法、偏好约束、作者决策和审查工具写入 `provenance`，正文只展示简短摘要。
 
 ### 联合抽卡路径
 

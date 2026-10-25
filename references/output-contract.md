@@ -57,6 +57,20 @@
         - id: "edit_scope"
           options: ["palette_only", "palette_legend", "full_figure"]
       decision_log: []
+    candidate_diversity:
+      strategy: "CIE76 symmetric mean-nearest palette distance plus visual-family separation"
+      minimum_delta_e: 18.0
+      observed_min_delta_e: 21.4
+      distinct_families: 3
+      families: ["东方纸墨", "版画靛蓝", "草木土色"]
+      pass: true
+      fallback_used: false
+      rejected_candidates:
+        - palette_id: "dunhuang-mineral"
+          family: "敦煌矿物"
+          distance_to_selected: 16.2
+          reason: "below_minimum_delta_e"
+      fallback_candidates: []
     visual_preview:
       html: "assets/palette-gallery/index.html"
       svg: "assets/palette-gallery/palette-atlas.svg"
