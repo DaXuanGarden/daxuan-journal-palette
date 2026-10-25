@@ -203,8 +203,20 @@ def _rank_matches(
 
 
 def _make_sci_bundle(figure: str, groups: int) -> dict[str, Any]:
-    categorical = categorical_recommendations(field="database", n=groups, require_fit=True, candidate_limit=12)
-    diverging = diverging_recommendations(n=7)
+    try:
+        categorical = categorical_recommendations(field="database", n=groups, require_fit=True, candidate_limit=12)
+        diverging = diverging_recommendations(n=7)
+    except FileNotFoundError as error:
+        return {
+            "categorical": [],
+            "heatmap": [],
+            "provenance": {
+                "sci_status": "unavailable",
+                "fallback": "daxuan-atlas",
+                "fallback_reason": str(error),
+                "validation": "SCI diagnostics unavailable; visual-card inspiration is retained without semantic SCI ranking",
+            },
+        }
     bundle: dict[str, Any] = {
         "categorical": [_compact_categorical(row) for row in categorical["recommendations"][:12]],
         "heatmap": [_compact_diverging(row) for row in diverging["recommendations"][:12]],
@@ -216,13 +228,20 @@ def _make_sci_bundle(figure: str, groups: int) -> dict[str, Any]:
         },
     }
     if figure in ("circular", "all"):
-        circular = circular_heatmap_recommendation(categories=groups)
-        bundle["circular"] = {
-            "figure": circular["figure"],
-            "background": circular["background"],
-            "layers": circular["semantic_layers"],
-            "policy": circular["policy"],
-        }
+        try:
+            circular = circular_heatmap_recommendation(categories=groups)
+            bundle["circular"] = {
+                "figure": circular["figure"],
+                "background": circular["background"],
+                "layers": circular["semantic_layers"],
+                "policy": circular["policy"],
+            }
+        except FileNotFoundError as error:
+            bundle["circular"] = {
+                "sci_status": "unavailable",
+                "fallback": "daxuan-atlas",
+                "fallback_reason": str(error),
+            }
     return bundle
 
 
@@ -234,7 +253,14 @@ def draw_joint(cards_path: str | Path, *, figure: str = "all", groups: int = 5, 
     drawn = rng.sample(cards, draw_count)
     for index, card in enumerate(drawn, start=1):
         card["draw_rank"] = index
-        card["art_audit"] = audit_hex(card["extracted_hex"])
+        try:
+            card["art_audit"] = audit_hex(card["extracted_hex"])
+        except FileNotFoundError as error:
+            card["art_audit"] = {
+                "status": "unavailable",
+                "reason": str(error),
+                "hex": list(card["extracted_hex"]),
+            }
         card["visual_cue"] = _hue_label(card["extracted_hex"])
     sci = _make_sci_bundle(figure, groups)
     matches: dict[str, list[dict[str, Any]]] = {}

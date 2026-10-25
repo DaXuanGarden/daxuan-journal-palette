@@ -45,10 +45,20 @@ class JointPaletteDrawTests(unittest.TestCase):
         self.assertIn("categorical", first["sci_candidates"])
         self.assertIn("heatmap", first["sci_candidates"])
         self.assertIn("circular", first["sci_candidates"])
-        self.assertEqual(len(first["matches"]["categorical"]), 3)
-        self.assertEqual(len(first["matches"]["heatmap"]), 3)
-        self.assertTrue(all(row["sci_palette_id"] for row in first["matches"]["categorical"]))
-        self.assertTrue(all("intact" in row["rule"] for row in first["matches"]["heatmap"]))
+        try:
+            module.load_sci()
+            sci_available = True
+        except FileNotFoundError:
+            sci_available = False
+        if sci_available:
+            self.assertEqual(len(first["matches"]["categorical"]), 3)
+            self.assertEqual(len(first["matches"]["heatmap"]), 3)
+            self.assertTrue(all(row["sci_palette_id"] for row in first["matches"]["categorical"]))
+            self.assertTrue(all("intact" in row["rule"] for row in first["matches"]["heatmap"]))
+        else:
+            self.assertEqual(first["matches"]["categorical"], [])
+            self.assertEqual(first["matches"]["heatmap"], [])
+            self.assertEqual(first["cards"][0]["art_audit"]["status"], "unavailable")
 
     def test_preview_writes_a_visible_png_and_html(self) -> None:
         module = load_joint()

@@ -5,6 +5,12 @@ from pathlib import Path
 import tempfile
 import unittest
 
+try:
+    import PIL  # noqa: F401
+    PIL_AVAILABLE = True
+except ImportError:
+    PIL_AVAILABLE = False
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -20,6 +26,7 @@ def load_preview():
 
 
 class PalettePreviewTests(unittest.TestCase):
+    @unittest.skipUnless(PIL_AVAILABLE, "Pillow is an optional preview dependency")
     def test_preview_writes_five_panel_card_and_manifest(self) -> None:
         preview = load_preview()
         with tempfile.TemporaryDirectory() as tmp:
@@ -36,6 +43,7 @@ class PalettePreviewTests(unittest.TestCase):
             )
             self.assertEqual(len(result["colors"]), 5)
 
+    @unittest.skipUnless(PIL_AVAILABLE, "Pillow is an optional preview dependency")
     def test_preview_rejects_invalid_hex(self) -> None:
         preview = load_preview()
         with tempfile.TemporaryDirectory() as tmp:
