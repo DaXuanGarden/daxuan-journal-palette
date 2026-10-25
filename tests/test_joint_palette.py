@@ -4,6 +4,12 @@ import importlib.util
 import json
 import tempfile
 import unittest
+
+try:
+    import PIL  # noqa: F401
+    PIL_AVAILABLE = True
+except ImportError:
+    PIL_AVAILABLE = False
 from pathlib import Path
 
 
@@ -60,6 +66,7 @@ class JointPaletteDrawTests(unittest.TestCase):
             self.assertEqual(first["matches"]["heatmap"], [])
             self.assertEqual(first["cards"][0]["art_audit"]["status"], "unavailable")
 
+    @unittest.skipUnless(PIL_AVAILABLE, "Pillow is an optional preview dependency")
     def test_preview_writes_a_visible_png_and_html(self) -> None:
         module = load_joint()
         with tempfile.TemporaryDirectory() as tmp:

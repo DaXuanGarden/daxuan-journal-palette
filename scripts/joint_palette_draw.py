@@ -207,7 +207,7 @@ def _make_sci_bundle(figure: str, groups: int) -> dict[str, Any]:
         categorical = categorical_recommendations(field="database", n=groups, require_fit=True, candidate_limit=12)
         diverging = diverging_recommendations(n=7)
     except FileNotFoundError as error:
-        return {
+        fallback = {
             "categorical": [],
             "heatmap": [],
             "provenance": {
@@ -217,6 +217,13 @@ def _make_sci_bundle(figure: str, groups: int) -> dict[str, Any]:
                 "validation": "SCI diagnostics unavailable; visual-card inspiration is retained without semantic SCI ranking",
             },
         }
+        if figure in ("circular", "all"):
+            fallback["circular"] = {
+                "sci_status": "unavailable",
+                "fallback": "daxuan-atlas",
+                "fallback_reason": str(error),
+            }
+        return fallback
     bundle: dict[str, Any] = {
         "categorical": [_compact_categorical(row) for row in categorical["recommendations"][:12]],
         "heatmap": [_compact_diverging(row) for row in diverging["recommendations"][:12]],
