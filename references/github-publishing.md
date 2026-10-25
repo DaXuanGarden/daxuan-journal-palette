@@ -22,8 +22,8 @@
 ## 内置发布命令
 
 ```bash
-python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/publish_skill.py \
-  /home/daxuan/.codex/skills/daxuan-journal-palette \
+python3 /path/to/qiaomu-meta-skill/scripts/publish_skill.py \
+  /path/to/daxuan-journal-palette \
   --github-user DaXuanGarden \
   --repo-name daxuan-journal-palette \
   --no-sync-local

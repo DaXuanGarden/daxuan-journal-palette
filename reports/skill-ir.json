@@ -3,7 +3,7 @@
   "generated_at": "2026-10-25",
   "package": {
     "name": "daxuan-journal-palette",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "owner": {
       "name": "大轩",
       "github": "https://github.com/DaXuanGarden",
@@ -34,6 +34,9 @@
     ],
     "outputs": [
       "compact primary and alternatives route",
+      "directional A/B/C candidate plan",
+      "topic-anchored image search plan",
+      "theme-aware palette brief from title/fragment/figure meaning",
       "style family and rationale",
       "semantic HEX mapping",
       "layer mapping contract",
@@ -149,7 +152,8 @@
       "references/palette-atlas.md",
       "references/palette-gallery.md",
       "references/sci-color-palettes-bridge.md",
-      "references/style-taxonomy.md"
+      "references/style-taxonomy.md",
+      "references/theme-to-palette.md"
     ],
     "scripts": [
       "scripts/author_review.py",
@@ -159,7 +163,9 @@
       "scripts/joint_palette_draw.py",
       "scripts/render_palette_preview.py",
       "scripts/route_palette.py",
-      "scripts/sci_palette_bridge.py"
+      "scripts/sci_palette_bridge.py",
+      "scripts/palette_distance.py",
+      "scripts/theme_palette.py"
     ],
     "evals": [
       "evals/trigger_cases.json"
@@ -177,7 +183,10 @@
       "reports/sci-integration-circular-heatmap-2026-10-25.json",
       "reports/sci-integration-circular-heatmap-2026-10-25.md",
       "reports/skill-ir.json",
-      "reports/trigger-eval.json"
+      "reports/trigger-eval.json",
+      "reports/luban-theme-aware-palette-2026-10-25.md",
+      "reports/luban-certificate-2026-10-25-theme-aware.svg",
+      "reports/examples/theme-palette-sedentary-cardiovascular.json"
     ]
   },
   "portability": {

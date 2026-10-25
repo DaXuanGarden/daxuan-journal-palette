@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.8.0
+- Skill: daxuan-journal-palette 0.9.0
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
@@ -74,6 +74,13 @@
 - Updated `scripts/route_palette.py` to require distinct visual families and a default symmetric mean-nearest `ΔE76 >= 18` for A/B/C candidates; near-duplicates are returned in `rejected_candidates` with reasons.
 - Added per-candidate family, distance and distinctness fields plus a machine-readable `candidate_diversity` audit and explicit fallback reporting.
 - Added regression tests and documented the gate in the output contract and human-review workflow.
+
+## 12. 0.9.0 theme-aware direction expansion
+
+- Added `scripts/theme_palette.py` to convert a paper title, text fragment and figure meaning into topic anchors, visual metaphors, public-domain image queries and directional A/B/C palette candidates.
+- Added explicit sedentary-cardiovascular direction profiles: vascular-clinical, circulation-energy and biological-equilibrium. Each direction has a visual rationale, theme fit and avoid list.
+- Added CIE76/family checks to direction selection, an `awaiting_author` handoff, and provenance stating that images are visual cues rather than scientific evidence.
+- Added `references/theme-to-palette.md` and regression tests for theme detection, directional separation and generic fallback.
 
 ## 4. Advantages and evidence
 

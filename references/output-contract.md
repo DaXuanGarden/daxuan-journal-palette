@@ -71,6 +71,34 @@
           distance_to_selected: 16.2
           reason: "below_minimum_delta_e"
       fallback_candidates: []
+    theme:
+      id: "sedentary_cardiovascular"
+      title: "久坐行为与心血管疾病的遗传相关性"
+      fragment: "Genetic correlation across cardiovascular outcomes"
+      figure_meaning: "21 outcome rings with signed genetic correlations"
+      matched_terms: ["久坐", "心血管", "vascular"]
+      topic_anchors: ["heart", "vessel", "arterial wall", "circulation"]
+      visual_metaphors: ["flow", "network", "movement", "barrier", "recovery"]
+    image_inspiration:
+      source_policy: "public-domain or author-supplied image only"
+      provider: "The Metropolitan Museum of Art Collection API"
+      search_queries: ["heart|anatomy|vascular", "movement|walking|figure", "water|flow|current"]
+      selected_card_id: null
+      extraction_status: "query-planned | awaiting-selection | candidate-extracted | rejected"
+      image_is_scientific_evidence: false
+    directional_candidates:
+      - direction_id: "A"
+        label: "血管临床可信度"
+        palette_id: "clinical-cool-warm"
+        direction: "冷静蓝灰承载临床可信度，珊瑚只作为有限验证强调。"
+      - direction_id: "B"
+        label: "循环与活动能量"
+        palette_id: "matisse-flat"
+        direction: "更鲜明的蓝—朱砂—黄组合表达流动和活动。"
+      - direction_id: "C"
+        label: "生物系统平衡"
+        palette_id: "tea-earth-botanical"
+        direction: "植物绿、土色和海岸蓝强调系统平衡。"
     visual_preview:
       html: "assets/palette-gallery/index.html"
       svg: "assets/palette-gallery/palette-atlas.svg"

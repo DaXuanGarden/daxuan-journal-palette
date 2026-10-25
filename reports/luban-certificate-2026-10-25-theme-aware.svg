@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <rect width="1200" height="680" fill="#fbfaf7"/>
+  <rect x="28" y="28" width="1144" height="624" rx="20" fill="none" stroke="#244f70" stroke-width="5"/>
+  <rect x="52" y="52" width="1096" height="576" rx="14" fill="none" stroke="#c56b65" stroke-width="2"/>
+  <text x="600" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#244f70">出师证书 · 鲁班工坊</text>
+  <text x="600" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#59656d">THEME-AWARE SCIENTIFIC PALETTE</text>
+  <line x1="180" y1="198" x2="1020" y2="198" stroke="#c8a16a" stroke-width="3"/>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#27343b">作品</text>
+  <text x="360" y="260" font-family="Arial, sans-serif" font-size="25" fill="#27343b">Daxuan Journal Palette 0.9.0</text>
+  <text x="150" y="315" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#27343b">过尺</text>
+  <text x="360" y="315" font-family="Arial, sans-serif" font-size="25" fill="#27343b">86 → 91 / 100（本轮实测）</text>
+  <text x="150" y="370" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#27343b">定位</text>
+  <text x="360" y="370" font-family="Arial, sans-serif" font-size="25" fill="#27343b">论文主题感知的科研配色编译器</text>
+  <text x="150" y="425" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#27343b">绝活</text>
+  <text x="360" y="425" font-family="Arial, sans-serif" font-size="25" fill="#27343b">主题锚点 + 图片来源 + 差异化 A/B/C</text>
+  <text x="150" y="480" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#27343b">下一步</text>
+  <text x="360" y="480" font-family="Arial, sans-serif" font-size="25" fill="#27343b">把三方向落到真实图形 benchmark</text>
+  <circle cx="250" cy="565" r="32" fill="#244f70"/>
+  <circle cx="340" cy="565" r="32" fill="#d8584b"/>
+  <circle cx="430" cy="565" r="32" fill="#85664d"/>
+  <text x="600" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#59656d">验收师傅：鲁班 · 2026-10-25</text>
+</svg>

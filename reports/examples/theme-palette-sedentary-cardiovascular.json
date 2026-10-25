@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "theme-aware-palette-brief",
+  "theme": {
+    "id": "sedentary_cardiovascular",
+    "label": "sedentary behavior and cardiovascular health",
+    "title": "久坐行为与心血管疾病的遗传相关性",
+    "fragment": "Genetic correlation across cardiovascular outcomes",
+    "figure_meaning": "21 outcome rings with signed genetic correlations",
+    "matched_terms": [
+      "久坐",
+      "cardiovascular",
+      "心血管",
+      "vascular"
+    ],
+    "theme_terms": [
+      "cardiovascular",
+      "vascular",
+      "久坐",
+      "心血管"
+    ],
+    "topic_anchors": [
+      "heart",
+      "vessel",
+      "arterial wall",
+      "circulation"
+    ],
+    "visual_metaphors": [
+      "flow",
+      "network",
+      "movement",
+      "barrier",
+      "recovery"
+    ]
+  },
+  "figure": {
+    "type": "circular",
+    "groups": 5,
+    "background": "white"
+  },
+  "image_inspiration": {
+    "source_policy": "public-domain or author-supplied image only",
+    "provider": "The Metropolitan Museum of Art Collection API",
+    "search_query": "heart|anatomy|vascular|movement|walking|figure|water|flow|current|botanical|leaf|vein",
+    "search_queries": [
+      "heart|anatomy|vascular",
+      "movement|walking|figure",
+      "water|flow|current",
+      "botanical|leaf|vein"
+    ],
+    "why_these_queries": "主题锚点覆盖心脏/血管；流动、步行和叶脉作为久坐—循环的视觉隐喻。",
+    "next_step": "先查看候选图片并选择 card_id，再运行 extract_palette.py；图片只提供视觉线索，不承载论文证据。",
+    "draw_command": "python3 scripts/draw_art_cards.py 'heart|anatomy|vascular|movement|walking|figure|water|flow|current|botanical|leaf|vein' --count 5 --seed 20261025 --palette-friendly"
+  },
+  "directions": [
+    {
+      "direction_id": "A",
+      "direction_name": "vascular-clinical",
+      "label": "血管临床可信度",
+      "palette_id": "clinical-cool-warm",
+      "visual_family": "临床冷暖",
+      "distance_to_previous_selected_delta_e": 0.0,
+      "distinctness": "pass",
+      "direction": "冷静蓝灰承载临床可信度，珊瑚只作为有限验证强调。",
+      "theme_fit": "最适合主结果图、遗传相关性和多层验证状态。",
+      "avoid": [
+        "大面积暖色",
+        "把红色解释为风险方向"
+      ],
+      "fallback_used": false,
+      "pairwise_min_delta_e": 20.22
+    },
+    {
+      "direction_id": "B",
+      "direction_name": "circulation-energy",
+      "label": "循环与活动能量",
+      "palette_id": "matisse-flat",
+      "visual_family": "平面构成",
+      "distance_to_previous_selected_delta_e": 20.22,
+      "distinctness": "pass",
+      "direction": "更鲜明的蓝—朱砂—黄组合表达流动、活动和结果层级。",
+      "theme_fit": "适合展示久坐与心血管结局之间的整体关系和图形摘要。",
+      "avoid": [
+        "用暖色单独编码统计方向",
+        "覆盖所有层的高饱和填充"
+      ],
+      "fallback_used": false,
+      "pairwise_min_delta_e": 20.22
+    },
+    {
+      "direction_id": "C",
+      "direction_name": "biological-equilibrium",
+      "label": "生物系统平衡",
+      "palette_id": "tea-earth-botanical",
+      "visual_family": "茶褐植物",
+      "distance_to_previous_selected_delta_e": 24.23,
+      "distinctness": "pass",
+      "direction": "植物绿、土色和海岸蓝强调组织、代谢和血管系统的平衡。",
+      "theme_fit": "适合机制解释、亚临床血管表型和补充图。",
+      "avoid": [
+        "绿色表达显著性",
+        "将自然意象写成生物学因果证据"
+      ],
+      "fallback_used": false,
+      "pairwise_min_delta_e": 20.22
+    }
+  ],
+  "candidate_diversity": {
+    "strategy": "theme-directed semantic roles plus CIE76/family separation",
+    "minimum_delta_e": 18.0,
+    "observed_min_delta_e": 20.22,
+    "pass": true,
+    "rejected_candidates": []
+  },
+  "provenance": {
+    "script": "scripts/theme_palette.py",
+    "registry": "assets/palette-gallery/palettes.json",
+    "image_source_status": "query-planned; no image downloaded"
+  },
+  "human_review": {
+    "status": "awaiting_author",
+    "questions": [
+      "A（血管临床可信度）、B（循环与活动能量）、C（生物系统平衡）中，哪种主题方向最符合论文叙事？",
+      "图片只作为视觉灵感，是否允许使用 The Met 公共领域卡片？",
+      "本轮只提取图片色板，还是同时生成三套真实图形预览？"
+    ]
+  }
+}

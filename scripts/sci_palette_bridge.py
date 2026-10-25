@@ -23,7 +23,9 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_SCI_ROOT = Path("/home/daxuan/.codex/skills/sci-color-palettes")
+# No developer-specific path is embedded.  Public installs can use the
+# environment variable or place sibling checkouts next to this Skill.
+DEFAULT_SCI_ROOT: Path | None = None
 FIELD_ALIASES = {
     "clinical": "clinical",
     "临床": "clinical",
@@ -62,7 +64,8 @@ def _candidate_sci_roots(root: str | os.PathLike[str] | None = None) -> list[Pat
         # Public installs may place both skills next to one another. This avoids
         # requiring the developer's /home path while keeping the local checkout fast.
         candidates.append(Path(__file__).resolve().parents[1].parent / "sci-color-palettes")
-        candidates.append(DEFAULT_SCI_ROOT)
+        if DEFAULT_SCI_ROOT is not None:
+            candidates.append(DEFAULT_SCI_ROOT)
     unique: list[Path] = []
     seen: set[str] = set()
     for candidate in candidates:

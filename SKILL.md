@@ -4,7 +4,7 @@ description: |
   这是一个面向期刊论文图表的 Daxuan Skill，用于选择、设计和审查艺术化但可读的科研配色。它根据图表语义、组数、数据类型、期刊场景和目标介质输出可复用的 HEX、R/ggplot2、Python 配色映射、风格说明，以及色盲、灰度、对比度、印刷和多面板一致性检查。用户提到中国水墨、东方色、矿物色、敦煌、宋韵、Nature/Cell 风格、低饱和高级配色、开放抽卡、公共领域作品、随机视觉卡片、从图片提取配色、富集图、热图、柱状图或科研图配色时触发；不用于品牌、网页 UI、照片调色或替代统计分析。
 metadata:
   author: Daxuan
-  version: "0.8.0"
+  version: "0.9.0"
   maturity: production
 ---
 
@@ -29,6 +29,7 @@ GitHub: https://github.com/DaXuanGarden
 - 用户同时要求“抽卡”和 SCI/期刊适配时，使用 [joint-card-sci-workflow](references/joint-card-sci-workflow.md) 与 `scripts/joint_palette_draw.py`：图片卡只提供视觉线索，SCI 色板按分类、发散热图或环形热图语义筛选；输出 JSON、PNG 和 HTML 联合预览，并记录 seed、匹配距离和来源。不要把图片色与 SCI 色板跨语义拼接。
 - 普通请求先使用 `palette-index.json` 和 `route_palette.py` 快速路由，只返回 1 套主方案和最多 2 套备选；完整配方、来源和审查细节按需读取，不默认展开整个色板库。
 - A/B/C 候选必须通过视觉多样性门：路由器用无外部依赖的 CIE76 对称平均最近色距离筛选，并优先保留不同 `family` 的候选；默认最小距离为 `ΔE76 = 18`。低于阈值或同一家族的候选会写入 `rejected_candidates`，不会伪装成独立方向。
+- 如果用户提供论文标题、摘要/片段或图形含义，先运行 `scripts/theme_palette.py`：它把主题词拆成科学主题锚点、视觉隐喻、公共领域图片检索词和 A/B/C 方向角色，再从色板注册表中选择有主题理由且彼此分离的候选。标题和片段只用于视觉主题规划，不把图片灵感写成生物学证据。
 - 只有用户明确提出“抽卡、随机作品、公共领域卡片、生成视觉卡片、图片提取”等意图时才进入图像流程；抽卡默认 5 张，明确说“一张/单张”时只抽 1 张，显式数量可扩展到 10 张。
 - 默认只追问三个缺失信息：图表类型、组数/类别数、白底或深底；其余视觉家族、密度和风险先依据索引自动推断。
 - 不触发：网站/应用 UI、品牌 Logo、照片白平衡、统计检验、GWAS 结果解读和一般论文写作；只讨论字体/尺寸而不涉及配色时也不触发本 Skill。
@@ -68,6 +69,31 @@ GitHub: https://github.com/DaXuanGarden
 
 `route_palette.py` 会返回同一套 `human_review` 问题和暂停点；需要长期记录时，用 `author_review.py create` 生成 review brief，再用 `author_review.py record` 追加决策日志。这样作者的审美判断保留在流程里，但最终图仍经过灰度、色觉、缩印和人工复核。
 
+## Theme-to-palette workflow
+
+当配色需要服务于一篇具体论文，而不是孤立的图表类型时，使用
+[`scripts/theme_palette.py`](scripts/theme_palette.py) 先建立主题简报：
+
+1. 输入论文标题、摘要/结果片段和图形含义，识别主题锚点与可用的视觉隐喻；
+2. 生成带理由的公共领域图像检索词，例如心血管主题的心脏/血管锚点，以及流动、步行、叶脉等隐喻；
+3. 将 A/B/C 预先定义为不同叙事方向，而不是同一色相的轻微变体；
+4. 每个方向从注册表选择完整色板，并同时通过视觉家族与 `ΔE76` 距离门；
+5. 作者先选择方向和图片来源，再运行 `draw_art_cards.py`，选择 `card_id` 后使用 `extract_palette.py` 提取候选色；
+6. 图片色只作为视觉线索，最终仍按分类、连续、发散和验证层的科学语义重新分配，并运行真实图形审查。
+
+示例：
+
+```bash
+python3 scripts/theme_palette.py \
+  --title "久坐行为与心血管疾病的遗传相关性" \
+  --fragment "Genetic correlation across cardiovascular outcomes" \
+  --figure-meaning "21 outcome rings with signed genetic correlations" \
+  --figure-type circular --groups 5 --background white \
+  --output qa/theme-palette-brief.json
+```
+
+该命令只生成主题和候选规划，不自动修改生产图，也不把图像内容当作论文证据。
+
 ## Style Router
 
 按以下顺序路由，不要把“艺术风格”当作数据类型：
@@ -89,15 +115,15 @@ GitHub: https://github.com/DaXuanGarden
 
 ## Compact Workflow
 
-1. 读取快速索引：识别图表语义、关键词、组数和背景；默认只选 1 个主路由和最多 2 个备选。
+1. 如果有论文标题、片段或图形含义，先运行 `theme_palette.py` 建立主题简报；否则读取快速索引，识别图表语义、关键词、组数和背景。
 2. 对候选运行视觉多样性门：记录视觉家族、CIE76 距离、阈值、被拒绝候选和必要的回退；不要把三个相近色板包装成三个审美方向。
 3. 判断是否明确进入抽卡；未明确提出图像探索时，停留在内置色板快速路径。
 4. 对期刊/临床/数据库/色盲/灰度/打印请求，调用 `sci_palette_bridge.py` 做应用档案排序；Daxuan 仍负责视觉家族和图形落地。
 5. 只追问缺失的三个关键参数：图表类型、组数/类别数、白底或深底；其余信息先写入 assumptions。
 6. 选视觉家族：从索引给出 palette ID、适用图表和主要风险；需要详细 HEX 时再读取 `palette-atlas`。
 7. 生成映射：输出颜色名称、HEX、语义角色、R/ggplot2 和 Python 写法，并保留类别顺序。定性类别使用 `sp.select()`，连续/发散数据使用 `sp.ramp()` 或 `div-*`，不混合两个定性色板。
-8. 输出 `human_review`：展示主方案和备选，提出三个有限问题，明确 `awaiting_author` 暂停点；作者未选择前不改生产图。
-9. 作者选择后，调用 `author_review.py record` 记录选择与反馈，把文字转成约束，再重新生成候选和预览。
+8. 输出 `human_review`：展示主题方向、图片检索词、主方案和备选，提出三个有限问题，明确 `awaiting_author` 暂停点；作者未选择前不改生产图。
+9. 作者选择后，调用 `author_review.py record` 记录选择与反馈，把文字转成约束；如选择了图片，再运行 `extract_palette.py` 生成候选色板。
 10. 审查实际结果：检查相邻颜色对比、灰度层次、常见色觉差异、黑白打印、浅色背景上的文字、透明叠加和导出后的最终尺寸。可调用 SCI 的 `sp.check()`/`sp.report()` 与 EasyPlot 的 palette audit；诊断结果不是认证结论。
 11. 生成真实预览：使用 `scripts/render_palette_preview.py` 输出 normal/grayscale/protanopia/deuteranopia/target-size 五联卡；最终环形图还要复查图例、裁切、字体和层间冲突。
 12. 交付：默认给 1 套主方案和最多 2 套备选；把来源、算法、偏好约束、作者决策和审查工具写入 `provenance`，正文只展示简短摘要。
@@ -130,6 +156,7 @@ GitHub: https://github.com/DaXuanGarden
 - 艺术家视觉原则、公开仓库、博物馆开放数据和来源记录：[artistic-inspiration](references/artistic-inspiration.md)
 - 开放抽卡、图像提色、来源记录和内置化规则：[card-draw-workflow](references/card-draw-workflow.md)
 - 视觉卡片与 SCI 候选的联合抽卡、匹配和预览：[joint-card-sci-workflow](references/joint-card-sci-workflow.md)
+- 论文主题、图像检索和方向性 A/B/C 规划：[theme-to-palette](references/theme-to-palette.md)
 - SCI 期刊/应用场景色板适配和审计：[sci-color-palettes-bridge](references/sci-color-palettes-bridge.md)
 - 快速关键词路由和轻量匹配表：[palette-index.json](assets/palette-gallery/palette-index.json)、[route_palette.py](scripts/route_palette.py)
 - GitHub public skill 仓库结构和发布顺序：[github-publishing](references/github-publishing.md)

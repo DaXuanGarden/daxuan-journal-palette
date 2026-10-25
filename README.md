@@ -1,6 +1,6 @@
 # Daxuan Journal Palette
 
-一个面向科研论文图表的配色 Skill：把图表语义、作者审美和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.8.0。
+一个面向科研论文图表的配色 Skill：把图表语义、作者审美和出版可读性连接起来，输出可复用的 HEX、R/ggplot2、Python 映射以及色盲、灰度、印刷和多面板一致性审查。当前版本为 0.9.0。
 
 ## 这个 Skill 的亮点：抽卡式找到配色
 
@@ -16,6 +16,21 @@
 抽卡不是把图片颜色直接贴到论文图上。图片负责打开想象，作者选中的视觉线索再经过提色、语义映射和科研图示例，变成可以解释、复用和继续维护的色板。默认抽 5 张；说“随机一张”时只返回 1 张；显式说“抽十张”时返回 10 张。要求色彩丰富时，流程会先用缩略图筛掉主要为灰度或低饱和的候选。抽卡来源、作品信息、提色方法和调整记录会保存在 `provenance` 中。
 
 一句话理解它：**内置风格给你稳定起点，开放抽卡给你创造力，科研语义把灵感变成可用配色。**
+
+## 从论文主题到配色方向
+
+如果配色需要服务于一篇具体论文，先给出标题、摘要/结果片段和图形含义。主题规划器会把文字拆成三类信息：科学主题锚点、可解释的视觉隐喻，以及适合公共领域图像检索的关键词。随后它会预先给出三个有明确方向差异的候选：例如“血管临床可信度”“循环与活动能量”“生物系统平衡”。这些方向再分别绑定到不同视觉家族，并通过 `ΔE76` 距离门，避免 A/B/C 只是同一套靛蓝—珊瑚色的轻微变体。
+
+```bash
+python3 scripts/theme_palette.py \
+  --title "久坐行为与心血管疾病的遗传相关性" \
+  --fragment "Genetic correlation across cardiovascular outcomes" \
+  --figure-meaning "21 outcome rings with signed genetic correlations" \
+  --figure-type circular --groups 5 --background white \
+  --output qa/theme-palette-brief.json
+```
+
+该简报会生成主题匹配词、心脏/血管等主题锚点、流动/步行/叶脉等视觉隐喻、The Met 公共领域检索命令，以及 A/B/C 各自的色板、方向理由、距离和淘汰记录。作者先选择主题方向和图片来源，之后才运行抽卡和 `extract_palette.py`。图片只提供视觉线索，最终颜色仍按图表的分类、连续、发散和验证语义重新分配。
 
 ## SCI 配色库适配
 
@@ -85,7 +100,7 @@ python3 scripts/author_review.py record \
 
 该检查只是候选筛选信号，不能替代实际图形的灰度、色觉、缩印和出版审查；完整字段见 [`references/output-contract.md`](references/output-contract.md)。
 
-完整的字段映射、调用规则和输出契约见 [`references/sci-color-palettes-bridge.md`](references/sci-color-palettes-bridge.md)。
+完整的字段映射、调用规则和输出契约见 [`references/sci-color-palettes-bridge.md`](references/sci-color-palettes-bridge.md)。主题、图片检索和方向性候选规则见 [`references/theme-to-palette.md`](references/theme-to-palette.md)。
 
 ## 联合抽卡：10 张视觉卡片 × SCI 候选
 
@@ -216,13 +231,15 @@ python3 scripts/route_palette.py "随机抽一张蓝绿色公共领域作品"
 
 ## 本地验证
 
-本地目录可直接被 Codex 读取；需要用 Skills CLI 安装到另一个环境时，可使用 npx skills add /home/daxuan/.codex/skills/daxuan-journal-palette，再按目标环境的安装提示确认目录。
+本地目录可直接被 Codex 读取；需要用 Skills CLI 安装到另一个环境时，可使用 `npx skills add DaXuanGarden/daxuan-journal-palette`，再按目标环境的安装提示确认目录。
 
 上游参考：qiaomu-meta-skill; K-Dense-AI/scientific-agent-skills scientific-visualization; local easyplot; local nature-figure; local journal-ggplot-stylebook; local sci-color-palettes。
 
 ```bash
-python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/validate_skill.py /home/daxuan/.codex/skills/daxuan-journal-palette
-python3 /home/daxuan/.codex/skills/qiaomu-meta-skill/scripts/trigger_eval.py /home/daxuan/.codex/skills/daxuan-journal-palette --output /home/daxuan/.codex/skills/daxuan-journal-palette/reports/trigger-eval.json
+# If qiaomu-meta-skill is installed, run its validators from that installation:
+python3 /path/to/qiaomu-meta-skill/scripts/validate_skill.py /path/to/daxuan-journal-palette
+python3 /path/to/qiaomu-meta-skill/scripts/trigger_eval.py /path/to/daxuan-journal-palette \
+  --output /path/to/daxuan-journal-palette/reports/trigger-eval.json
 ```
 
 ## Troubleshooting
