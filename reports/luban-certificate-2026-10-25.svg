@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Luban certificate for Daxuan Journal Palette</title>
+  <desc id="desc">Daxuan Journal Palette scored 79 out of 100 in a Luban skill audit and is positioned as a Chinese-first scientific palette compiler.</desc>
+  <rect width="1200" height="720" fill="#F7F4EE"/>
+  <rect x="34" y="34" width="1132" height="652" rx="24" fill="#FFFDF8" stroke="#2E4352" stroke-width="5"/>
+  <rect x="64" y="64" width="1072" height="12" rx="6" fill="#713E50"/>
+  <text x="600" y="145" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="42" font-weight="700" fill="#2E4352">出师证书 · 鲁班工坊</text>
+  <text x="600" y="190" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#6B7378">SKILL POLISH AUDIT · 2026-10-25</text>
+  <line x1="160" y1="230" x2="1040" y2="230" stroke="#DABC90" stroke-width="3"/>
+  <text x="130" y="295" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#713E50">作品</text>
+  <text x="340" y="295" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#202124">Daxuan Journal Palette 0.5.6</text>
+  <text x="130" y="355" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#713E50">过尺</text>
+  <text x="340" y="355" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#202124">79 / 100（实测）</text>
+  <text x="130" y="415" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#713E50">定位</text>
+  <text x="340" y="415" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#202124">把科研审美意图编译成可复查的期刊配色</text>
+  <text x="130" y="475" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#713E50">绝活</text>
+  <text x="340" y="475" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#202124">中文视觉语汇 + 语义映射 + SCI 审计</text>
+  <text x="130" y="535" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#713E50">下一步</text>
+  <text x="340" y="535" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#202124">用真实科研图制作四联 benchmark</text>
+  <circle cx="1028" cy="566" r="60" fill="#2E4352"/>
+  <text x="1028" y="558" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#FFFDF8">验收师傅</text>
+  <text x="1028" y="585" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#DABC90">鲁班</text>
+  <rect x="64" y="632" width="1072" height="12" rx="6" fill="#6F8F7B"/>
+</svg>

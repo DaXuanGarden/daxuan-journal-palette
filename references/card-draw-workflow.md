@@ -6,7 +6,11 @@
 
 ### 1. `open-public`：公共领域作品
 
-使用 `scripts/draw_art_cards.py` 从 The Met Collection API 抽取 3–5 张候选图。脚本使用分页搜索、`hasImages=true` 和 `isPublicDomain=true`，返回作品标题、艺术家、对象 ID、缩略图 URL、作品页和权利说明。它只保存元数据，默认不把第三方图像复制进仓库。
+使用 `scripts/draw_art_cards.py` 从 The Met Collection API 抽取 3–10 张候选图。脚本使用分页搜索、`hasImages=true` 和 `isPublicDomain=true`，返回作品标题、艺术家、对象 ID、缩略图 URL、作品页和权利说明。它只保存元数据，默认不把第三方图像复制进仓库。
+
+当作者要求“色彩丰富、多彩、高饱和、不要灰灰的”时，必须使用 `--palette-friendly`。该模式先对语义搜索结果进行候选池过采样，再读取缩略图计算透明的色彩丰富度诊断，默认拒绝主要为灰度或低饱和棕褐色的图片。诊断使用平均 HSV 饱和度、75% 分位饱和度、彩色像素比例和色相覆盖率；它只是候选筛选信号，不是色盲安全或期刊合规认证。候选不足时，应扩大查询或降低 `--min-colorfulness`，不能把灰度图片直接当成彩色方案。
+
+多个主题可以用竖线连接，例如 `--query "poster|kimono|colorful textile|ceramic"`；脚本会合并候选 ID、去重，再统一进行色彩丰富度筛选。单一主题候选不足时，优先扩大主题池，保留筛选阈值。
 
 适合的请求：
 
@@ -44,6 +48,7 @@ artist: "..."
 artwork_id: "..."
 rights: public-domain | generated | unclear
 palette_status: not-extracted
+colorfulness: {score: 0.31, mean_saturation: 0.28, colorful_fraction: 0.47}
 ```
 
 展示 3–5 张后，让作者选择 `card_id`。如果作者说“你来选”，选择依据仍应写清楚：图表语义、背景、图形密度、最终尺寸和颜色风险，而不是只说“最漂亮”。
@@ -61,8 +66,12 @@ palette_status: not-extracted
 
 ```bash
 python3 scripts/draw_art_cards.py \
-  --query "blue landscape" --count 5 --seed 20261002 \
+  --query "colorful abstract" --count 5 --palette-friendly --seed 20261002 \
   --output cards.json
+
+python3 scripts/draw_art_cards.py \
+  --query "colorful textile" --count 10 --palette-friendly \
+  --min-colorfulness 0.22 --download-dir cards/images --output cards.json
 
 python3 scripts/extract_palette.py selected-card.jpg \
   --count 5 --seed 20261002 \
@@ -77,6 +86,7 @@ python3 scripts/extract_palette.py selected-card.jpg \
 抽卡色板要进入内置库，至少满足：
 
 - 有完整来源或生成记录；
+- 如果作者要求色彩丰富，候选卡片的色彩丰富度筛选记录必须保留；
 - 有明确的 `source_type`、`rights`、`extraction` 和 `transformation`；
 - 适合一种清楚的图表语义，而不只是“看起来漂亮”；
 - 经过实际图形、灰度、色觉差异和缩印检查；

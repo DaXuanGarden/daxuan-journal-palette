@@ -52,6 +52,52 @@ class CardToolTests(unittest.TestCase):
         self.assertTrue(all(card["rights"].startswith("public-domain") for card in payload["cards"]))
         json.dumps(payload, ensure_ascii=False)
 
+    def test_colorfulness_screen_separates_colorful_and_grayscale_pixels(self) -> None:
+        module = load_script("draw_art_cards.py")
+        colorful = module.colorfulness_from_pixels(
+            [(220, 30, 40)] * 8 + [(30, 100, 220)] * 8 + [(235, 190, 30)] * 8
+        )
+        grayscale = module.colorfulness_from_pixels(
+            [(220, 220, 220)] * 8 + [(100, 100, 100)] * 8 + [(30, 30, 30)] * 8
+        )
+        self.assertGreater(colorful["score"], grayscale["score"])
+        self.assertGreater(colorful["hue_coverage"], 0)
+        self.assertEqual(grayscale["hue_coverage"], 0)
+
+    def test_palette_friendly_draw_records_screen_metadata(self) -> None:
+        module = load_script("draw_art_cards.py")
+
+        def fake_fetch(url: str) -> dict:
+            if "/search?" in url:
+                return {"total": 3, "objectIDs": [101, 102, 103]}
+            object_id = int(url.rsplit("/", 1)[-1])
+            return {
+                "objectID": object_id,
+                "isPublicDomain": True,
+                "primaryImageSmall": f"https://images.example/{object_id}.jpg",
+                "objectURL": f"https://museum.example/{object_id}",
+                "title": f"Work {object_id}",
+                "artistDisplayName": "Test artist",
+            }
+
+        module.fetch_json = fake_fetch
+        module.screen_record_colorfulness = lambda record, **_: {
+            **record,
+            "colorfulness": {"score": 0.5},
+        }
+        payload = module.draw_cards(
+            "colorful",
+            count=3,
+            seed=2,
+            download_dir=None,
+            palette_friendly=True,
+            min_colorfulness=0.22,
+        )
+        self.assertTrue(payload["screen"]["palette_friendly"])
+        self.assertEqual(payload["screen"]["min_colorfulness"], 0.22)
+        self.assertEqual(payload["count"], 3)
+        self.assertTrue(all("colorfulness" in card for card in payload["cards"]))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,23 +1,23 @@
 {
   "name": "daxuan-journal-palette",
-  "version": "0.5.4",
+  "version": "0.7.0",
   "owner": {
     "name": "大轩",
     "github": "https://github.com/DaXuanGarden",
     "gitlab": "https://gitlab.com/DaXuanGarden"
   },
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-25",
   "status": "local-development",
   "maturity_tier": "production",
-  "lifecycle_stage": "fast-router",
+  "lifecycle_stage": "human-in-the-loop-figure-review",
   "context_budget_tier": "production",
   "license": "MIT",
-  "upstream_inspiration": "qiaomu-meta-skill; K-Dense-AI/scientific-agent-skills scientific-visualization; local easyplot; local nature-figure; local journal-ggplot-stylebook",
+  "upstream_inspiration": "qiaomu-meta-skill; K-Dense-AI/scientific-agent-skills scientific-visualization; local easyplot; local nature-figure; local journal-ggplot-stylebook; local sci-color-palettes",
   "intent": {
     "job_to_be_done": "为科研图表选择、映射和审查适合期刊传播的艺术化配色，并输出可复用代码。",
     "target_users": ["GWAS/omics researchers", "R and Python figure authors", "journal figure reviewers"],
-    "inputs": ["figure type", "semantic groups", "category order", "background", "final size", "target journal or medium", "optional card-draw description or selected image"],
-    "outputs": ["compact primary and alternatives route", "style family and rationale", "semantic HEX mapping", "visual palette preview", "R/ggplot2 code", "Python code", "accessibility and print audit", "provenance", "assumptions", "optional draw cards and extracted candidate palette"],
+    "inputs": ["figure type", "semantic groups", "category order", "background", "final size", "target journal or medium", "optional card-draw description or selected image", "card manifest plus figure-specific SCI candidate request"],
+    "outputs": ["compact primary and alternatives route", "style family and rationale", "semantic HEX mapping", "layer mapping contract", "preference constraints and rejected candidates", "bounded human review questions", "author decision log", "visual palette preview", "normal/CVD/grayscale/target-size preview card", "R/ggplot2 code", "Python code", "accessibility and print audit", "optional SCI application profile and gate", "provenance", "assumptions", "optional draw cards and extracted candidate palette", "joint visual-card/SCI semantic candidate preview"],
     "exclusions": ["brand identity", "web UI themes", "photo correction", "statistical analysis", "journal acceptance guarantee"]
   },
   "qiaomu_defaults": {
@@ -31,7 +31,7 @@
     "secret_scan": true,
     "trigger_eval": true,
     "install_check": true,
-    "human_figure_review": false,
+    "human_figure_review": true,
     "publication": false
   }
 }

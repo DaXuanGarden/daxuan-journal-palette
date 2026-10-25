@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "title": "LDSC circular heatmap · category ring",
+  "colors": [
+    "#6D98AF",
+    "#7DACA3",
+    "#CBA064",
+    "#CE8793",
+    "#A28BAF"
+  ],
+  "panels": [
+    "normal",
+    "grayscale",
+    "protanopia",
+    "deuteranopia",
+    "target-size"
+  ],
+  "target_size_proof": "2x2 swatch card; inspect again at final figure dimensions",
+  "audit_status": "screening_only",
+  "provenance": {
+    "script": "scripts/render_palette_preview.py",
+    "rule": "same semantic colors across normal, grayscale and CVD panels"
+  }
+}
