@@ -2,7 +2,7 @@
 
 ## 1. Result
 
-- Skill: daxuan-journal-palette 0.5.4
+- Skill: daxuan-journal-palette 0.7.0
 - Job: 为科研论文图表选择、映射和审查艺术化配色，并输出可复用代码。
 - Path: /home/daxuan/.codex/skills/daxuan-journal-palette
 - Publication: local only; no repository, release or marketplace publication was requested.
@@ -43,7 +43,7 @@
 ## 9. 0.4.0 open-card-draw expansion
 
 - Added `references/card-draw-workflow.md` for public-domain, generated and hybrid card draws, selection-before-extraction, provenance and internalization rules.
-- Added `scripts/draw_art_cards.py` for reproducible 3–5 card draws from The Met's paginated public-domain search and object metadata API.
+- Added `scripts/draw_art_cards.py` for reproducible 3–10 card draws from The Met's paginated public-domain search and object metadata API; v0.5.5 adds palette-friendly colorfulness screening and multi-query candidate pools.
 - Added `scripts/extract_palette.py` for optional Pillow-based RGB k-means extraction with seed, source, rights and candidate-only status.
 - Added deterministic tests and CI help/compile checks for both scripts. The package still keeps image assets outside the repository by default.
 
@@ -53,6 +53,20 @@
 - Added `scripts/route_palette.py`: ordinary requests return one primary palette and up to two alternatives; explicit card-draw wording returns a draw mode with default count 5 or count 1 for a single-card request.
 - Reduced default questions to figure type, group count and background; detailed provenance remains available without expanding the normal response.
 - Added router regression tests and kept the full palette atlas as an on-demand reference.
+
+## 0.5.6 SCI palette integration
+
+- Added `scripts/sci_palette_bridge.py` as an explicit-path adapter to the local `sci-color-palettes` package. It keeps Daxuan visual families separate from SCI application scoring and does not duplicate the 184-colour registry.
+- Added `references/sci-color-palettes-bridge.md` with field mapping, categorical versus diverging rules, and the three semantic layers used by the current LDSC/Genova/HDL circular heatmap.
+- Added bridge tests for application-field routing, `sp.select()` categorical subsets, centred `div-*` ramps and the circular-heatmap contract.
+- Added `audit_hex()` so Daxuan or image-extracted candidates can use the same SCI diagnostics without being copied into the SCI registry.
+- The recommended workflow is: SCI application gate -> Daxuan semantic/style mapping -> actual-size CVD/grayscale/print review. Automated scores remain diagnostic evidence, not journal certification.
+
+## 0.5.7 joint card-SCI expansion
+
+- Added `scripts/joint_palette_draw.py` to combine a seeded 1–10 card draw with SCI-ranked categorical, diverging-heatmap and circular-layer candidates.
+- Added `references/joint-card-sci-workflow.md` to make the separation explicit: image palettes guide mood, intact SCI ramps carry semantic meaning, and cross-layer colour splicing is prohibited.
+- Added JSON, PNG and HTML outputs and regression tests; the current 10-card project replay is stored outside the public Skill under the GWAS QA directory.
 
 ## 4. Advantages and evidence
 

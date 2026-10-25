@@ -1,0 +1,2182 @@
+{
+  "figure": "LDSC/Genova/HDL circular genetic-correlation heatmap",
+  "background": "#FFFFFF",
+  "semantic_layers": [
+    {
+      "layer": "outcome_category_ring",
+      "kind": "categorical",
+      "field": "database",
+      "reason": "five outcome categories need hue and pairwise separation",
+      "recommendations": [
+        {
+          "id": "burgundy-clin-hi",
+          "name_zh": "勃艮第灰·临床",
+          "name_en": "Burgundy Slate Clinical",
+          "family": "clinical",
+          "base": "burgundy",
+          "derived": true,
+          "hex": [
+            "#38091E",
+            "#824859",
+            "#C08E9A",
+            "#FFECF2",
+            "#293F4F",
+            "#859AA8",
+            "#D3DEE5",
+            "#DABC90"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 80,
+              "database": 68,
+              "basic": 92,
+              "general": 92
+            },
+            "fit": {
+              "clinical": true,
+              "database": true,
+              "basic": true,
+              "general": true
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 8,
+              "min8": 12.8,
+              "min5": 27.3,
+              "cvd8": 9.6,
+              "cvd5": 13.4,
+              "cvd5_pro": 6.4,
+              "span8": 0.865,
+              "dark": 3,
+              "hue_spread": 62.9,
+              "arm_monotone": false,
+              "is_scale": false
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "burgundy-clin-hi",
+            "name_zh": "勃艮第灰·临床",
+            "n": 8,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 6.4,
+                "closest_pair": [
+                  "#C08E9A",
+                  "#859AA8"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 9.6,
+                "closest_pair": [
+                  "#FFECF2",
+                  "#D3DEE5"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 14.6,
+                "closest_pair": [
+                  "#C08E9A",
+                  "#DABC90"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.8,
+                "closest_pair": [
+                  "#C08E9A",
+                  "#859AA8"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#38091E",
+                "#293F4F"
+              ],
+              "on_white_AA": [
+                "#824859"
+              ],
+              "on_white_low": [
+                "#C08E9A",
+                "#FFECF2",
+                "#859AA8",
+                "#D3DEE5",
+                "#DABC90"
+              ],
+              "on_black_AA+": [
+                "#C08E9A",
+                "#FFECF2",
+                "#859AA8",
+                "#D3DEE5",
+                "#DABC90"
+              ]
+            },
+            "notes": [
+              "pale members (#C08E9A, #FFECF2, #859AA8, #D3DEE5, #DABC90) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp"
+            ],
+            "luminance_sorted": [
+              "#38091E",
+              "#293F4F",
+              "#824859",
+              "#859AA8",
+              "#C08E9A",
+              "#DABC90",
+              "#D3DEE5",
+              "#FFECF2"
+            ]
+          },
+          "field": "database",
+          "score": 68,
+          "fits": true,
+          "metrics": {
+            "n": 8,
+            "min8": 12.8,
+            "min5": 27.3,
+            "cvd8": 9.6,
+            "cvd5": 13.4,
+            "cvd5_pro": 6.4,
+            "span8": 0.865,
+            "dark": 3,
+            "hue_spread": 62.9,
+            "arm_monotone": false,
+            "is_scale": false
+          },
+          "selected_hex": [
+            "#38091E",
+            "#C08E9A",
+            "#FFECF2",
+            "#859AA8",
+            "#DABC90"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#38091E",
+              "#C08E9A",
+              "#FFECF2",
+              "#859AA8",
+              "#DABC90"
+            ],
+            "n": 5,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 6.4,
+                "simulated_hex": [
+                  "#0C101F",
+                  "#93959A",
+                  "#EEEFF2",
+                  "#9499A9",
+                  "#CABB8E"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 13.4,
+                "simulated_hex": [
+                  "#15171D",
+                  "#9E9D99",
+                  "#F2F2F2",
+                  "#8F95A8",
+                  "#D1C291"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 14.6,
+                "simulated_hex": [
+                  "#400810",
+                  "#CB8C92",
+                  "#FFEBEE",
+                  "#7D9E9E",
+                  "#EAB3AF"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.8,
+                "simulated_hex": [
+                  "#151515",
+                  "#999999",
+                  "#F0F0F0",
+                  "#979797",
+                  "#BFBFBF"
+                ]
+              }
+            },
+            "lightness_span": 0.865,
+            "contrast_on_white": {
+              "min": 1.13,
+              "max": 17.13,
+              "aa_or_better": 1,
+              "aaa": 1
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "selection_rule": "sci_palettes.select: preserve original ramp members",
+          "why": "pairwise separation 27.3 on the best 5; hue spread 63 deg for many categories"
+        },
+        {
+          "id": "burgundy-clin",
+          "name_zh": "勃艮第灰·临床",
+          "name_en": "Burgundy Slate Clinical",
+          "family": "clinical",
+          "base": "burgundy",
+          "derived": true,
+          "hex": [
+            "#3B1022",
+            "#844C5C",
+            "#C0929D",
+            "#FFECF2",
+            "#2E4352",
+            "#889CAA",
+            "#D4DFE6",
+            "#DABD94"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 78,
+              "database": 67,
+              "basic": 92,
+              "general": 92
+            },
+            "fit": {
+              "clinical": true,
+              "database": true,
+              "basic": true,
+              "general": true
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 8,
+              "min8": 12.6,
+              "min5": 25.3,
+              "cvd8": 9.3,
+              "cvd5": 12.8,
+              "cvd5_pro": 6.4,
+              "span8": 0.862,
+              "dark": 3,
+              "hue_spread": 63.2,
+              "arm_monotone": false,
+              "is_scale": false
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "burgundy-clin",
+            "name_zh": "勃艮第灰·临床",
+            "n": 8,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 6.4,
+                "closest_pair": [
+                  "#C0929D",
+                  "#889CAA"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 9.3,
+                "closest_pair": [
+                  "#FFECF2",
+                  "#D4DFE6"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 14.0,
+                "closest_pair": [
+                  "#C0929D",
+                  "#DABD94"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 1.5,
+                "closest_pair": [
+                  "#C0929D",
+                  "#889CAA"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#3B1022",
+                "#2E4352"
+              ],
+              "on_white_AA": [
+                "#844C5C"
+              ],
+              "on_white_low": [
+                "#C0929D",
+                "#FFECF2",
+                "#889CAA",
+                "#D4DFE6",
+                "#DABD94"
+              ],
+              "on_black_AA+": [
+                "#C0929D",
+                "#FFECF2",
+                "#889CAA",
+                "#D4DFE6",
+                "#DABD94"
+              ]
+            },
+            "notes": [
+              "pale members (#C0929D, #FFECF2, #889CAA, #D4DFE6, #DABD94) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp"
+            ],
+            "luminance_sorted": [
+              "#3B1022",
+              "#2E4352",
+              "#844C5C",
+              "#889CAA",
+              "#C0929D",
+              "#DABD94",
+              "#D4DFE6",
+              "#FFECF2"
+            ]
+          },
+          "field": "database",
+          "score": 67,
+          "fits": true,
+          "metrics": {
+            "n": 8,
+            "min8": 12.6,
+            "min5": 25.3,
+            "cvd8": 9.3,
+            "cvd5": 12.8,
+            "cvd5_pro": 6.4,
+            "span8": 0.862,
+            "dark": 3,
+            "hue_spread": 63.2,
+            "arm_monotone": false,
+            "is_scale": false
+          },
+          "selected_hex": [
+            "#3B1022",
+            "#C0929D",
+            "#FFECF2",
+            "#889CAA",
+            "#DABD94"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#3B1022",
+              "#C0929D",
+              "#FFECF2",
+              "#889CAA",
+              "#DABD94"
+            ],
+            "n": 5,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 6.4,
+                "simulated_hex": [
+                  "#131723",
+                  "#97989D",
+                  "#EEEFF2",
+                  "#969BAB",
+                  "#CABC92"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 12.8,
+                "simulated_hex": [
+                  "#1C1D21",
+                  "#A09F9C",
+                  "#F2F2F2",
+                  "#9197AA",
+                  "#D1C395"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 14.0,
+                "simulated_hex": [
+                  "#430F16",
+                  "#CA9096",
+                  "#FFEBEE",
+                  "#80A0A0",
+                  "#E9B5B1"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 1.5,
+                "simulated_hex": [
+                  "#1A1A1A",
+                  "#9D9D9D",
+                  "#F0F0F0",
+                  "#999999",
+                  "#C0C0C0"
+                ]
+              }
+            },
+            "lightness_span": 0.862,
+            "contrast_on_white": {
+              "min": 1.13,
+              "max": 16.37,
+              "aa_or_better": 1,
+              "aaa": 1
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "selection_rule": "sci_palettes.select: preserve original ramp members",
+          "why": "pairwise separation 25.3 on the best 5; hue spread 63 deg for many categories"
+        },
+        {
+          "id": "lilac_garden-clin-hi",
+          "name_zh": "熏紫春庭·临床",
+          "name_en": "Smoked Lilac Garden Clinical",
+          "family": "clinical",
+          "base": "lilac_garden",
+          "derived": true,
+          "hex": [
+            "#1C104B",
+            "#B9ABC7",
+            "#A48F63",
+            "#688A6F",
+            "#6F98A9",
+            "#B68390",
+            "#232C37",
+            "#F2F0F5"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 59,
+              "database": 65,
+              "basic": 81,
+              "general": 85
+            },
+            "fit": {
+              "clinical": true,
+              "database": true,
+              "basic": true,
+              "general": true
+            },
+            "primary": "general",
+            "metrics": {
+              "n": 8,
+              "min8": 21.1,
+              "min5": 25.5,
+              "cvd8": 10.2,
+              "cvd5": 10.2,
+              "cvd5_pro": 13.7,
+              "span8": 0.867,
+              "dark": 2,
+              "hue_spread": 89.7,
+              "arm_monotone": false,
+              "is_scale": false
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "lilac_garden-clin-hi",
+            "name_zh": "熏紫春庭·临床",
+            "n": 8,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 9.5,
+                "closest_pair": [
+                  "#6F98A9",
+                  "#B68390"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 10.2,
+                "closest_pair": [
+                  "#688A6F",
+                  "#B68390"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 10.3,
+                "closest_pair": [
+                  "#688A6F",
+                  "#6F98A9"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.4,
+                "closest_pair": [
+                  "#A48F63",
+                  "#6F98A9"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#1C104B",
+                "#232C37"
+              ],
+              "on_white_AA": [],
+              "on_white_low": [
+                "#B9ABC7",
+                "#F2F0F5"
+              ],
+              "on_black_AA+": [
+                "#B9ABC7",
+                "#A48F63",
+                "#688A6F",
+                "#6F98A9",
+                "#B68390",
+                "#F2F0F5"
+              ]
+            },
+            "notes": [
+              "pale members (#B9ABC7, #F2F0F5) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp"
+            ],
+            "luminance_sorted": [
+              "#1C104B",
+              "#232C37",
+              "#688A6F",
+              "#B68390",
+              "#A48F63",
+              "#6F98A9",
+              "#B9ABC7",
+              "#F2F0F5"
+            ]
+          },
+          "field": "database",
+          "score": 65,
+          "fits": true,
+          "metrics": {
+            "n": 8,
+            "min8": 21.1,
+            "min5": 25.5,
+            "cvd8": 10.2,
+            "cvd5": 10.2,
+            "cvd5_pro": 13.7,
+            "span8": 0.867,
+            "dark": 2,
+            "hue_spread": 89.7,
+            "arm_monotone": false,
+            "is_scale": false
+          },
+          "selected_hex": [
+            "#1C104B",
+            "#A48F63",
+            "#688A6F",
+            "#B68390",
+            "#F2F0F5"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#1C104B",
+              "#A48F63",
+              "#688A6F",
+              "#B68390",
+              "#F2F0F5"
+            ],
+            "n": 5,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 13.7,
+                "simulated_hex": [
+                  "#06174E",
+                  "#9B8D61",
+                  "#8A836E",
+                  "#888A90",
+                  "#EFF1F5"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 10.2,
+                "simulated_hex": [
+                  "#071649",
+                  "#A19364",
+                  "#847F70",
+                  "#93928F",
+                  "#F0F1F5"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 10.4,
+                "simulated_hex": [
+                  "#151822",
+                  "#B18782",
+                  "#648982",
+                  "#C18187",
+                  "#F2F1F2"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.4,
+                "simulated_hex": [
+                  "#171717",
+                  "#909090",
+                  "#818181",
+                  "#8F8F8F",
+                  "#F1F1F1"
+                ]
+              }
+            },
+            "lightness_span": 0.867,
+            "contrast_on_white": {
+              "min": 1.13,
+              "max": 17.14,
+              "aa_or_better": 1,
+              "aaa": 1
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "selection_rule": "sci_palettes.select: preserve original ramp members",
+          "why": "pairwise separation 25.5 on the best 5; hue spread 90 deg for many categories"
+        },
+        {
+          "id": "lilac_garden-h270",
+          "name_zh": "熏紫春庭·色相+270",
+          "name_en": "Smoked Lilac Garden h+270",
+          "family": "hue_rotate",
+          "base": "lilac_garden",
+          "derived": true,
+          "hex": [
+            "#0096A8",
+            "#AFDDE9",
+            "#F5B5CA",
+            "#DFB79F",
+            "#B4CDB5",
+            "#B0C8EE",
+            "#819690",
+            "#EEF5F7"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 63,
+              "database": 65,
+              "basic": 71,
+              "general": 61
+            },
+            "fit": {
+              "clinical": false,
+              "database": true,
+              "basic": true,
+              "general": true
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 8,
+              "min8": 17.2,
+              "min5": 24.6,
+              "cvd8": 8.7,
+              "cvd5": 15.3,
+              "cvd5_pro": 14.5,
+              "span8": 0.656,
+              "dark": 0,
+              "hue_spread": 94.9,
+              "arm_monotone": false,
+              "is_scale": false
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "lilac_garden-h270",
+            "name_zh": "熏紫春庭·色相+270",
+            "n": 8,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 6.8,
+                "closest_pair": [
+                  "#DFB79F",
+                  "#B4CDB5"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.7,
+                "closest_pair": [
+                  "#F5B5CA",
+                  "#B4CDB5"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 7.2,
+                "closest_pair": [
+                  "#F5B5CA",
+                  "#DFB79F"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "closest_pair": [
+                  "#B4CDB5",
+                  "#B0C8EE"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [],
+              "on_white_AA": [],
+              "on_white_low": [
+                "#AFDDE9",
+                "#F5B5CA",
+                "#DFB79F",
+                "#B4CDB5",
+                "#B0C8EE",
+                "#EEF5F7"
+              ],
+              "on_black_AA+": [
+                "#0096A8",
+                "#AFDDE9",
+                "#F5B5CA",
+                "#DFB79F",
+                "#B4CDB5",
+                "#B0C8EE",
+                "#819690",
+                "#EEF5F7"
+              ]
+            },
+            "notes": [
+              "pale members (#AFDDE9, #F5B5CA, #DFB79F, #B4CDB5, #B0C8EE, #EEF5F7) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp"
+            ],
+            "luminance_sorted": [
+              "#0096A8",
+              "#819690",
+              "#DFB79F",
+              "#B4CDB5",
+              "#B0C8EE",
+              "#F5B5CA",
+              "#AFDDE9",
+              "#EEF5F7"
+            ]
+          },
+          "field": "database",
+          "score": 65,
+          "fits": true,
+          "metrics": {
+            "n": 8,
+            "min8": 17.2,
+            "min5": 24.6,
+            "cvd8": 8.7,
+            "cvd5": 15.3,
+            "cvd5_pro": 14.5,
+            "span8": 0.656,
+            "dark": 0,
+            "hue_spread": 94.9,
+            "arm_monotone": false,
+            "is_scale": false
+          },
+          "selected_hex": [
+            "#0096A8",
+            "#F5B5CA",
+            "#DFB79F",
+            "#B0C8EE",
+            "#EEF5F7"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#0096A8",
+              "#F5B5CA",
+              "#DFB79F",
+              "#B0C8EE",
+              "#EEF5F7"
+            ],
+            "n": 5,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 14.5,
+                "simulated_hex": [
+                  "#7B87AA",
+                  "#BABECB",
+                  "#C2B99E",
+                  "#BDC9F0",
+                  "#F4F4F7"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 15.3,
+                "simulated_hex": [
+                  "#5B6DA9",
+                  "#C8C8C9",
+                  "#CBC19F",
+                  "#B7C3ED",
+                  "#F2F3F7"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 7.2,
+                "simulated_hex": [
+                  "#00A49B",
+                  "#FFB3BC",
+                  "#EEB0B0",
+                  "#A3CFD3",
+                  "#ECF6F6"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.7,
+                "simulated_hex": [
+                  "#777777",
+                  "#C4C4C4",
+                  "#BEBEBE",
+                  "#C6C6C6",
+                  "#F4F4F4"
+                ]
+              }
+            },
+            "lightness_span": 0.656,
+            "contrast_on_white": {
+              "min": 1.1,
+              "max": 3.54,
+              "aa_or_better": 0,
+              "aaa": 0
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "selection_rule": "sci_palettes.select: preserve original ramp members",
+          "why": "pairwise separation 24.6 on the best 5; hue spread 95 deg for many categories"
+        },
+        {
+          "id": "burgundy-light",
+          "name_zh": "勃艮第灰·浅调",
+          "name_en": "Burgundy Slate Light",
+          "family": "contrast",
+          "base": "burgundy",
+          "derived": true,
+          "hex": [
+            "#764355",
+            "#B07182",
+            "#D9A7B3",
+            "#FFECF2",
+            "#5A7081",
+            "#9EB3C3",
+            "#D9E4EB",
+            "#E8CA9E"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 73,
+              "database": 63,
+              "basic": 88,
+              "general": 85
+            },
+            "fit": {
+              "clinical": true,
+              "database": true,
+              "basic": true,
+              "general": true
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 8,
+              "min8": 11.7,
+              "min5": 25.2,
+              "cvd8": 7.9,
+              "cvd5": 14.1,
+              "cvd5_pro": 7.3,
+              "span8": 0.791,
+              "dark": 2,
+              "hue_spread": 63.0,
+              "arm_monotone": false,
+              "is_scale": false
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "burgundy-light",
+            "name_zh": "勃艮第灰·浅调",
+            "n": 8,
+            "hard_pairs": [
+              {
+                "a": "#FFECF2",
+                "b": "#D9E4EB",
+                "delta_e": 11.7
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 4.9,
+                "closest_pair": [
+                  "#FFECF2",
+                  "#D9E4EB"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 7.9,
+                "closest_pair": [
+                  "#FFECF2",
+                  "#D9E4EB"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 10.9,
+                "closest_pair": [
+                  "#D9A7B3",
+                  "#E8CA9E"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.7,
+                "closest_pair": [
+                  "#D9A7B3",
+                  "#9EB3C3"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#764355"
+              ],
+              "on_white_AA": [
+                "#5A7081"
+              ],
+              "on_white_low": [
+                "#D9A7B3",
+                "#FFECF2",
+                "#9EB3C3",
+                "#D9E4EB",
+                "#E8CA9E"
+              ],
+              "on_black_AA+": [
+                "#B07182",
+                "#D9A7B3",
+                "#FFECF2",
+                "#9EB3C3",
+                "#D9E4EB",
+                "#E8CA9E"
+              ]
+            },
+            "notes": [
+              "pale members (#D9A7B3, #FFECF2, #9EB3C3, #D9E4EB, #E8CA9E) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp",
+              "some members sit below CIE76 12: do not place them side by side without a second cue (marker shape, linestyle, direct label)"
+            ],
+            "luminance_sorted": [
+              "#764355",
+              "#5A7081",
+              "#B07182",
+              "#9EB3C3",
+              "#D9A7B3",
+              "#E8CA9E",
+              "#D9E4EB",
+              "#FFECF2"
+            ]
+          },
+          "field": "database",
+          "score": 63,
+          "fits": true,
+          "metrics": {
+            "n": 8,
+            "min8": 11.7,
+            "min5": 25.2,
+            "cvd8": 7.9,
+            "cvd5": 14.1,
+            "cvd5_pro": 7.3,
+            "span8": 0.791,
+            "dark": 2,
+            "hue_spread": 63.0,
+            "arm_monotone": false,
+            "is_scale": false
+          },
+          "selected_hex": [
+            "#764355",
+            "#D9A7B3",
+            "#FFECF2",
+            "#9EB3C3",
+            "#E8CA9E"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#764355",
+              "#D9A7B3",
+              "#FFECF2",
+              "#9EB3C3",
+              "#E8CA9E"
+            ],
+            "n": 5,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 7.3,
+                "simulated_hex": [
+                  "#474B56",
+                  "#ACAEB3",
+                  "#EEEFF2",
+                  "#ADB2C4",
+                  "#D8C99C"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 14.1,
+                "simulated_hex": [
+                  "#525254",
+                  "#B7B6B2",
+                  "#F2F2F2",
+                  "#A8AEC3",
+                  "#DFD09F"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 10.9,
+                "simulated_hex": [
+                  "#804249",
+                  "#E4A5AB",
+                  "#FFEBEE",
+                  "#96B7B8",
+                  "#F8C1BD"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.7,
+                "simulated_hex": [
+                  "#4F4F4F",
+                  "#B2B2B2",
+                  "#F0F0F0",
+                  "#B0B0B0",
+                  "#CDCDCD"
+                ]
+              }
+            },
+            "lightness_span": 0.791,
+            "contrast_on_white": {
+              "min": 1.13,
+              "max": 7.77,
+              "aa_or_better": 1,
+              "aaa": 1
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "selection_rule": "sci_palettes.select: preserve original ramp members",
+          "why": "pairwise separation 25.2 on the best 5; hue spread 63 deg for many categories"
+        }
+      ]
+    },
+    {
+      "layer": "signed_ldsc_heat_ring",
+      "kind": "diverging",
+      "reason": "genetic correlation is signed and has a meaningful zero midpoint",
+      "recommendations": [
+        {
+          "id": "div-plum-sage-deep",
+          "name_zh": "双向·plum-sage·柔",
+          "name_en": "Diverging Plum-Sage Soft",
+          "family": "diverging",
+          "base": "div",
+          "derived": true,
+          "hex": [
+            "#2C203B",
+            "#6F6479",
+            "#B8B0BE",
+            "#F6EAD3",
+            "#BDB199",
+            "#828B70",
+            "#476553"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 41,
+              "database": 39,
+              "basic": 49,
+              "general": 50
+            },
+            "fit": {
+              "clinical": false,
+              "database": false,
+              "basic": false,
+              "general": false
+            },
+            "primary": "general",
+            "metrics": {
+              "n": 7,
+              "min8": 18.3,
+              "min5": 20.5,
+              "cvd8": 15.5,
+              "cvd5": 15.5,
+              "cvd5_pro": 20.4,
+              "span8": 0.813,
+              "dark": 3,
+              "hue_spread": 110.8,
+              "arm_monotone": true,
+              "is_scale": true
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "div-plum-sage-deep",
+            "name_zh": "双向·plum-sage·柔",
+            "n": 7,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 15.5,
+                "closest_pair": [
+                  "#BDB199",
+                  "#828B70"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 15.5,
+                "closest_pair": [
+                  "#6F6479",
+                  "#476553"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 7.1,
+                "closest_pair": [
+                  "#B8B0BE",
+                  "#BDB199"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.4,
+                "closest_pair": [
+                  "#B8B0BE",
+                  "#BDB199"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#2C203B"
+              ],
+              "on_white_AA": [
+                "#6F6479",
+                "#476553"
+              ],
+              "on_white_low": [
+                "#B8B0BE",
+                "#F6EAD3",
+                "#BDB199"
+              ],
+              "on_black_AA+": [
+                "#B8B0BE",
+                "#F6EAD3",
+                "#BDB199",
+                "#828B70"
+              ]
+            },
+            "notes": [
+              "pale members (#B8B0BE, #F6EAD3, #BDB199) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp"
+            ],
+            "luminance_sorted": [
+              "#2C203B",
+              "#476553",
+              "#6F6479",
+              "#828B70",
+              "#BDB199",
+              "#B8B0BE",
+              "#F6EAD3"
+            ]
+          },
+          "centre_index_zero_based": 3,
+          "centre_hex": "#F6EAD3",
+          "selected_hex": [
+            "#2C203B",
+            "#6F6479",
+            "#B8B0BE",
+            "#F6EAD3",
+            "#BDB199",
+            "#828B70",
+            "#476553"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#2C203B",
+              "#6F6479",
+              "#B8B0BE",
+              "#F6EAD3",
+              "#BDB199",
+              "#828B70",
+              "#476553"
+            ],
+            "n": 7,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 15.5,
+                "simulated_hex": [
+                  "#1C243C",
+                  "#61677A",
+                  "#AEB2BF",
+                  "#F1E9D2",
+                  "#B8B098",
+                  "#8F876F",
+                  "#646052"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 15.5,
+                "simulated_hex": [
+                  "#1E253A",
+                  "#636878",
+                  "#B0B3BD",
+                  "#F4ECD4",
+                  "#BBB39A",
+                  "#8E8771",
+                  "#5E5C54"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 7.1,
+                "simulated_hex": [
+                  "#2A2328",
+                  "#6E666A",
+                  "#B8B1B4",
+                  "#FDE6E3",
+                  "#C4ADAA",
+                  "#858883",
+                  "#43655F"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.4,
+                "simulated_hex": [
+                  "#252525",
+                  "#686868",
+                  "#B3B3B3",
+                  "#EBEBEB",
+                  "#B2B2B2",
+                  "#878787",
+                  "#5D5D5D"
+                ]
+              }
+            },
+            "lightness_span": 0.813,
+            "contrast_on_white": {
+              "min": 1.19,
+              "max": 15.25,
+              "aa_or_better": 3,
+              "aaa": 1
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "rank_metrics": {
+            "cvd_min_deuteranopia": 15.5,
+            "cvd5_deuteranopia": 15.5,
+            "min5_delta_e": 20.5,
+            "lightness_span8": 0.813
+          },
+          "selection_rule": "sci_palettes.ramp for continuous signed values; preserve the pale centre"
+        },
+        {
+          "id": "div-plum-sage",
+          "name_zh": "双向·plum-sage",
+          "name_en": "Diverging Plum-Sage",
+          "family": "diverging",
+          "base": "div",
+          "derived": true,
+          "hex": [
+            "#655675",
+            "#968AA1",
+            "#C9C1CF",
+            "#F6EAD3",
+            "#CFC2AA",
+            "#A0A98D",
+            "#6F8F7B"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 27,
+              "database": 28,
+              "basic": 34,
+              "general": 32
+            },
+            "fit": {
+              "clinical": false,
+              "database": false,
+              "basic": false,
+              "general": false
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 7,
+              "min8": 14.2,
+              "min5": 14.2,
+              "cvd8": 11.8,
+              "cvd5": 14.1,
+              "cvd5_pro": 14.3,
+              "span8": 0.724,
+              "dark": 1,
+              "hue_spread": 111.0,
+              "arm_monotone": true,
+              "is_scale": true
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "div-plum-sage",
+            "name_zh": "双向·plum-sage",
+            "n": 7,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 10.4,
+                "closest_pair": [
+                  "#CFC2AA",
+                  "#A0A98D"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 11.8,
+                "closest_pair": [
+                  "#CFC2AA",
+                  "#A0A98D"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 7.8,
+                "closest_pair": [
+                  "#C9C1CF",
+                  "#CFC2AA"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.4,
+                "closest_pair": [
+                  "#C9C1CF",
+                  "#CFC2AA"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [],
+              "on_white_AA": [
+                "#655675"
+              ],
+              "on_white_low": [
+                "#C9C1CF",
+                "#F6EAD3",
+                "#CFC2AA",
+                "#A0A98D"
+              ],
+              "on_black_AA+": [
+                "#968AA1",
+                "#C9C1CF",
+                "#F6EAD3",
+                "#CFC2AA",
+                "#A0A98D",
+                "#6F8F7B"
+              ]
+            },
+            "notes": [
+              "pale members (#C9C1CF, #F6EAD3, #CFC2AA, #A0A98D) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp"
+            ],
+            "luminance_sorted": [
+              "#655675",
+              "#6F8F7B",
+              "#968AA1",
+              "#A0A98D",
+              "#CFC2AA",
+              "#C9C1CF",
+              "#F6EAD3"
+            ]
+          },
+          "centre_index_zero_based": 3,
+          "centre_hex": "#F6EAD3",
+          "selected_hex": [
+            "#655675",
+            "#968AA1",
+            "#C9C1CF",
+            "#F6EAD3",
+            "#CFC2AA",
+            "#A0A98D",
+            "#6F8F7B"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#655675",
+              "#968AA1",
+              "#C9C1CF",
+              "#F6EAD3",
+              "#CFC2AA",
+              "#A0A98D",
+              "#6F8F7B"
+            ],
+            "n": 7,
+            "hard_pairs": [],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 10.4,
+                "simulated_hex": [
+                  "#525B77",
+                  "#878EA2",
+                  "#BFC3D0",
+                  "#F1E9D2",
+                  "#C9C1A9",
+                  "#ADA58C",
+                  "#8E897A"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 11.8,
+                "simulated_hex": [
+                  "#545C74",
+                  "#898EA0",
+                  "#C1C4CE",
+                  "#F4ECD4",
+                  "#CCC5AB",
+                  "#ACA58E",
+                  "#88857C"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 7.8,
+                "simulated_hex": [
+                  "#63595F",
+                  "#958C91",
+                  "#C9C2C5",
+                  "#FDE6E3",
+                  "#D7BDBB",
+                  "#A3A6A0",
+                  "#6A8F89"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.4,
+                "simulated_hex": [
+                  "#5B5B5B",
+                  "#8E8E8E",
+                  "#C4C4C4",
+                  "#EBEBEB",
+                  "#C3C3C3",
+                  "#A5A5A5",
+                  "#878787"
+                ]
+              }
+            },
+            "lightness_span": 0.724,
+            "contrast_on_white": {
+              "min": 1.19,
+              "max": 6.69,
+              "aa_or_better": 1,
+              "aaa": 0
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "rank_metrics": {
+            "cvd_min_deuteranopia": 11.8,
+            "cvd5_deuteranopia": 14.1,
+            "min5_delta_e": 14.2,
+            "lightness_span8": 0.724
+          },
+          "selection_rule": "sci_palettes.ramp for continuous signed values; preserve the pale centre"
+        },
+        {
+          "id": "div-plum-blue",
+          "name_zh": "双向·plum-blue",
+          "name_en": "Diverging Plum-Blue",
+          "family": "diverging",
+          "base": "div",
+          "derived": true,
+          "hex": [
+            "#713E50",
+            "#A17C88",
+            "#D2BFC5",
+            "#F3E7FC",
+            "#CCBFD5",
+            "#9F9ABD",
+            "#6978A6"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 31,
+              "database": 20,
+              "basic": 36,
+              "general": 34
+            },
+            "fit": {
+              "clinical": false,
+              "database": false,
+              "basic": false,
+              "general": false
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 7,
+              "min8": 8.8,
+              "min5": 14.2,
+              "cvd8": 8.7,
+              "cvd5": 14.0,
+              "cvd5_pro": 14.1,
+              "span8": 0.757,
+              "dark": 1,
+              "hue_spread": 31.6,
+              "arm_monotone": true,
+              "is_scale": true
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "div-plum-blue",
+            "name_zh": "双向·plum-blue",
+            "n": 7,
+            "hard_pairs": [
+              {
+                "a": "#D2BFC5",
+                "b": "#CCBFD5",
+                "delta_e": 8.8
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 8.8,
+                "closest_pair": [
+                  "#D2BFC5",
+                  "#CCBFD5"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.7,
+                "closest_pair": [
+                  "#D2BFC5",
+                  "#CCBFD5"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 5.4,
+                "closest_pair": [
+                  "#D2BFC5",
+                  "#CCBFD5"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "closest_pair": [
+                  "#D2BFC5",
+                  "#CCBFD5"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#713E50"
+              ],
+              "on_white_AA": [],
+              "on_white_low": [
+                "#D2BFC5",
+                "#F3E7FC",
+                "#CCBFD5",
+                "#9F9ABD"
+              ],
+              "on_black_AA+": [
+                "#A17C88",
+                "#D2BFC5",
+                "#F3E7FC",
+                "#CCBFD5",
+                "#9F9ABD",
+                "#6978A6"
+              ]
+            },
+            "notes": [
+              "pale members (#D2BFC5, #F3E7FC, #CCBFD5, #9F9ABD) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp",
+              "some members sit below CIE76 12: do not place them side by side without a second cue (marker shape, linestyle, direct label)"
+            ],
+            "luminance_sorted": [
+              "#713E50",
+              "#6978A6",
+              "#A17C88",
+              "#9F9ABD",
+              "#CCBFD5",
+              "#D2BFC5",
+              "#F3E7FC"
+            ]
+          },
+          "centre_index_zero_based": 3,
+          "centre_hex": "#F3E7FC",
+          "selected_hex": [
+            "#713E50",
+            "#A17C88",
+            "#D2BFC5",
+            "#F3E7FC",
+            "#CCBFD5",
+            "#9F9ABD",
+            "#6978A6"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#713E50",
+              "#A17C88",
+              "#D2BFC5",
+              "#F3E7FC",
+              "#CCBFD5",
+              "#9F9ABD",
+              "#6978A6"
+            ],
+            "n": 7,
+            "hard_pairs": [
+              {
+                "a": "#D2BFC5",
+                "b": "#CCBFD5",
+                "delta_e": 8.8
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 8.8,
+                "simulated_hex": [
+                  "#424651",
+                  "#7F8188",
+                  "#C1C2C5",
+                  "#E5EAFD",
+                  "#BCC3D6",
+                  "#949EBF",
+                  "#6C7BA8"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.7,
+                "simulated_hex": [
+                  "#4D4D4F",
+                  "#878787",
+                  "#C5C5C5",
+                  "#E7EBFB",
+                  "#BFC4D4",
+                  "#949DBC",
+                  "#6876A5"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 5.4,
+                "simulated_hex": [
+                  "#7B3D44",
+                  "#A87B80",
+                  "#D6BEC1",
+                  "#F2E9ED",
+                  "#CBC1C6",
+                  "#9A9FA5",
+                  "#5D8086"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "simulated_hex": [
+                  "#4A4A4A",
+                  "#858585",
+                  "#C3C3C3",
+                  "#EBEBEB",
+                  "#C3C3C3",
+                  "#9E9E9E",
+                  "#787878"
+                ]
+              }
+            },
+            "lightness_span": 0.757,
+            "contrast_on_white": {
+              "min": 1.19,
+              "max": 8.38,
+              "aa_or_better": 1,
+              "aaa": 1
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "rank_metrics": {
+            "cvd_min_deuteranopia": 8.7,
+            "cvd5_deuteranopia": 14.0,
+            "min5_delta_e": 14.2,
+            "lightness_span8": 0.757
+          },
+          "selection_rule": "sci_palettes.ramp for continuous signed values; preserve the pale centre"
+        },
+        {
+          "id": "div-plum-blue-soft",
+          "name_zh": "双向·plum-blue·柔",
+          "name_en": "Diverging Plum-Blue Soft",
+          "family": "diverging",
+          "base": "div",
+          "derived": true,
+          "hex": [
+            "#AE7688",
+            "#C8A1AD",
+            "#E1CED4",
+            "#F3E7FC",
+            "#DBCEE4",
+            "#BCB7DB",
+            "#93A2D2"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 11,
+              "database": 9,
+              "basic": 15,
+              "general": 13
+            },
+            "fit": {
+              "clinical": false,
+              "database": false,
+              "basic": false,
+              "general": false
+            },
+            "primary": "basic",
+            "metrics": {
+              "n": 7,
+              "min8": 8.7,
+              "min5": 8.8,
+              "cvd8": 8.6,
+              "cvd5": 8.6,
+              "cvd5_pro": 8.7,
+              "span8": 0.595,
+              "dark": 0,
+              "hue_spread": 32.1,
+              "arm_monotone": true,
+              "is_scale": true
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "div-plum-blue-soft",
+            "name_zh": "双向·plum-blue·柔",
+            "n": 7,
+            "hard_pairs": [
+              {
+                "a": "#E1CED4",
+                "b": "#F3E7FC",
+                "delta_e": 11.9
+              },
+              {
+                "a": "#E1CED4",
+                "b": "#DBCEE4",
+                "delta_e": 8.7
+              },
+              {
+                "a": "#F3E7FC",
+                "b": "#DBCEE4",
+                "delta_e": 8.8
+              },
+              {
+                "a": "#DBCEE4",
+                "b": "#BCB7DB",
+                "delta_e": 11.8
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 8.6,
+                "closest_pair": [
+                  "#E1CED4",
+                  "#DBCEE4"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.6,
+                "closest_pair": [
+                  "#E1CED4",
+                  "#DBCEE4"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 5.3,
+                "closest_pair": [
+                  "#E1CED4",
+                  "#DBCEE4"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "closest_pair": [
+                  "#E1CED4",
+                  "#DBCEE4"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [],
+              "on_white_AA": [],
+              "on_white_low": [
+                "#C8A1AD",
+                "#E1CED4",
+                "#F3E7FC",
+                "#DBCEE4",
+                "#BCB7DB",
+                "#93A2D2"
+              ],
+              "on_black_AA+": [
+                "#AE7688",
+                "#C8A1AD",
+                "#E1CED4",
+                "#F3E7FC",
+                "#DBCEE4",
+                "#BCB7DB",
+                "#93A2D2"
+              ]
+            },
+            "notes": [
+              "pale members (#C8A1AD, #E1CED4, #F3E7FC, #DBCEE4, #BCB7DB, #93A2D2) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp",
+              "some members sit below CIE76 12: do not place them side by side without a second cue (marker shape, linestyle, direct label)"
+            ],
+            "luminance_sorted": [
+              "#AE7688",
+              "#93A2D2",
+              "#C8A1AD",
+              "#BCB7DB",
+              "#DBCEE4",
+              "#E1CED4",
+              "#F3E7FC"
+            ]
+          },
+          "centre_index_zero_based": 3,
+          "centre_hex": "#F3E7FC",
+          "selected_hex": [
+            "#AE7688",
+            "#C8A1AD",
+            "#E1CED4",
+            "#F3E7FC",
+            "#DBCEE4",
+            "#BCB7DB",
+            "#93A2D2"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#AE7688",
+              "#C8A1AD",
+              "#E1CED4",
+              "#F3E7FC",
+              "#DBCEE4",
+              "#BCB7DB",
+              "#93A2D2"
+            ],
+            "n": 7,
+            "hard_pairs": [
+              {
+                "a": "#E1CED4",
+                "b": "#F3E7FC",
+                "delta_e": 11.9
+              },
+              {
+                "a": "#E1CED4",
+                "b": "#DBCEE4",
+                "delta_e": 8.7
+              },
+              {
+                "a": "#F3E7FC",
+                "b": "#DBCEE4",
+                "delta_e": 8.8
+              },
+              {
+                "a": "#DBCEE4",
+                "b": "#BCB7DB",
+                "delta_e": 11.8
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 8.6,
+                "simulated_hex": [
+                  "#7B7E89",
+                  "#A4A7AD",
+                  "#D0D1D4",
+                  "#E5EAFD",
+                  "#CBD2E5",
+                  "#B0BBDD",
+                  "#96A5D5"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.6,
+                "simulated_hex": [
+                  "#868787",
+                  "#ADACAC",
+                  "#D4D4D4",
+                  "#E7EBFB",
+                  "#CED3E3",
+                  "#B1BADA",
+                  "#92A0D1"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 5.3,
+                "simulated_hex": [
+                  "#B9747C",
+                  "#D0A0A5",
+                  "#E5CDD0",
+                  "#F2E9ED",
+                  "#DAD0D5",
+                  "#B7BCC2",
+                  "#87AAB1"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "simulated_hex": [
+                  "#838383",
+                  "#AAAAAA",
+                  "#D2D2D2",
+                  "#EBEBEB",
+                  "#D2D2D2",
+                  "#BBBBBB",
+                  "#A2A2A2"
+                ]
+              }
+            },
+            "lightness_span": 0.595,
+            "contrast_on_white": {
+              "min": 1.19,
+              "max": 3.65,
+              "aa_or_better": 0,
+              "aaa": 0
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "rank_metrics": {
+            "cvd_min_deuteranopia": 8.6,
+            "cvd5_deuteranopia": 8.6,
+            "min5_delta_e": 8.8,
+            "lightness_span8": 0.595
+          },
+          "selection_rule": "sci_palettes.ramp for continuous signed values; preserve the pale centre"
+        },
+        {
+          "id": "div-plum-blue-deep",
+          "name_zh": "双向·plum-blue·柔",
+          "name_en": "Diverging Plum-Blue Soft",
+          "family": "diverging",
+          "base": "div",
+          "derived": true,
+          "hex": [
+            "#2E0115",
+            "#75535E",
+            "#C0AEB4",
+            "#F3E7FC",
+            "#BAAEC3",
+            "#7E799B",
+            "#394A74"
+          ],
+          "application": {
+            "scores": {
+              "clinical": 44,
+              "database": 31,
+              "basic": 49,
+              "general": 50
+            },
+            "fit": {
+              "clinical": false,
+              "database": false,
+              "basic": false,
+              "general": false
+            },
+            "primary": "general",
+            "metrics": {
+              "n": 7,
+              "min8": 8.4,
+              "min5": 20.5,
+              "cvd8": 8.2,
+              "cvd5": 20.5,
+              "cvd5_pro": 20.5,
+              "span8": 0.826,
+              "dark": 3,
+              "hue_spread": 31.8,
+              "arm_monotone": true,
+              "is_scale": true
+            },
+            "derived": true
+          },
+          "audit": {
+            "palette": "div-plum-blue-deep",
+            "name_zh": "双向·plum-blue·柔",
+            "n": 7,
+            "hard_pairs": [
+              {
+                "a": "#C0AEB4",
+                "b": "#BAAEC3",
+                "delta_e": 8.4
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 8.8,
+                "closest_pair": [
+                  "#C0AEB4",
+                  "#BAAEC3"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.2,
+                "closest_pair": [
+                  "#C0AEB4",
+                  "#BAAEC3"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 5.4,
+                "closest_pair": [
+                  "#C0AEB4",
+                  "#BAAEC3"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "closest_pair": [
+                  "#C0AEB4",
+                  "#BAAEC3"
+                ]
+              }
+            },
+            "contrast": {
+              "on_white_AAA": [
+                "#2E0115",
+                "#394A74"
+              ],
+              "on_white_AA": [
+                "#75535E"
+              ],
+              "on_white_low": [
+                "#C0AEB4",
+                "#F3E7FC",
+                "#BAAEC3"
+              ],
+              "on_black_AA+": [
+                "#C0AEB4",
+                "#F3E7FC",
+                "#BAAEC3",
+                "#7E799B"
+              ]
+            },
+            "notes": [
+              "pale members (#C0AEB4, #F3E7FC, #BAAEC3) are below 3:1 on white: use them for fills/bands only, put labels and data points on white, or outline them with a darker member of the same ramp",
+              "some members sit below CIE76 12: do not place them side by side without a second cue (marker shape, linestyle, direct label)"
+            ],
+            "luminance_sorted": [
+              "#2E0115",
+              "#394A74",
+              "#75535E",
+              "#7E799B",
+              "#BAAEC3",
+              "#C0AEB4",
+              "#F3E7FC"
+            ]
+          },
+          "centre_index_zero_based": 3,
+          "centre_hex": "#F3E7FC",
+          "selected_hex": [
+            "#2E0115",
+            "#75535E",
+            "#C0AEB4",
+            "#F3E7FC",
+            "#BAAEC3",
+            "#7E799B",
+            "#394A74"
+          ],
+          "selected_audit": {
+            "hex": [
+              "#2E0115",
+              "#75535E",
+              "#C0AEB4",
+              "#F3E7FC",
+              "#BAAEC3",
+              "#7E799B",
+              "#394A74"
+            ],
+            "n": 7,
+            "hard_pairs": [
+              {
+                "a": "#C0AEB4",
+                "b": "#BAAEC3",
+                "delta_e": 8.4
+              }
+            ],
+            "cvd": {
+              "protanopia": {
+                "min_delta_e": 8.8,
+                "simulated_hex": [
+                  "#040816",
+                  "#56585E",
+                  "#B0B1B4",
+                  "#E5EAFD",
+                  "#ACB1C4",
+                  "#737D9D",
+                  "#3F4C76"
+                ]
+              },
+              "deuteranopia": {
+                "min_delta_e": 8.2,
+                "simulated_hex": [
+                  "#0D0F14",
+                  "#5D5D5D",
+                  "#B3B3B4",
+                  "#E7EBFB",
+                  "#AEB2C2",
+                  "#737C9A",
+                  "#3A4773"
+                ]
+              },
+              "tritanopia": {
+                "min_delta_e": 5.4,
+                "simulated_hex": [
+                  "#360007",
+                  "#7C5257",
+                  "#C4ADB0",
+                  "#F2E9ED",
+                  "#B9B0B4",
+                  "#797E83",
+                  "#2D5257"
+                ]
+              },
+              "achromatopsia": {
+                "min_delta_e": 0.0,
+                "simulated_hex": [
+                  "#0C0C0C",
+                  "#5B5B5B",
+                  "#B2B2B2",
+                  "#EBEBEB",
+                  "#B2B2B2",
+                  "#7D7D7D",
+                  "#494949"
+                ]
+              }
+            },
+            "lightness_span": 0.826,
+            "contrast_on_white": {
+              "min": 1.19,
+              "max": 18.56,
+              "aa_or_better": 3,
+              "aaa": 2
+            },
+            "notes": [
+              "diagnostic only; evaluate the rendered figure at its final size",
+              "pale members should remain fills/bands rather than small text"
+            ]
+          },
+          "rank_metrics": {
+            "cvd_min_deuteranopia": 8.2,
+            "cvd5_deuteranopia": 20.5,
+            "min5_delta_e": 20.5,
+            "lightness_span8": 0.826
+          },
+          "selection_rule": "sci_palettes.ramp for continuous signed values; preserve the pale centre"
+        }
+      ]
+    },
+    {
+      "layer": "validation_ring",
+      "kind": "neutral-accent",
+      "reason": "HDL/Genova validation is a status cue, so keep neutral gray plus one accent",
+      "rule": "do not encode validation status using the heatmap scale"
+    }
+  ],
+  "policy": [
+    "one ramp per semantic layer; never splice members from unrelated ramps",
+    "preserve category order across panels and legend",
+    "pale SCI members are fills/bands only; use dark members for text and outlines",
+    "retain labels/geometry/markers because color is not the sole evidence cue",
+    "run sp.report or sp.check again after the final figure is rendered"
+  ],
+  "provenance": {
+    "adapter": "daxuan-journal-palette/scripts/sci_palette_bridge.py",
+    "sci_root": "/home/daxuan/.codex/skills/sci-color-palettes",
+    "daxuan_role": "style family, semantic mapping and final figure audit",
+    "sci_role": "application ranking and accessibility diagnostics"
+  }
+}

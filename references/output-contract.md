@@ -26,15 +26,63 @@
       palette_id: "ink-mineral-a-sunlit"
       adjustment: "none"
       audit_tool: "unavailable"
+    layer_mapping:
+      - layer: "outcome_category_ring"
+        palette_type: "qualitative"
+        palette_id: "ink-mineral-a-sunlit"
+        category_order: ["group_1", "group_2"]
+      - layer: "signed_effect_ring"
+        palette_type: "diverging"
+        palette_id: "div-plum-blue"
+        zero_stop: 3
+      - layer: "validation_ring"
+        palette_type: "neutral-accent"
+        validated_color: "#D37C70"
+        unavailable_color: "#DDD9D0"
+    preference_constraints:
+      avoid_hues: []
+      lightness_target: "balanced"
+      chroma_target: "moderate"
+      preserve_cues: []
+      applied_constraints: []
+      rejected_candidates: []
+    human_review:
+      status: "awaiting_author"
+      candidate_ids: ["ink-mineral-a-sunlit", "div-plum-blue"]
+      questions:
+        - id: "visual_direction"
+          options: ["keep", "airy", "colorful", "warmer", "cooler"]
+        - id: "priority"
+          options: ["balanced", "readability", "aesthetics", "print"]
+        - id: "edit_scope"
+          options: ["palette_only", "palette_legend", "full_figure"]
+      decision_log: []
     visual_preview:
       html: "assets/palette-gallery/index.html"
       svg: "assets/palette-gallery/palette-atlas.svg"
+      rendered_preview:
+        normal: "palette_preview.png"
+        protanopia: "palette_preview.png"
+        deuteranopia: "palette_preview.png"
+        grayscale: "palette_preview.png"
+        target_size: "palette_preview.png"
     card_draw:
       mode: "open-public | prompted-generated | hybrid | none"
       cards: []
       selected_card: null
       extracted_palette: null
       selection_status: "not-requested | awaiting-selection | selected | reviewed"
+    joint_card_sci:
+      mode: "joint-card-sci | none"
+      figure: "categorical | heatmap | circular | all"
+      seed: 20261025
+      visual_card_is_inspiration_only: true
+      matches:
+        categorical: [{card_id: "card-03", sci_palette_id: "burgundy-clin-hi", mean_delta_e: 18.2}]
+        heatmap: [{card_id: "card-03", sci_palette_id: "div-plum-sage-deep", mean_delta_e: 16.7}]
+      preview:
+        png: "joint_palette_preview.png"
+        html: "index.html"
 
 ## Review questions
 
@@ -50,7 +98,7 @@
 - 哪些判断是设计建议，哪些是已运行的检查，哪些仍是 missing evidence？
 - 是否记录了原始色板 ID、明度/饱和度调整和审查工具版本？
 - 是否给作者提供了可直接查看的 HTML/SVG 预览，而不是只给 HEX 文本？
-- 如果使用抽卡，作者是否先看过 3–5 张候选图并明确选择了 `card_id`？
+- 如果使用抽卡，作者是否先看过 3–10 张候选图并明确选择了 `card_id`？
 - 抽卡来源、版权状态、生成 prompt、提色算法和明度/饱和度调整是否可追溯？
 - 抽卡图片是否只作为视觉输入，最终颜色是否重新按图表语义分配？
 

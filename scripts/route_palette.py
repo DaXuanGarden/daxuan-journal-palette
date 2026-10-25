@@ -22,6 +22,8 @@ def normalize(text: str) -> str:
 
 
 def infer_figure_type(text: str) -> str:
+    if any(term in text for term in ("环形", "圆环", "环图", "circular", "circumferential")):
+        return "circular"
     if any(term in text for term in ("发散", "正负", "效应", "相关性", "diverging")):
         return "diverging"
     if any(term in text for term in ("连续", "热图", "强度", "密度", "显著性", "sequential")):
@@ -48,10 +50,53 @@ def draw_requested(text: str) -> bool:
     return any(term in text for term in ("抽卡", "随机抽", "视觉卡片", "公共领域", "生成卡片", "图片提取", "draw card", "image card"))
 
 
+def palette_rich_requested(text: str) -> bool:
+    return any(term in text for term in ("色彩丰富", "多彩", "高饱和", "鲜艳", "不要灰", "colorful", "vivid", "saturated"))
+
+
 def requested_draw_count(text: str, default: int) -> int:
     if any(term in text for term in ("一张", "一幅", "单张", "single", "one card")):
         return 1
+    number_map = {"两": 2, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10}
+    match = re.search(r"(10|[2-9]|[两二三四五六七八九十])\s*(?:张|幅|个)?[^0-9]{0,12}(?:卡片|卡|cards?)", text)
+    if match:
+        token = match.group(1)
+        return min(10, int(token) if token.isdigit() else number_map[token])
     return default
+
+
+def build_human_review_contract(cards: list[dict]) -> dict:
+    """Return a bounded author handoff before any production figure edit."""
+    return {
+        "mode": "author-select-before-render",
+        "status": "awaiting_author",
+        "candidate_ids": [card["palette_id"] for card in cards],
+        "questions": [
+            {
+                "id": "visual_direction",
+                "question": "下一轮更想保持当前气质、变亮、变鲜明、变暖还是变冷静？",
+                "options": ["keep", "airy", "colorful", "warmer", "cooler"],
+            },
+            {
+                "id": "priority",
+                "question": "这一轮优先审美、可读性、均衡，还是打印/CVD？",
+                "options": ["balanced", "readability", "aesthetics", "print"],
+            },
+            {
+                "id": "edit_scope",
+                "question": "本轮只改配色，还是允许同步改图例/整图细节？",
+                "options": ["palette_only", "palette_legend", "full_figure"],
+            },
+        ],
+        "guardrails": [
+            "keep data and semantic assignments fixed",
+            "compare candidates with identical geometry and export settings",
+            "pause before editing a production figure",
+            "record selection and free-text feedback as preference constraints",
+        ],
+        "decision_log": [],
+        "provenance": {"contract": "scripts/author_review.py", "status": "router-handoff"},
+    }
 
 
 def route(request: str, limit: int = 3) -> dict:
@@ -69,6 +114,16 @@ def route(request: str, limit: int = 3) -> dict:
         scored.append((len(hits) * 3 + type_bonus, -order, hits, route_item))
     scored.sort(reverse=True, key=lambda item: (item[0], item[1]))
     selected = [item for item in scored if item[0] > 0][:limit]
+    # A circular figure is usually layer-aware: its category ring needs a
+    # qualitative family even when the request also contains "heatmap". If no
+    # explicit style keyword was supplied, do not let the heatmap keyword route
+    # the whole figure to a sequential ramp.
+    semantic_keywords = {"热图", "连续", "强度", "密度", "显著性", "sequential", "相关性", "正负", "发散", "效应", "diverging"}
+    explicit_style_hit = any(
+        hit not in semantic_keywords for item in scored for hit in item[2]
+    )
+    if figure_type == "circular" and not explicit_style_hit:
+        selected = [item for item in scored if "qualitative" in item[3]["figure_types"]][:limit]
     if len(selected) < limit:
         selected_keys = {id(item) for item in selected}
         selected.extend(item for item in scored if id(item) not in selected_keys and len(selected) < limit)
@@ -90,7 +145,9 @@ def route(request: str, limit: int = 3) -> dict:
         "primary": cards[0],
         "alternatives": cards[1:],
         "next_questions": ["图表类型？", "大约几组/几类？", "白底还是深底？"],
+        "human_review": build_human_review_contract(cards),
         "draw_count": requested_draw_count(text, index["defaults"]["draw_cards"]) if draw_requested(text) else 0,
+        "palette_friendly": palette_rich_requested(text) if draw_requested(text) else False,
         "provenance": {"index": str(INDEX.relative_to(ROOT)), "full_recipes": "palettes.json", "status": "router-suggestion"},
     }
 
@@ -106,9 +163,12 @@ def compact_summary(result: dict) -> str:
         f"类型：{result['figure_type']}；组数：{result['groups']}；背景：{result['background']}",
         f"首要风险：{result['primary']['risk']}",
         "下一步：图表类型、组数、白底/深底",
+        "作者审阅：先选择视觉方向、优先级和改动范围，再进入下一轮渲染",
     ]
     if result["draw_count"]:
         lines.append(f"抽卡数量：{result['draw_count']} 张")
+        if result.get("palette_friendly"):
+            lines.append("抽卡筛选：色彩丰富度筛选（排除主要灰度/低饱和候选）")
     return "\n".join(lines)
 
 
