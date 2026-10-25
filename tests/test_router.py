@@ -35,6 +35,12 @@ class FastRouterTests(unittest.TestCase):
         self.assertEqual(router.route("随机抽一张蓝绿色公共领域作品") ["draw_count"], 1)
         self.assertEqual(router.route("随机抽一张蓝绿色公共领域作品")["mode"], "card-draw")
 
+    def test_draw_count_accepts_explicit_counts_up_to_ten(self) -> None:
+        router = load_router()
+        self.assertEqual(router.route("随机抽十张色彩丰富的公共领域卡片")["draw_count"], 10)
+        self.assertEqual(router.route("随机抽 8 张色彩丰富的公共领域卡片")["draw_count"], 8)
+        self.assertTrue(router.route("随机抽十张色彩丰富的公共领域卡片")["palette_friendly"])
+
     def test_plain_image_word_does_not_start_card_draw(self) -> None:
         router = load_router()
         self.assertEqual(router.route("这张图用水墨配色")["mode"], "fast-built-in")
@@ -45,6 +51,21 @@ class FastRouterTests(unittest.TestCase):
         self.assertIn("主方案：ink-mineral-a-sunlit", summary)
         self.assertIn("备选：dunhuang-mineral、hokusai-indigo", summary)
         self.assertIn("首要风险：", summary)
+
+    def test_route_returns_bounded_human_review_handoff(self) -> None:
+        router = load_router()
+        result = router.route("五组白底环形热图")
+        review = result["human_review"]
+        self.assertEqual(review["status"], "awaiting_author")
+        self.assertEqual(len(review["questions"]), 3)
+        self.assertEqual(review["candidate_ids"], [result["primary"]["palette_id"], *[item["palette_id"] for item in result["alternatives"]]])
+        self.assertIn("pause before editing", " ".join(review["guardrails"]))
+
+    def test_circular_keyword_is_not_collapsed_into_sequential(self) -> None:
+        router = load_router()
+        result = router.route("LDSC 环形热图")
+        self.assertEqual(result["figure_type"], "circular")
+        self.assertEqual(result["primary"]["palette_id"], "ink-mineral-a-sunlit")
 
     def test_diverging_request_still_gets_two_alternatives(self) -> None:
         router = load_router()
