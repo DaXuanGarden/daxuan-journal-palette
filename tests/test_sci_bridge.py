@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from functools import wraps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,6 +23,17 @@ def load_bridge():
     return module
 
 
+def requires_sci(test):
+    @wraps(test)
+    def wrapped(self, *args, **kwargs):
+        bridge = load_bridge()
+        if bridge.discover_sci_root() is None:
+            self.skipTest("sci-color-palettes is an optional local dependency")
+        return test(self, *args, **kwargs)
+
+    return wrapped
+
+
 class SciBridgeTests(unittest.TestCase):
     def test_field_aliases_and_inference(self) -> None:
         bridge = load_bridge()
@@ -29,6 +41,7 @@ class SciBridgeTests(unittest.TestCase):
         self.assertEqual(bridge.infer_field(figure_type="GWAS heatmap"), "basic")
         self.assertEqual(bridge.infer_field(groups=8), "database")
 
+    @requires_sci
     def test_categorical_selection_preserves_real_ramp_members(self) -> None:
         bridge = load_bridge()
         result = bridge.categorical_recommendations(field="database", n=5)
@@ -41,6 +54,7 @@ class SciBridgeTests(unittest.TestCase):
         self.assertIn("selected_audit", row)
         self.assertIn("cvd", row["selected_audit"])
 
+    @requires_sci
     def test_arbitrary_palette_can_be_audited_without_registry_mutation(self) -> None:
         bridge = load_bridge()
         result = bridge.audit_hex(["#123456", "#D95F59", "#E6AB02"])
@@ -49,6 +63,7 @@ class SciBridgeTests(unittest.TestCase):
         self.assertIn("deuteranopia", result["cvd"])
         self.assertIn("contrast_on_white", result)
 
+    @requires_sci
     def test_diverging_ramp_has_original_centre(self) -> None:
         bridge = load_bridge()
         result = bridge.diverging_recommendations(n=7)
@@ -58,6 +73,7 @@ class SciBridgeTests(unittest.TestCase):
         self.assertEqual(row["centre_hex"], row["hex"][3])
         self.assertEqual(len(row["selected_hex"]), 7)
 
+    @requires_sci
     def test_current_circular_heatmap_contract_separates_layers(self) -> None:
         bridge = load_bridge()
         result = bridge.circular_heatmap_recommendation(
